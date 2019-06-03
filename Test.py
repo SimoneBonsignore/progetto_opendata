@@ -13,4 +13,5 @@ with open("./sinistri2018.csv", newline="", encoding="ISO-8859-1") as sinistri20
             if "/" in str:  #Se la data contiene lo / significa che è scritta nel formato sbagliato
                 print (f"{riga[0]}") #visualizzo la data nel formato errato
                 print(str[6:11]+ "-" + str[3:5] + "-" + str[0:2]) #la ristrutturo nel formato corretto
+                
     
