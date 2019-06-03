@@ -1,8 +1,8 @@
-# 0. Software utilizzato
-* Python ver.3.7
-* Visual Studio Code, per l'implementazione del codice Python
-* LibreOffice, per la visione dei file .csv
-* GitHub, per la sincronizzazione del codice
+# Software utilizzato
+* **Python** .3.7
+* **Visual Studio Code**, per l'implementazione del codice Python
+* **LibreOffice**, per la visione dei file .csv
+* **GitHub**, per la sincronizzazione del codice
 
 # 1. Raccolta dati
 * sinistri2018.csv (http://opendata.comune.palermo.it)
