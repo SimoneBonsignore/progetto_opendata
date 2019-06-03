@@ -17,3 +17,7 @@
 * Input -> sinistri.csv / Output -> newSinistri.csv
   * Luogo: Ci interessa prendere solo la via e non altri dati come il numero civico
   * Data: Alcune date sono in formato *dd/mm/yyyy*, la maggior parte in formato *yyyy-mm-dd*. Decidiamo di convertire tutto nel formato più utilizzato nel documento, ovvero *yyyy-mm-dd*
+
+
+* Input -> Palermo-2018-*.csv / Output -> 2018-\*.csv
+  * Data: Le date sono scritte nel formato *dd/mm/yyyy*. Decidiamo di convertire tutto nel formato utilizzato dal documento newSinistri.csv, *yyyy-mm-dd*
