@@ -15,4 +15,4 @@ for nomeMese in mesi:
             header = next(lettore)
             writer = csv.writer(newMese, delimiter=";") 
             writer.writerow(header[:]) #Copio l'header del file di origine nel nuovo file
-
+            
