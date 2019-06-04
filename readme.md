@@ -15,7 +15,7 @@
 
 # 2. Processamento dei dati
 * Input -> sinistri.csv / Output -> newSinistri.csv
-  * Luogo: Ci interessa prendere solo la via e non altri dati come il numero civico
+  * Luogo: Ci interessa prendere solo la via e non altri dati come il numero civico. Alcune vie non sono indicate e da un primo confronto contengono coordinate errate, decidiamo quindi di eliminarle
   * Data: Alcune date sono in formato *dd/mm/yyyy*, la maggior parte in formato *yyyy-mm-dd*. Decidiamo di convertire tutto nel formato più utilizzato nel documento, ovvero *yyyy-mm-dd*
 
 
