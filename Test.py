@@ -2,7 +2,7 @@ import csv
 import re
 
 with open("./dati/sinistri2018.csv", newline="", encoding="ISO-8859-1") as sinistri2018: #Apro il csv d'origine
-    with open('./dati/newSinistri.csv', 'w') as newSinistri: #Creo il nuovo csv in modalità scrittura
+    with open('./dati/newSinistri.csv', 'w', newline="") as newSinistri: #Creo il nuovo csv in modalità scrittura
         lettore = csv.reader(sinistri2018, delimiter=";") 
         header = next(lettore) 
         writer = csv.writer(newSinistri, delimiter=";") 
