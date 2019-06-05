@@ -1,6 +1,8 @@
 #Author: Vincenzo Guccione
 
 import csv
+import datetime
+#from dateutil.parser import parse
 
 #Creo un array che contiene i nomi dei mesi
 mesi = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"]
@@ -17,17 +19,23 @@ for nomeMese in mesi:
             writer.writerow(header[:]) #Copio l'header del file di origine nel nuovo file
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
-                str = riga[1]   #Prendo solo gli elementi della colonna Data
-            if "/" in str:  #Se la data contiene lo / significa che è scritta nel formato sbagliato
+                 #str = riga[1]   #Prendo solo gli elementi della colonna Data
+                 #riga[1]=riga[1].replace("/","-")
+                 # parse(riga[1])                                  
+                 #str =riga[1]
+                 #riga[1]=  (str[4:8]+"-"  + str[2] +"-"  + str[0]) 
+                 riga[1]=datetime.datetime.strptime(riga[1], "%d/%m/%Y").strftime("%Y-%m-%d")
+                 writer.writerow(riga[:]) #In questo caso la riga è formattata come vogliamo e la copiamo nel nuovo csv
+
+           #if "/" in str:  #Se la data contiene lo / significa che è scritta nel formato sbagliato
                 #print (f"{riga[0]}") #visualizzo la data nel formato errato
                 #print(str[6:11]+ "-" + str[3:5] + "-" + str[0:2]) #la ristrutturo nel formato corretto
-                print(riga[1])
-                print(str[6:11])
-                print(str[3:5])
-                print(str[0:2])
+                #print(riga[1])
+                #print(str[6:11])
+                #print(str[3:5])
+                #print(str[0:2])
                 #newData = (str[6:11] + "-" + str[3:5] + "-" + str[0:2])
                 #riga[1] = newData
                 #print(riga[1])
-                #writer.writerow(riga[:]) #In questo caso la riga è formattata come vogliamo e la copiamo nel nuovo csv
 
             
