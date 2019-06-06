@@ -44,7 +44,7 @@ with open("./dati/datiMeteo2018.csv", "w", newline="") as datiMeteo2018:
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
                 print(f"Scrivo la riga: {riga[:]}")
-            writer.writerow(riga[:])                                        #Scrivo le restanti righe
+                writer.writerow(riga[:])                                        #Scrivo le restanti righe
         
 
 
