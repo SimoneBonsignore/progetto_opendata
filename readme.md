@@ -1,5 +1,5 @@
 # Software utilizzato
-* **Python** .3.7
+* **Python** 3.7
 * **Visual Studio Code**, per l'implementazione del codice Python
 * **LibreOffice**, per la visione dei file .csv
 * **GitHub**, per la sincronizzazione del codice
@@ -22,3 +22,6 @@
 * Input -> Palermo-2018-*.csv / Output -> 2018-\*.csv
   * Data: Le date sono scritte nel formato *dd/mm/yyyy*. Decidiamo di convertire tutto nel formato utilizzato dal documento newSinistri.csv, *yyyy-mm-dd*
   * Fenomeno: La colonna è scritta con spazi superflui che eliminiamo. Sostituiamo i fenomeni del tipo "piogga temporale" con "temporale"
+
+* Input -> 2018-*.csv / Output -> datiMeteo2018.csv
+  * Vengono uniti tutti i file csv riguardanti le condizioni meteo mese per mese in un unico file
