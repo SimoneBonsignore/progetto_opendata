@@ -4,6 +4,11 @@
 * **LibreOffice**, per la visione dei file .csv
 * **GitHub**, per la sincronizzazione del codice
 
+# Abstract 
+*La nostra idea di progetto è quella di realizzare una mappa interattiva che mostra dove sono avvenuti i sinistri nella zona di palermo nel 2018 ed, eventualmente, avere la possibilità di filtrare i risultati ottenuti per via, tipologia, giorno della settimana, ecc.... Verranno utilizzati anche i dati relativi al meteo per dare una visione più chiara delle zone che sono più 'pericolose' durante il maltempo, in modo tale da assegnare alla zona a rischio incidente un "indice di pericolosità" maggiore.
+
+*This project is based on the idea of creating an interactive map that shows where the incident occurred in all Palermo in 2018 and, eventually, having the chance of filtering those results in address, tipology, day of the week and so on. We'll also use data concerning the weather in which those accident occured so that the user can have a clearer view of which zone is 'more dangerous' during a bad weather, it has also the purpose of assigning to those zones an "index of danger" higher than it would usually be. 
+
 # 1. Raccolta dati
 * sinistri2018.csv (http://opendata.comune.palermo.it)
   * Licenza CC BY-SA 4.0
