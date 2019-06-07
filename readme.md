@@ -31,4 +31,6 @@
   * Illesi e Riservata: Nel file di origine non sono indicati il numero di persone illese e il numero di persone in prognosi riservata, non riuscendo a risalire a questi numeri nemmeno mediante l'utilizzo dei dati nelle altre colonne, decidiamo di assegnare a queste due colonne valore 0.
 
 * Input -> bergamo.csv / Output -> newBergamo.csv
-  * Vengono uniti tutti i file csv riguardanti le condizioni meteo mese per mese in un unico file
+  * Data: le date sono scritte nel formato *dd-mm-yyyy*. Si converte il tutto nel formato *yyyy-mm-dd* 
+  * Coordinate: le coordinate sono scritte insieme, separate da una virgola. Vengono separate tramite splitting e scritte separatamente al momento di scrittura del nuovo csv.
+  * Città:La riga contenente la località presenta sia la città che la via dove è avvenuto il sinistro, queste due informazioni sono state "separate" rimpiazzando la città con uno spazio vuoto e specificando la città all'inizio di ogni riga durante la scrittura
