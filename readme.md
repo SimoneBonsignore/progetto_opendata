@@ -5,9 +5,10 @@
 * **GitHub**, per la sincronizzazione del codice
 
 # Abstract 
-* La nostra idea di progetto è quella di realizzare una mappa interattiva che mostra dove sono avvenuti i sinistri nella zona di palermo nel 2018 ed, eventualmente, avere la possibilità di filtrare i risultati ottenuti per via, tipologia, giorno della settimana, ecc.... Verranno utilizzati anche i dati relativi al meteo per dare una visione più chiara delle zone che sono più 'pericolose' durante il maltempo, in modo tale da assegnare alla zona a rischio incidente un "indice di pericolosità" maggiore.
+* La nostra idea di progetto è quello di creare un modello unico per i sinistri stradali, tale modello è pensato prendendo come riferimento quattro città, ciascuna delle quali situata in una zona divera di Italia, da Nord, al Centro, al Sud e alle isole, confrontando la struttura di ciascuno dataset e unendoli in un unico modello che li rappresenti tutti  seguendo la medesima struttura, si ha la possibilità di filtrare tutti i sinistri  per via, tipologia, giorno della settimana, ecc....
+Un ulteriore passo è quello di una mappa interattiva che mostra dove sono avvenuti i sinistri studiati. Per problemi di disponibilità di dataset aggiornati, alcuni modelli si riferiscono all'anno 2017, altri all'anno 2018.
 
-* This project is based on the idea of creating an interactive map that shows where the incident occurred in all Palermo in 2018 and, eventually, having the chance of filtering those results in address, tipology, day of the week and so on. We'll also use data concerning the weather in which those accident occured so that the user can have a clearer view of which zone is 'more dangerous' during a bad weather, it has also the purpose of assigning to those zones an "index of danger" higher than it would usually be. 
+* The project proposed is based on the idea of creating a unique mode for accidents, this model is studied taking in account four cities, each of which located on different zone of Italy, North,South, Center,islands. We confront the structure for each dataset, mergin them into a single model that represents them all with the same structure , having the chance of filtering them by address, tipology, day of the week and so on. Another step would be an interactive map that shows where those accident occured. Regrettably, the availability of the dataset was not sufficient so we had to use different years, some referring to the 2017 and others 2018. 
 
 # 1. Raccolta dati
 * palermo.csv (http://opendata.comune.palermo.it)
