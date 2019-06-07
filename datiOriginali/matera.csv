@@ -1,0 +1,329 @@
+anno,mese,organo,organosede,data,orario,tipostrada,zona,localita,LAT,LON,abitato,tipo_sx,causa,n_veicoli,n_pesanti,solo_danni,feriti,decessi
+2018,Gennaio,Polizia Municipale,MATERA,lunedì 1 gennaio 2018,"16,50",Provinciale,S.P. Matera-Montescaglioso,km 2+600,40.639179018502254,16.622164249420166,no,Scontro frontale laterale,Distrazione,2,0,no,3,0
+2018,Gennaio,Polizia Municipale,MATERA,martedì 2 gennaio 2018,"10,20",Comunale,Matera,via zanardelli,,,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,martedì 2 gennaio 2018,"16,50",Comunale,Matera,"vai annunziatella altezza ""Linea Sport""",40.67079852,16.60556406,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Gennaio,Polizia Municipale,MATERA,mercoledì 3 gennaio 2018,"17,15",Comunale,Matera,Via Trabaci c/o rotatoria Via La Martella,40.67351842,16.58615291,si,Altro,Mancata precedenza,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,venerdì 5 gennaio 2018,"12,40",Comunale,Matera,Via Da Vinci incr. Via Pizzilli- Vico III Nazionale,40.67642331,16.59537435,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,domenica 7 gennaio 2018,"18,40",Comunale,Matera,Via Nazionale n. 56,40.67357741,16.60001725,si,Scontro frontale laterale,Distrazione,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,lunedì 8 gennaio 2018,"8,05",Comunale,Matera,Via Parini intersezione Via Petrarca,40.67344315,16.59621119,si,Scontro frontale laterale,Mancata precedenza,2,0,no,3,0
+2018,Gennaio,Polizia Municipale,MATERA,lunedì 8 gennaio 2018,"10,10",Comunale,Matera,"Area Ospedale ""Madonna delle Grazie"" Parcheggio",40.6542876,16.61323786,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,martedì 9 gennaio 2018,"8,00",Comunale,Matera,Via A.Moro altezza n. 26,40.66573479,16.60027206,si,Urto contro ostacolo fisso,Altro,1,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,martedì 9 gennaio 2018,"19,50",Comunale,Matera,Via Don Minzoni ang. Piazza Matteotti,40.66666253,16.60217911,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,mercoledì 10 gennaio 2018,"9,30",Comunale,Matera,Via Dante fr. civ. n. 61/G,40.6723609,16.59390986,si,Urto contro ostacolo fisso,Distrazione,1,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,giovedì 11 gennaio 2018,"17,20",Comunale,Matera,Via dei Peucezi civ. 20-22,40.68247476,16.58620387,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Gennaio,Polizia Municipale,MATERA,venerdì 12 gennaio 2018,"10,25",Comunale,S.S. 99,Km 15+800,,,si,Urto contro ostacolo fisso,Distrazione,0,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,venerdì 12 gennaio 2018,"13,15",Comunale,Matera,Via Mattei altezza I.T.I.S. Pentasuglia,40.67966573,16.57906651,si,Investimento di pedone,Altro,1,0,no,1,0
+2018,Gennaio,Polizia Municipale,MATERA,sabato 13 gennaio 2018,"10,15",Comunale,Matera,"Area Ospedale ""Madonna delle Grazie""",40.65404749,16.6121918,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,martedì 16 gennaio 2018,"8,25",Comunale,Matera,Via Einaudi 13,40.66794425,16.59808874,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Gennaio,Polizia Municipale,MATERA,mercoledì 17 gennaio 2018,"12,40",Comunale,Matera,Via Dante inters. Via Montefinese,40.67582525,16.58881903,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,giovedì 18 gennaio 2018,"8,50",Comunale,Matera,Via a Moro,,,si,Scontro frontale laterale,Distrazione,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,sabato 13 gennaio 2018,"14,15",Comunale,Matera,Via Cappuccini intersezione Via Casalnuovo,40.65535386,16.61695004,si,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,domenica 21 gennaio 2018,"13,00",Comunale,Matera,Area Parcheggio Via Saragat,40.66658522,16.59681201,si,Urto contro ostacolo fisso,Distrazione,1,0,no,2,0
+2018,Gennaio,Polizia Municipale,MATERA,lunedì 22 gennaio 2018,"10,40",Comunale,Matera,Via Passarelli intersezione Via D'Alessio,40.66456087,16.60256535,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,martedì 23 gennaio 2018,"16,55",Comunale,Matera,Via San Vito inters. SS 7,40.68150859964763,16.602444648742676,si,Altro,Altro,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,mercoledì 24 gennaio 2018,"12,30",Comunale,Matera,V.le Europa inters. Via Santa Caterina da Siena,40.66481925,16.5939045,si,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,mercoledì 24 gennaio 2018,"20,00",Comunale,Matera,Via Ferrari nei pressi inters. Via Alvino,40.6813052,16.54193401,si,Urto contro ostacolo fisso,Improvviso malore,1,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,giovedì 25 gennaio 2018,"11,15",Comunale,Matera,Via Lucana intersezione Via Fortunato,40.66026578,16.61247075,si,Scontro frontale laterale,Mano da tenere,2,0,no,1,0
+2018,Gennaio,Polizia Municipale,MATERA,venerdì 26 gennaio 2018,"7,40",Comunale,Matera,Via Nazionale n. 39,40.67360792,16.59984291,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Gennaio,Polizia Municipale,MATERA,sabato 27 gennaio 2018,"12,10",Comunale,Matera,Via Amendola inters. Via XX Settembre,40.66928087,16.60624802,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Gennaio,Polizia Municipale,MATERA,lunedì 29 gennaio 2018,"7,55",Statale,S.S. 7,Km 564 direzione Matera,,,no,Tamponamento,Velocità,3,0,no,1,0
+2018,Gennaio,Polizia Municipale,MATERA,martedì 30 gennaio 2018,"9,30",Comunale,Matera,Via XX Settembre n. 48,40.66905708,16.60622388,si,Scontro frontale laterale,Distrazione,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,martedì 30 gennaio 2018,"16,00",Comunale,Matera,Via La Martella in prossimità civ. n. 17,40.67129898,16.58400446,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Gennaio,Polizia Municipale,MATERA,mercoledì 31 gennaio 2018,"13,45",Comunale,Matera,Via La Martella in prossimità civ. n. 17,40.67129898,16.58400446,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,giovedì 1 febbraio 2018,"12,10",Comunale,Matera,Via delle Arti antistante P.C. 995,,,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,giovedì 1 febbraio 2018,"18,00",Comunale,Matera,Via dei Normanni fr. n. 11,40.67195607,16.59033179,si,Investimento di pedone,Mancata precedenza,1,0,no,2,0
+2018,Febbraio,Polizia Municipale,MATERA,lunedì 5 febbraio 2018,"8,10",Comunale,Matera,Via Annunziatella altezza civ. 97,40.67190114,16.60370529,si,Investimento di pedone,Altro,1,0,no,1,0
+2018,Febbraio,Polizia Municipale,MATERA,mercoledì 7 febbraio 2018,"13,20",Comunale,Matera,"Via Moro rotatoria ""Pino"" Liceo Scientifico",40.66454662,16.59775615,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,mercoledì 7 febbraio 2018,"16,15",Provinciale,S.P. n. 201,Km 6+815,,,no,Scontro frontale laterale,Mano da tenere,2,0,no,3,0
+2018,Febbraio,Polizia Municipale,MATERA,mercoledì 7 febbraio 2018,"19,35",Comunale,Matera,Via Ugo La Malfa 47/49,40.66848541,16.59948081,si,Investimento di pedone,Distrazione,1,0,no,1,0
+2018,Febbraio,Polizia Municipale,MATERA,lunedì 12 febbraio 2018,"17,45",Statale,S.S. n.7,Km 567+VII,,,no,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Febbraio,Polizia Municipale,MATERA,martedì 13 febbraio 2018,"8,10",Comunale,Matera,Via La Martella rotatoria Via delle Arti,40.66901842940948,16.57387375831604,si,Fuoriuscita sede stradale,Velocità,1,0,no,1,0
+2018,Febbraio,Polizia Municipale,MATERA,martedì 13 febbraio 2018,"11,40",Comunale,Matera,Via Manzoni angolo Via Parini,40.67450504,16.59393132,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,mercoledì 14 febbraio 2018,"15,50",Comunale,Matera,Via Passarelli ang. Largo Passarelli,40.66500643,16.60343707,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,mercoledì 14 febbraio 2018,"17,30",Comunale,Matera,Viale C. Levi prossimità Via dell'Ulivo,40.65832873,16.60429537,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Febbraio,Polizia Municipale,MATERA,venerdì 16 febbraio 2018,"11,40",Comunale,Matera,Via Moro antistante Tribunale,40.66549879,16.60004944,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,sabato 17 febbraio 2018,"12,40",Comunale,Matera,Via Vena,,,si,Urto veicolo in sosta,Guasto meccanico,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,martedì 20 febbraio 2018,"9,00",Statale,S.S. n.7,Km 564+671 direzione Matera,,,no,Tamponamento,Distanza sicurezza,2,0,no,3,0
+2018,Febbraio,Polizia Municipale,MATERA,martedì 20 febbraio 2018,"14,45",Provinciale,S.P. Matera-Grassano,intersezione Via Monticchio,40.65900019,16.54174089,no,Scontro frontale laterale,Velocità,2,0,no,1,0
+2018,Febbraio,Polizia Municipale,MATERA,mercoledì 21 febbraio 2018,"8,55",Comunale,Matera,Via Marconi n. 109-111,40.67591679,16.59941375,si,Urto veicolo in sosta,Guasto meccanico,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,mercoledì 21 febbraio 2018,"19,35",Comunale,Matera,Via A.M. Di Francia-strada di collegamento Via Castello,40.65990767,16.59866273,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,sabato 24 febbraio 2018,"13,10",Comunale,Matera,svincolo SS 99 Ipercoop -Borgo Venusio,40.71961153,16.57721579,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,domenica 25 febbraio 2018,"11,00",Comunale,Matera,Via Lucana/Via XX Settembre,40.6685851,16.60610586,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,domenica 25 febbraio 2018,"13,30",Comunale,Matera,Via Borsellino intersezione Via Impastato,40.6865935,16.57540798,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,lunedì 26 febbraio 2018,"8,10",Comunale,Matera,Via Lanera altezza Liceo Pedagogico,40.66153745,16.60358459,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Febbraio,Polizia Municipale,MATERA,lunedì 26 febbraio 2018,"13,20",Comunale,Matera,Via del Giglio,40.65874789,16.60536826,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Febbraio,Polizia Municipale,MATERA,martedì 27 febbraio 2018,"9,00",Comunale,Matera,Via della Scienza n. 22,40.67327227,16.57292694,si,Urto veicolo in sosta,Distrazione,2,1,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,giovedì 1 marzo 2018,"14,50",Comunale,Matera,Via Granulari,,,si,Scontro frontale laterale,Distrazione,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,venerdì 2 marzo 2018,"10,41",Comunale,Matera,Via Cererie Istituto Penitenziario,40.67445825,16.60569549,si,Urto contro ostacolo fisso,Improvviso malore,1,0,no,1,0
+2018,Marzo,Polizia Municipale,MATERA,venerdì 2 marzo 2018,"16,45",Comunale,Matera,"Via Nazionale n., 238",40.67698881,16.59269482,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Marzo,Polizia Municipale,MATERA,sabato 3 marzo 2018,"18,15",Comunale,Matera,Via Annunziatella n. 141,40.67230597,16.60276115,si,Scontro frontale laterale,Altro,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,domenica 4 marzo 2018,"8,30",Comunale,Matera,Via Roma int. Via Lucana,40.66719556,16.60444826,si,Urto contro ostacolo fisso,Velocità,1,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,mercoledì 7 marzo 2018,"13,20",Comunale,Matera,Via Lucana incrocio Via Don Minzoni,40.66639804,16.60443217,si,Scontro frontale laterale,Altro,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,giovedì 8 marzo 2018,"8,10",Comunale,Matera,Via Dante tratto tra via Gandhi e Via Montefinese,40.67549978,16.58911943,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Marzo,Polizia Municipale,MATERA,giovedì 8 marzo 2018,"11,15",Comunale,Matera,Via Dante altezza civ. n. 51,40.67180654,16.59474671,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Marzo,Polizia Municipale,MATERA,lunedì 12 marzo 2018,"8,25",Comunale,Matera,Piazza degli Olmi,,,si,Scontro frontale laterale,Distrazione,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,lunedì 12 marzo 2018,"18,20",Comunale,Matera,Via Montescaglioso inters. Via Lucana,40.65546171,16.61480695,si,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,martedì 13 marzo 2018,"10,10",Comunale,Matera,Strada di collegamento Via Moro/Piazza Matteotti,40.66656487,16.60166413,si,Tamponamento,Distanza sicurezza,2,0,no,1,0
+2018,Marzo,Polizia Municipale,MATERA,martedì 13 marzo 2018,"16,35",Comunale,Matera,Via Gattini,,,si,Scontro frontale laterale,Distrazione,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,mercoledì 14 marzo 2018,"8,30",Comunale,Matera,Via Lazazzera/Via Dante,40.6705483,16.59706414,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Marzo,Polizia Municipale,MATERA,giovedì 15 marzo 2018,"11,55",Comunale,Matera,via Marconi/via Istria,40.67499122,16.59980267,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,sabato 17 marzo 2018,"10,35",Comunale,Matera,Via Lucana altezza ex casello ferroviario,40.65549427,16.61452532,si,Scontro frontale laterale,Distanza sicurezza,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,lunedì 19 marzo 2018,"10,40",Statale,S.S. n. 7,km 580+830,,,no,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,lunedì 19 marzo 2018,"18,30",Provinciale,S.P. n. 42,a circa mt 85 dall'intersez. Con la S.P. n. 41,40.73841297394456,16.673598289489746,no,Scontro frontale laterale,Velocità,2,0,no,2,0
+2018,Marzo,Polizia Municipale,MATERA,mercoledì 21 marzo 2018,"8,35",Comunale,Matera,Via Gravina altezza civ. n. 1/A,40.6802963,16.58490568,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,lunedì 26 marzo 2018,"13,25",Comunale,Matera,Via Nazionale inters. Via Sturzo/Via San Pardo,40.67757872,16.59172118,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,lunedì 26 marzo 2018,"16,10",Comunale,Matera,Via La Martella/Via delle Arti,40.66910794,16.57388449,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,mercoledì 28 marzo 2018,"15,30",Provinciale,S.P. collegamento Ospedale-S.S. 7,Km 1+300,,,no,Scontro frontale laterale,Velocità,2,0,no,2,0
+2018,Marzo,Polizia Municipale,MATERA,giovedì 29 marzo 2018,"16,51",Comunale,Matera,Via F.P. Festa int. Via Volpe,40.67017804,16.60727531,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Marzo,Polizia Municipale,MATERA,venerdì 30 marzo 2018,"16,20",Comunale,Matera,Via Cererie,,,si,Scontro frontale laterale,Distrazione,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,martedì 3 aprile 2018,"15,53",Comunale,Matera,via roma civico 44-46,40.66718336,16.60431415,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Aprile,Polizia Municipale,MATERA,martedì 3 aprile 2018,"18,15",Comunale,Matera,via La Martella,,,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,martedì 3 aprile 2018,"19,00",Comunale,Matera,via Lucana fr. civici 117-119,40.66510816,16.60689175,si,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,sabato 7 aprile 2018,"8,30",Comunale,Matera,"via Roma , 14",40.66724032,16.60541654,si,Scontro frontale laterale,Mancata precedenza,1,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,sabato 7 aprile 2018,"13,30",Comunale,Matera,via S. Pardo,,,si,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,martedì 10 aprile 2018,"8,50",Statale,ss n.7,"km.563+199,85",,,no,Tamponamento,Distanza sicurezza,3,0,no,3,0
+2018,Aprile,Polizia Municipale,MATERA,mercoledì 11 aprile 2018,"8,25",Comunale,Matera,"viale Europa ,3",40.66449983,16.59620315,si,Tamponamento,Distanza sicurezza,2,0,no,2,0
+2018,Aprile,Polizia Municipale,MATERA,mercoledì 11 aprile 2018,"13,20",Comunale,Matera,via bizantini incrocio via Dante,40.67793673,16.58718288,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,giovedì 12 aprile 2018,"9,00",Comunale,Matera,area ospedaliera,40.65398644,16.61228299,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Aprile,Polizia Municipale,MATERA,sabato 14 aprile 2018,"18,00",Comunale,Matera,via Lucana,,,si,Tamponamento,Distanza sicurezza,2,0,no,1,0
+2018,Aprile,Polizia Municipale,MATERA,lunedì 16 aprile 2018,"8,55",Comunale,Matera,via Moro incrocio area sosta SISAS,40.66676832,16.60145223,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,lunedì 16 aprile 2018,"20,05",Comunale,Matera,"via pecci, 6-8",40.66216208,16.5991804,si,Scontro frontale laterale,Velocità,3,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,martedì 17 aprile 2018,"12,15",Comunale,Matera,"P.zza Matteotti,5-6",40.66694532,16.60241514,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Aprile,Polizia Municipale,MATERA,martedì 17 aprile 2018,"15,15",Comunale,Matera,via C. Levi in crocio via del ciclamino,40.6597978,16.60129666,si,Scontro frontale laterale,Mancata precedenza,2,0,no,3,0
+2018,Aprile,Polizia Municipale,MATERA,mercoledì 18 aprile 2018,"14,15",Comunale,Matera,"via Gravina, 15",40.68120349,16.58220738,si,Scontro frontale laterale,Distanza sicurezza,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,mercoledì 18 aprile 2018,"19,30",Comunale,Matera,"parallela via Nazionale ,37",40.6735591,16.59985632,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Aprile,Polizia Municipale,MATERA,giovedì 19 aprile 2018,"15,30",Comunale,Matera,via beneventi,40.67403918950404,16.597337722778317,si,Scontro frontale laterale,Velocità,3,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,venerdì 20 aprile 2018,"8,25",Comunale,Matera,via parini incrocio via Manzoni,40.674539617319354,16.593899130821228,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,sabato 21 aprile 2018,"19,15",Comunale,Matera,"via seneca, 13-17",40.68036749,16.57706559,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Aprile,Polizia Municipale,MATERA,domenica 22 aprile 2018,"9,30",Comunale,Matera,via montescaglioso presso area di servizio Q8,40.6529812,16.61618561,si,Scontro frontale laterale,Velocità,2,0,no,2,0
+2018,Aprile,Polizia Municipale,MATERA,lunedì 23 aprile 2018,"14,25",Comunale,Matera,via gattini incrocio via S. Stefano,40.67302205,16.60728872,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Aprile,Polizia Municipale,MATERA,lunedì 23 aprile 2018,"17,05",Comunale,Matera,"via Lucana ,95-97",40.66560255,16.60571963,si,Tamponamento,Distanza sicurezza,3,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,martedì 24 aprile 2018,"17,20",Comunale,Matera,via borsellino incrocio via falcone,40.68786264,16.57686442,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,venerdì 27 aprile 2018,"9,50",Comunale,Matera,via degli Aragonisi incrocio via La Martella,40.67190724,16.58427536,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,venerdì 27 aprile 2018,"13,15",Comunale,Matera,via Istria incrocio via Marconi,40.67498105,16.59980267,si,Fuoriuscita sede stradale,Velocità,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,sabato 28 aprile 2018,"11,00",Comunale,Matera,Piazza della visitazione,40.6653401,16.60049736,si,Scontro frontale laterale,Distrazione,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,sabato 28 aprile 2018,"18,00",Comunale,Matera,via protospata incrocio la Croce,40.67258264,16.60173386,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,lunedì 30 aprile 2018,"11,05",Provinciale,s.p. n.10,km1+700,,,no,Tamponamento,Distrazione,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,lunedì 30 aprile 2018,"14,15",Comunale,Matera,viale Italia,,,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Aprile,Polizia Municipale,MATERA,lunedì 30 aprile 2018,"19,00",Comunale,Matera,via Torraca incrocio via Passarelli,40.66522616,16.60399497,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,mercoledì 2 maggio 2018,"14,50",Comunale,Matera,via degli Aragonisi,,,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,giovedì 3 maggio 2018,"17,10",Comunale,Matera,Piazzale municipio via A. Moro,40.66669508,16.6001004,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,venerdì 4 maggio 2018,"17,20",Comunale,Matera,via Lucana n.109,40.66532585,16.60632044,si,Scontro frontale,Mancata precedenza,2,0,no,1,0
+2018,Maggio,Polizia Municipale,MATERA,martedì 8 maggio 2018,"16,00",Statale,ss.n.7,altezza km564,,,no,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,giovedì 10 maggio 2018,"8,00",Comunale,Matera,area ospedaliera Madonna Delle Grazie,40.6539376,16.61263704,si,Scontro frontale laterale,Mano da tenere,2,0,no,2,0
+2018,Maggio,Polizia Municipale,MATERA,giovedì 10 maggio 2018,"21,05",Comunale,Matera,via Lucana n.205,40.66122614,16.61055297,si,Tamponamento,Altro,2,0,no,1,0
+2018,Maggio,Polizia Municipale,MATERA,venerdì 11 maggio 2018,"8,55",Comunale,Matera,strada di collegamento via Bizantini e SS.99 inrcocio SS.7,40.68053632,16.5901494,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Maggio,Polizia Municipale,MATERA,sabato 12 maggio 2018,"9,00",Comunale,Matera,via Annunziatella,,,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,sabato 12 maggio 2018,"12,10",Comunale,Matera,via Dante,,,si,Tamponamento,Distanza sicurezza,3,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,domenica 13 maggio 2018,"13,50",Comunale,Matera,via S. Pardo altezza civico n.18,40.67679963,16.59674495,si,Scontro frontale laterale,Mano da tenere,2,0,no,3,0
+2018,Maggio,Polizia Municipale,MATERA,mercoledì 16 maggio 2018,"10,30",Provinciale,Matera-Grassano n.8,km.4+350,,,no,Tamponamento,Distanza sicurezza,2,0,no,1,0
+2018,Maggio,Polizia Municipale,MATERA,mercoledì 16 maggio 2018,"17,00",Comunale,Matera,via Miorana altezza civico n.112,40.67375032,16.59072876,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,mercoledì 16 maggio 2018,"20,00",Comunale,Matera,via Lucana incrocio via Gamsci,40.66546827,16.6059047,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Maggio,Polizia Municipale,MATERA,venerdì 18 maggio 2018,"13,15",Comunale,Matera,via Manzoni n.6,40.67394358,16.59261435,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,sabato 19 maggio 2018,"11,15",Comunale,Matera,via Nazioni Unite altezza n.9,40.66533603,16.596407,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Maggio,Polizia Municipale,MATERA,sabato 19 maggio 2018,"19,45",Comunale,Matera,via Annunziatella n.42,40.67146579,16.60477817,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Maggio,Polizia Municipale,MATERA,mercoledì 23 maggio 2018,"8,45",Comunale,Matera,via degli aragonesi altezza civico n.24,40.67179942,16.58451676,si,Scontro frontale laterale,Mancata precedenza,3,0,no,1,0
+2018,Maggio,Polizia Municipale,MATERA,venerdì 25 maggio 2018,"8,40",Comunale,Matera,via gravina altezza rotatoria incrocio con bretella di collegamento con Piazza Vivaldi,40.68359549,16.57702804,si,Tamponamento,Distanza sicurezza,3,0,no,1,0
+2018,Maggio,Polizia Municipale,MATERA,sabato 26 maggio 2018,"17,55",Comunale,Matera,via Dante incrocio via D.L.Sturzo (Rotatoria),40.67642534,16.58865809,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Maggio,Polizia Municipale,MATERA,lunedì 28 maggio 2018,"13,00",Comunale,Matera,via Manzoni incrocio via semeraro,40.67476745,16.59451872,si,Tamponamento,Distanza sicurezza,3,0,no,2,0
+2018,Maggio,Polizia Municipale,MATERA,lunedì 28 maggio 2018,"18,50",Comunale,Matera,via A.M. di Francia,,,si,Tamponamento,Distanza sicurezza,3,0,no,2,0
+2018,Maggio,Polizia Municipale,MATERA,mercoledì 30 maggio 2018,"13,00",Comunale,Matera,via Dante,,,si,Urto contro ostacolo fisso,Guasto meccanico,1,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,mercoledì 30 maggio 2018,"18,40",Comunale,Matera,via Granulare incrocio via Gravina,40.68352634,16.57578886,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,giovedì 31 maggio 2018,"14,00",Comunale,Matera,via c. levi,,,si,Urto contro ostacolo fisso,Altro,1,0,si,0,0
+2018,Maggio,Polizia Municipale,MATERA,giovedì 31 maggio 2018,"18,30",Comunale,Matera,via S. Pardo incrocio via L. Da Vinci.,40.67771297,16.59524292,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Giugno,Polizia Municipale,MATERA,venerdì 1 giugno 2018,"18,30",Comunale,Matera,via Mattei,40.67866088,16.58091187,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Giugno,Polizia Municipale,MATERA,martedì 5 giugno 2018,"10,50",Comunale,Matera,via Lazazzera fronte scuola elementare,40.67213305,16.59724116,si,Fuoriuscita sede stradale,Improvviso malore,1,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,martedì 5 giugno 2018,"17,45",Comunale,Matera,via lucana incrocio via vena,40.66280095,16.60870492,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,venerdì 8 giugno 2018,"13,50",Comunale,Matera,via Gramsci incrocio via Torraca,40.66464021,16.60428196,si,Scontro frontale laterale,Mancata precedenza,3,0,no,3,0
+2018,Giugno,Polizia Municipale,MATERA,sabato 9 giugno 2018,"12,30",Comunale,Matera,"via Gravina altezza negozio ""Il Dolcetto""",40.68144758,16.58134639,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,domenica 10 giugno 2018,"11,45",Comunale,Matera,via Annunziatella altezza civico n. 24,40.67098568,16.60537362,si,Tamponamento,Distanza sicurezza,2,0,no,2,0
+2018,Giugno,Polizia Municipale,MATERA,martedì 12 giugno 2018,"16,00",Comunale,Matera,via trabaci altezza scuola elementare,40.67533501,16.583637,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Giugno,Polizia Municipale,MATERA,mercoledì 13 giugno 2018,"10,40",Comunale,Matera,via La Martella altezza area di srvizio G eG,40.66988509,16.58071339,si,Fuoriuscita sede stradale,Altro,1,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,mercoledì 13 giugno 2018,"18,15",Comunale,Matera,via Nazionale incrocio via Traetta,40.67323768,16.60066903,si,Tamponamento,Distanza sicurezza,2,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,giovedì 14 giugno 2018,"7,30",Comunale,Matera,rotatoria Cappelluti/timmari/moro (pino),40.66448559,16.59821749,si,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Giugno,Polizia Municipale,MATERA,giovedì 14 giugno 2018,"20,35",Comunale,Matera,via Passarelli incrocio via Gagarin,40.66398915,16.60136104,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,venerdì 15 giugno 2018,"10,15",Comunale,Matera,rotatoria via Rosselli / Annunziatella,40.67053202,16.60587788,si,Tamponamento,Distanza sicurezza,2,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,venerdì 15 giugno 2018,"13,40",Comunale,Matera,via cererie incrocio via Marconi,40.67507259,16.59980536,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Giugno,Polizia Municipale,MATERA,venerdì 15 giugno 2018,"20,10",Comunale,Matera,Parcheggio retrostante Piazzetta Vivaldi,40.6830097,16.57731771,si,Investimento di pedone,Velocità,1,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,domenica 17 giugno 2018,"9,35",Provinciale,S.P. n.11,incrocio Strade Comunali per C.da S. Lucia e per Berloco,,,no,Scontro frontale laterale,Velocità,2,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,lunedì 18 giugno 2018,"11,20",Comunale,Matera,via dei peucezi incrocio via lucrezio,40.68234255,16.58608317,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Giugno,Polizia Municipale,MATERA,mercoledì 20 giugno 2018,"7,55",Comunale,Matera,via degli aragonesi altezza civico n.5,40.67204965,16.58615023,si,Scontro frontale,Contromano,2,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,giovedì 21 giugno 2018,"10,40",Provinciale,S.P.10,atezza km. 1+650,,,no,Tamponamento,Velocità,3,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,venerdì 22 giugno 2018,"12,45",Comunale,Matera,via Nazionale altezza civico n.2,40.67272097,16.60185188,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,venerdì 22 giugno 2018,"19,30",Comunale,Matera,via Stigliani fronte civico n.21,40.66864003,16.60828918,si,Tamponamento,Velocità,2,0,si,0,0
+2018,Giugno,Polizia Municipale,MATERA,sabato 23 giugno 2018,"12,10",Comunale,Matera,via Umbria incrocio via Piemonte,40.67477559,16.60130203,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Giugno,Polizia Municipale,MATERA,lunedì 25 giugno 2018,"8,30",Comunale,Matera,via Dante altezza civico n.3,40.66870106,16.60170436,si,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Giugno,Polizia Municipale,MATERA,mercoledì 27 giugno 2018,"11,20",Comunale,Matera,via XX Settembre,40.66811107,16.60609514,si,Investimento di pedone,Mancata precedenza,1,0,si,0,0
+2018,Giugno,Polizia Municipale,MATERA,giovedì 28 giugno 2018,"13,50",Comunale,Matera,via Terenzio,40.68105297,16.5760088,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Giugno,Polizia Municipale,MATERA,venerdì 29 giugno 2018,"10,12",Comunale,Matera,via C. Levi incrocio viale del Garofano,40.65896357,16.60266459,si,Scontro frontale laterale,Mancata precedenza,3,0,no,1,0
+2018,Luglio,Polizia Municipale,MATERA,mercoledì 4 luglio 2018,"13,15",Comunale,Matera,via Nitti incrocio via Cavour,40.66683342629141,16.592724323272705,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,mercoledì 4 luglio 2018,"17,25",Comunale,Matera,via Farina incrocio via Frangione,40.64683956208781,16.622958183288574,si,Scontro frontale laterale,Velocità,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,giovedì 5 luglio 2018,"7,50",Provinciale,S.P 78,altezza incrocio con tratturo C.da La Bruna,40.646741877374716,16.697630882263184,no,Fuoriuscita sede stradale,Velocità,1,0,no,1,0
+2018,Luglio,Polizia Municipale,MATERA,giovedì 5 luglio 2018,"12,45",Comunale,Matera,via Madonna delle Virtù,40.667826248500575,16.61205232143402,si,Fuoriuscita sede stradale,Velocità,1,0,no,1,0
+2018,Luglio,Polizia Municipale,MATERA,giovedì 5 luglio 2018,"17,20",Provinciale,S.P. n.6,Km. 6+300 incrocio con strada di colegamento per S.P.n.8,,,no,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Luglio,Polizia Municipale,MATERA,venerdì 6 luglio 2018,"9,35",Comunale,Matera,viale Italia,40.66900622288701,16.587043404579163,si,Fuoriuscita sede stradale,Altro,1,0,no,2,0
+2018,Luglio,Polizia Municipale,MATERA,venerdì 6 luglio 2018,"17,15",Provinciale,S.P. n.10,km.1+610,,,no,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,venerdì 6 luglio 2018,"13,30",Comunale,Matera,via Gravina incrocio via Tito Livio,40.68082719305593,16.583360731601715,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Luglio,Polizia Municipale,MATERA,sabato 7 luglio 2018,"11,55",Comunale,Matera,via Nazionale n.156,40.67525160163987,16.59633994102478,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,domenica 8 luglio 2018,"12,15",Provinciale,S.P. n10,km.2+500,,,no,Fuoriuscita sede stradale,Altro,1,0,no,1,0
+2018,Luglio,Polizia Municipale,MATERA,giovedì 12 luglio 2018,"9,30",Comunale,Matera,via Cappelluti incrocio via Passarelli,40.663472369268945,16.600296199321747,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,venerdì 13 luglio 2018,"17,00",Comunale,Matera,via Rosselli incrocio via De Sariis,40.66883533133778,16.60379648208618,si,Investimento di pedone,Mancata precedenza,1,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,domenica 15 luglio 2018,"8,55",Comunale,Matera,via Marconi incrocio via S.Vito/S. Pardo,40.67678946,16.59903824,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Luglio,Polizia Municipale,MATERA,lunedì 16 luglio 2018,"11,30",Provinciale,S.P. n.10,altezza km.1+300,,,no,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,martedì 17 luglio 2018,"7,55",Comunale,Matera,via Respighi incrocio via Rota,40.6853385852903,16.5794447064399,si,Scontro frontale laterale,Mancata precedenza,2,0,no,3,0
+2018,Luglio,Polizia Municipale,MATERA,martedì 17 luglio 2018,"13,00",Comunale,Matera,via Morelli altezza civico n.2,40.6581089759505,16.6115453839302,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Luglio,Polizia Municipale,MATERA,mercoledì 18 luglio 2018,"18,15",Statale,S.S. 7,km.55,,,no,Tamponamento,Distrazione,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,venerdì 20 luglio 2018,"15,20",Comunale,Matera,via Lucana incrocio via Passarelli,40.6658365202673,16.6052609682083,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,domenica 22 luglio 2018,"14,20",Comunale,Matera,via Roma altezza civico n.43,40.6671426675807,16.6034504771232,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,lunedì 23 luglio 2018,"18,40",Comunale,Matera,viale dei Peuceti,40.6814801230937,16.5871131420135,si,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,martedì 24 luglio 2018,"12,00",Comunale,Matera,ospedale Madonna delle Grazie,40.6541492290788,16.6116607189178,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,mercoledì 25 luglio 2018,"14,30",Comunale,Matera,via dei Normanni,40.6701373511463,16.5898329019546,si,Fuoriuscita sede stradale,Guasto meccanico,1,0,no,1,0
+2018,Luglio,Polizia Municipale,MATERA,mercoledì 25 luglio 2018,"19,50",Comunale,Matera,via Dante incrocio via Gandhi,40.6758262691534,16.588821709156,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Luglio,Polizia Municipale,MATERA,giovedì 26 luglio 2018,"21,00",Comunale,Matera,via Delle Beccherie,40.6658914522117,16.6078412532806,si,Investimento di pedone,Distrazione,1,0,no,1,0
+2018,Luglio,Polizia Municipale,MATERA,venerdì 27 luglio 2018,"13,10",Comunale,Matera,via Marconi incrocio rec Marconi,40.67591679154909,16.59948080778122,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,sabato 28 luglio 2018,"10,00",Comunale,Matera,via Manzoni altezza civico n.2,40.6743545001506,16.5935236215591,si,Fuoriuscita sede stradale,Mano da tenere,2,0,si,0,0
+2018,Luglio,Polizia Municipale,MATERA,lunedì 30 luglio 2018,"13,20",Comunale,Matera,via La Martella incrocio svincolo SS.7 per potenza,40.6697508166689,16.5780338644981,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Agosto,Polizia Municipale,Matera,giovedì 2 agosto 2018,"8,30",Comunale,Matera,viale Italia incrocio via E. Maiorana,40.6727677604777,16.587027311325,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Agosto,Polizia Municipale,Matera,giovedì 2 agosto 2018,"16,45",Comunale,Matera,via Amendola incrocio via XX settembre,40.6692829035143,16.6061890125274,si,Scontro frontale laterale,Contromano,2,0,no,2,0
+2018,Agosto,Polizia Municipale,Matera,giovedì 2 agosto 2018,"20,30",Statale,SS. n.7,ss.7 incrocio C.da Pantano,40.6812279016565,16.6049015522003,no,Tamponamento,Distanza sicurezza,3,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,domenica 5 agosto 2018,"18,45",Comunale,Matera,via Cappelluti incrocio via Mattotti - gagarin,40.6648538411741,16.6006113588809,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,domenica 5 agosto 2018,"18,45",Comunale,Matera,via Annunziatella civico n.61,40.6715288567127,16.6046118736267,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,martedì 7 agosto 2018,"10,30",Comunale,Matera,via Lucana n.65,40.6660887999349,16.6048988699913,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,martedì 7 agosto 2018,"17,30",Comunale,Matera,via Borsellino incrocio via C.A. dalla Chiesa,40.6857901145008,16.5759256482124,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Agosto,Polizia Municipale,Matera,giovedì 9 agosto 2018,"10,45",Comunale,Matera,via Don Minzoni incrocio via Lucana,40.6663878721754,16.6044321656227,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,sabato 11 agosto 2018,"19,00",Comunale,Matera,area parcheggio centro Commerciale Venusio,40.7215183377577,16.5747427940368,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,lunedì 13 agosto 2018,"19,45",Statale,SS. 7,ss. 7 incrocio strada per Murgia Timone,40.6775705835696,16.6306185722351,no,Scontro frontale laterale,Mancata precedenza,2,0,no,6,0
+2018,Agosto,Polizia Municipale,Matera,giovedì 16 agosto 2018,"13,50",Comunale,Matera,via XX settembre altezza civico n.85,40.6700946290247,16.6060978174209,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,giovedì 16 agosto 2018,"16,30",Comunale,Matera,via I Maggio incrocio via delle Arti,40.6711545364329,16.5732970833778,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Agosto,Polizia Municipale,Matera,venerdì 17 agosto 2018,"14,15",Comunale,Matera,va Maiorana incrocio via dei Normanni,40.6727169028124,16.5908199548721,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,sabato 18 agosto 2018,"20,25",Comunale,Matera,via Nazionale altezza civico 150,40.6751580269917,16.5965491533279,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Agosto,Polizia Municipale,Matera,lunedì 20 agosto 2018,"9,15",Comunale,Matera,via La Martella altezza civico n.13,40.6730118767314,16.585409939289,si,Tamponamento,Distanza sicurezza,2,0,no,2,0
+2018,Agosto,Polizia Municipale,Matera,lunedì 20 agosto 2018,"21,25",Comunale,Matera,via D'Addozio altezza civico n.136,40.668414203865,16.6097053885459,si,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,martedì 21 agosto 2018,"17,45",Provinciale,ex ss.271,nei pressi dell'incrocio con la s.p.81,,,no,Fuoriuscita sede stradale,Velocità,1,0,no,1,0
+2018,Agosto,Polizia Municipale,Matera,giovedì 23 agosto 2018,"10,30",Statale,ss.7,altezza strada per santuario s.m. della Palomba,40.68158182501612,16.607927083969116,no,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,sabato 25 agosto 2018,"19,45",Comunale,Matera,Strada di collegamento tra via Marconi e ss.7 (salita S. Vto),40.67731835,16.59907579,si,Fuoriuscita sede stradale,Velocità,1,0,no,1,0
+2018,Agosto,Polizia Municipale,Matera,mercoledì 29 agosto 2018,"12,50",Comunale,Matera,va Gattini altezza civico n.42,40.67224494,16.60758108,si,Urto veicolo in sosta,Distrazione,4,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,mercoledì 29 agosto 2018,"20,20",Comunale,Matera,via dei Mestieri fronte P.C. n.1258,,,si,Fuoriuscita sede stradale,Distrazione,1,0,no,2,0
+2018,Agosto,Polizia Municipale,Matera,giovedì 30 agosto 2018,"10,10",Comunale,Matera,via Farina altezza civici nn.13-15,40.64921651,16.62161708,si,Fuoriuscita sede stradale,Altro,1,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,giovedì 30 agosto 2018,"19,15",Comunale,Matera,parcheggio MD Discount di via Nazionale n.89,40.67560149,16.59297913,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Agosto,Polizia Municipale,Matera,venerdì 31 agosto 2018,"18,00",Comunale,Matera,via Lucana incrocio via Duni,40.66253238,16.60900533,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Settembre,Polizia Municipale,Matera,sabato 1 settembre 2018,"19,45",Comunale,Matera,via Timmari altezza civico n.4,40.66400136,16.59721702,si,Fuoriuscita sede stradale,Distrazione,1,0,no,1,0
+2018,Settembre,Polizia Municipale,Matera,lunedì 3 settembre 2018,"10,55",Comunale,Matera,via Annunziatella in prossimtà intersezione con via L. Protospata/Nazionale altezza civico n.4,40.67272504,16.60176337,si,Investimento di pedone,Distrazione,1,0,no,1,0
+2018,Settembre,Polizia Municipale,Matera,lunedì 3 settembre 2018,"12,30",Comunale,Matera,via Bramante incrocio via Nicolodi,40.67625854,16.59168899,si,Scontro frontale,Mano da tenere,2,0,no,2,0
+2018,Settembre,Polizia Municipale,Matera,martedì 4 settembre 2018,"13,20",Comunale,Matera,via Ariosto altezza civico n.10,40.67336381,16.59488618,si,Fuoriuscita sede stradale,Distrazione,1,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,giovedì 6 settembre 2018,"18,15",Comunale,Matera,via stigliani,40.66933783,16.6074121,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,giovedì 6 settembre 2018,"20,15",Comunale,Matera,via g.b. vico,40.67731428,16.59400105,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,venerdì 7 settembre 2018,"14,45",Comunale,Matera,area Ipercoop Venusio,40.72155899,16.57510757,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,venerdì 7 settembre 2018,"18,50",Comunale,Matera,via Traetta incrocio via della Croce,40.67279421,16.60029888,si,Scontro frontale laterale,Distrazione,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,sabato 8 settembre 2018,"20,20",Comunale,Matera,via Nazionale incrocio via L. Protospata,40.67270266,16.60171777,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Settembre,Polizia Municipale,Matera,domenica 9 settembre 2018,"13,00",Comunale,Matera,via Lucana altezza civico n.321,40.65854034,16.61530584,si,Tamponamento,Distanza sicurezza,2,0,no,2,0
+2018,Settembre,Polizia Municipale,Matera,mercoledì 12 settembre 2018,"11,30",Comunale,Matera,via lucana altezza incrocio via Roma,40.6671915,16.60444289,si,Urto veicolo in sosta,Altro,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,giovedì 13 settembre 2018,"19,35",Comunale,Matera,via C. Levi altezza svincolo per via Fosse Ardeatine,40.65668667,16.61280602,si,Fuoriuscita sede stradale,Distrazione,1,0,no,2,0
+2018,Settembre,Polizia Municipale,Matera,sabato 15 settembre 2018,"20,30",Comunale,Matera,via a. moro,40.66755363,16.60195112,si,Tamponamento,Distanza sicurezza,3,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,lunedì 17 settembre 2018,"9,20",Comunale,Matera,via Nazionale incrocio via Manzoni,40.67541434,16.5959537,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,lunedì 17 settembre 2018,"12,50",Comunale,Matera,via A. Moro,40.66636549,16.60091043,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Settembre,Polizia Municipale,Matera,lunedì 17 settembre 2018,"19,15",Comunale,Matera,"via gravina altezza passo carrabile ""coim""",40.68258256,16.57280624,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Settembre,Polizia Municipale,Matera,mercoledì 19 settembre 2018,"17,25",Comunale,Matera,I^ traversa via Pirelli incrocio strad di collegamento tra S.P. Matera -Gravina e Borgo La Martella,40.68886328,16.52976751,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Settembre,Polizia Municipale,Matera,giovedì 20 settembre 2018,"11,00",Statale,S.S. 7,km.582+210,,,no,Tamponamento,Distrazione,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,venerdì 21 settembre 2018,"8,10",Comunale,Matera,Via Lucana altezza civico n.327,40.65800317,16.61561966,si,Fuoriuscita sede stradale,Mano da tenere,1,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,sabato 22 settembre 2018,"9,10",Comunale,Matera,via liguria,40.67439722,16.60213083,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,domenica 23 settembre 2018,"17,30",Comunale,Matera,via Lucana altezza civico n.155 A,40.6640095,16.60790831,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Settembre,Polizia Municipale,Matera,lunedì 24 settembre 2018,"8,55",Comunale,Matera,via Borsellino incrocio via dalla Chiesa,40.68579825,16.57593369,si,Scontro frontale laterale,Mancata precedenza,2,0,no,3,0
+2018,Settembre,Polizia Municipale,Matera,martedì 25 settembre 2018,"10,10",Comunale,Matera,via Matteotti incocio via D'alessio,40.66582838,16.60167217,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,giovedì 27 settembre 2018,"11,30",Comunale,Matera,via Don L. Sturzo,40.67534111,16.58647478,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,giovedì 27 settembre 2018,"18,30",Comunale,Matera,via Dante,40.67555674,16.58917308,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Settembre,Polizia Municipale,Matera,venerdì 28 settembre 2018,"14,30",Comunale,Matera,via A. Moro incrocio via La Malfa,40.66682732,16.60122961,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Ottobre,Polizia Municipale,Matera,lunedì 1 ottobre 2018,"10,00",Statale,SS.99,raccordo SS. 99 e SS.7,40.6840511,16.59020305,no,Tamponamento,Distrazione,2,0,si,0,0
+2018,Ottobre,Polizia Municipale,Matera,venerdì 5 ottobre 2018,"7,15",Provinciale,S.P.N.6,Altezza KM. 7+850,,,no,Fuoriuscita sede stradale,Velocità,1,0,no,1,0
+2018,Ottobre,Polizia Municipale,Matera,sabato 6 ottobre 2018,"12,45",Comunale,Matera,via XX Settembre incrocio via Lucana,40.6685973,16.60613537,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Ottobre,Polizia Municipale,Matera,sabato 6 ottobre 2018,"20,40",Comunale,Matera,via Lucana altezza civico n.274,40.66078259,16.61131471,si,Tamponamento,Stato di ebbrezza,2,0,si,0,0
+2018,Ottobre,Polizia Municipale,Matera,domenica 7 ottobre 2018,"11,00",Comunale,Matera,via Parini incrocio via Petrarca,40.67344925,16.59620851,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Ottobre,Polizia Municipale,Matera,lunedì 8 ottobre 2018,"17,15",Comunale,Matera,via Lucana altezza incrocio via padre mirabene,40.65946818,16.61404788,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Ottobre,Polizia Municipale,Matera,martedì 9 ottobre 2018,"12,10",Comunale,Matera,via dei dauni incrocio via nino Rota,40.68376024,16.58262849,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Ottobre,Polizia Municipale,Matera,martedì 9 ottobre 2018,"18,45",Comunale,Matera,via Falcone incrocio via Borsellino,40.68784636,16.57684028,si,Scontro frontale laterale,Mancata precedenza,2,0,no,5,0
+2018,Ottobre,Polizia Municipale,Matera,mercoledì 10 ottobre 2018,"11,30",Comunale,Matera,vico I° cappelluti,40.66570224,16.60270214,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Ottobre,Polizia Municipale,Matera,mercoledì 10 ottobre 2018,"14,00",Comunale,Matera,via Mattetti incrocio via Cappelluti,40.66480298,16.60053492,si,Tamponamento,Improvviso malore,2,0,si,0,0
+2018,Ottobre,Polizia Municipale,Matera,mercoledì 10 ottobre 2018,"16,00",Comunale,Matera,via Delle arti incrocio via I°Maggio,40.67117488,16.57334805,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Ottobre,Polizia Municipale,Matera,venerdì 12 ottobre 2018,"9,15",Comunale,Matera,via A.Maria Di Francia,40.66164528,16.59685493,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Ottobre,Polizia Municipale,Matera,venerdì 12 ottobre 2018,"11,20",Comunale,Matera,via Gravina c/o rotatoria con via Dalla Chiesa e strad di collegamneto per S.P. n.6.,40.68516163,16.57457113,si,Fuoriuscita sede stradale,Velocità,1,1,no,1,0
+2018,Ottobre,Polizia Municipale,Matera,martedì 16 ottobre 2018,"15,30",Comunale,Matera,via Manzoni incrocio via Dante,40.67366895,16.5919894,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Ottobre,Polizia Municipale,Matera,sabato 20 ottobre 2018,"17,30",Comunale,Matera,via Granulari incrocio via delle Comunicazioni,40.67770077,16.57497883,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Ottobre,Polizia Municipale,Matera,domenica 21 ottobre 2018,"9,25",Comunale,Matera,via Nazionale altezza civico n.93,40.67678743,16.59303814,si,Tamponamento,Distanza sicurezza,2,0,no,1,0
+2018,Ottobre,Polizia Municipale,Matera,lunedì 22 ottobre 2018,"11,55",Comunale,Matera,via Lucana incrocio Rec. VI Lucana,40.6589127,16.61491692,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Ottobre,Polizia Municipale,Matera,martedì 23 ottobre 2018,"7,50",Comunale,Matera,via Cavour incrocio via XXI Settembre,40.66679274,16.59232736,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Ottobre,Polizia Municipale,Matera,martedì 23 ottobre 2018,"12,30",Comunale,Matera,via A. Moro altezza Tribunale,40.66566969,16.60021305,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Ottobre,Polizia Municipale,Matera,martedì 23 ottobre 2018,"17,30",Comunale,Matera,c.da Aia del cavallo direzione Matera centro,40.65440562,16.58352971,si,Tamponamento,Distanza sicurezza,2,0,no,1,0
+2018,Ottobre,Polizia Municipale,Matera,mercoledì 24 ottobre 2018,"11,35",Comunale,Matera,via L. Protospata altezza civico n.45,40.66997257,16.60314471,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Ottobre,Polizia Municipale,Matera,giovedì 25 ottobre 2018,"15,35",Comunale,Matera,"via gravina antistante ingresso "" palumbo motors""",40.68256629,16.57277942,si,Fuoriuscita sede stradale,Anomalie Strada,1,0,si,0,0
+2018,Ottobre,Polizia Municipale,Matera,venerdì 26 ottobre 2018,"9,30",Comunale,Matera,via gravina altezza Hotel del Campo,40.68080482,16.58361554,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Ottobre,Polizia Municipale,Matera,venerdì 26 ottobre 2018,"12,30",Statale,S.S. 7,rampa di raccordo matera Sud,40.64441775,16.5940547,no,Tamponamento,Distanza sicurezza,3,0,si,0,0
+2018,Novembre,Polizia Municipale,Matera,giovedì 1 novembre 2018,"17,30",Comunale,Matera,via Passarelli incrocio via Torraca,40.66601759,16.60361141,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Novembre,Polizia Municipale,Matera,sabato 3 novembre 2018,"17,00",Comunale,Matera,via dell'artigianato,40.6702879,16.5744853,si,Altro,Altro,2,0,si,0,0
+2018,Novembre,Polizia Municipale,Matera,lunedì 5 novembre 2018,"16,10",Comunale,Matera,via Marconi incrocio via S. Pardo,40.67679353,16.59905434,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Novembre,Polizia Municipale,Matera,martedì 6 novembre 2018,"9,15",Comunale,Matera,via dell'artigianato,40.6697264,16.57168508,si,Scontro frontale laterale,Distrazione,2,0,si,0,0
+2018,Novembre,Polizia Municipale,Matera,mercoledì 7 novembre 2018,"12,05",Comunale,Matera,via Casalnuovo altezza civico n.223,40.65948852,16.61483914,si,Fuoriuscita sede stradale,Altro,1,0,si,0,0
+2018,Novembre,Polizia Municipale,Matera,venerdì 9 novembre 2018,"13,00",Comunale,Matera,strada di collegamento tra via Bizantini e ss.99 incrocio svincolo per ss.7,40.68057294,16.59018159,si,Scontro frontale laterale,Mancata precedenza,2,0,no,0,0
+2018,Novembre,Polizia Municipale,Matera,sabato 10 novembre 2018,"17,45",Comunale,Matera,via S. Pardo incrocio via Nazionale,40.6776133,16.59171313,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Novembre,Polizia Municipale,Matera,lunedì 12 novembre 2018,"14,23",Provinciale,S.P. timmari s. Chiara,"altezza km. 1+200 circa dall'Azienda ""La Fiorita""",40.7106866,16.51410341,no,Altro,Anomalie Strada,1,0,no,0,0
+2018,Novembre,Polizia Municipale,Matera,martedì 13 novembre 2018,"11,50",Comunale,Matera,Piazzale municipio Via A. Moro,40.66660963,16.6002667,si,Tamponamento,Velocità,4,0,si,0,0
+2018,Novembre,Polizia Municipale,Matera,mercoledì 14 novembre 2018,"10,50",Comunale,Matera,via Dei Peucezi altezza civico n.77,40.6814069,16.5870595,si,Scontro frontale laterale,Mancata precedenza,2,0,no,0,0
+2018,Novembre,Polizia Municipale,Matera,venerdì 16 novembre 2018,"18,30",Comunale,Matera,viale C. Levi incrocio viale del garofano,40.65894729,16.60274237,si,Scontro frontale laterale,Velocità,2,0,no,0,0
+2018,Novembre,Polizia Municipale,Matera,sabato 17 novembre 2018,"14,10",Comunale,Matera,via dei dauni -via dei Lucani- via Rota (rotatoria),40.68378668,16.58270627,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Novembre,Polizia Municipale,Matera,martedì 20 novembre 2018,"11,15",Comunale,Matera,via Piave,40.6695372,16.60795659,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Novembre,Polizia Municipale,Matera,mercoledì 21 novembre 2018,"8,25",Comunale,Matera,via Majorana - via Collodi- via dei normanni (rotatoria),40.67244431,16.59113646,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Novembre,Polizia Municipale,Matera,venerdì 23 novembre 2018,"11,50",Comunale,Matera,via Momtescaglioso nei pressi dellincrocio con via Verricelli,40.65493876,16.61623925,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Novembre,Polizia Municipale,Matera,venerdì 23 novembre 2018,"13,00",Comunale,Matera,via dei normanni-via Collodi- via E. Maiorana (rotatoria),40.67221646,16.59085214,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Novembre,Polizia Municipale,Matera,venerdì 23 novembre 2018,"17,40",Comunale,Matera,via Passarelli fronte civico n.93,40.66339505,16.60019964,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Novembre,Polizia Municipale,Matera,sabato 24 novembre 2018,"9,15",Comunale,Matera,via timmari incrocio de Robertis,40.663627,16.59634531,si,Scontro frontale,Contromano,2,0,no,2,0
+2018,Novembre,Polizia Municipale,Matera,sabato 24 novembre 2018,"19,35",Comunale,Matera,via Collodi/Lazazzera/viale Europa (rotatoria),40.66850372,16.59382939,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Novembre,Polizia Municipale,Matera,domenica 25 novembre 2018,"12,20",Statale,SS.7,altezza del km.583+800,,,no,Scontro frontale laterale,Velocità,2,0,no,1,0
+2018,Novembre,Polizia Municipale,Matera,domenica 25 novembre 2018,"19,00",Comunale,Matera,via lucana altezza civico n.159,40.66348458,16.60832942,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Novembre,Polizia Municipale,Matera,lunedì 26 novembre 2018,"9,30",Comunale,Matera,c.da giardinelle,,,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Novembre,Polizia Municipale,Matera,lunedì 26 novembre 2018,"15,05",Statale,SS.7,"altezza km.570+942,50",,,no,Tamponamento,Velocità,2,0,no,2,0
+2018,Novembre,Polizia Municipale,Matera,martedì 27 novembre 2018,"16,00",Comunale,Matera,via rosselli incrocio via giolitti,40.67312376,16.60607636,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Novembre,Polizia Municipale,Matera,mercoledì 28 novembre 2018,"9,15",Comunale,Matera,viale Europa altezza civico n.30,40.66704705,16.59053564,si,Investimento di pedone,Distrazione,1,0,no,1,0
+2018,Novembre,Polizia Municipale,Matera,mercoledì 28 novembre 2018,"20,05",Comunale,Matera,via Annunziatella altezza civico n.46,40.67152072,16.60470575,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Novembre,Polizia Municipale,Matera,venerdì 30 novembre 2018,"8,20",Comunale,Matera,via Passarelli imbocco per via A. M. Di Francia,40.66261784,16.5966028,si,Tamponamento,Distanza sicurezza,3,0,no,2,0
+2018,Novembre,Polizia Municipale,Matera,venerdì 30 novembre 2018,"16,20",Comunale,Matera,via Giardinelle altezza civico n. 42,40.67289999,16.576159,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 1 dicembre 2018,"11,45",Provinciale,s.p. n.10,altezza raccordo SS.7,,,no,Tamponamento,Distrazione,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 1 dicembre 2018,"11,45",Comunale,Matera,C.da Aia del Cavallo - raccordo SS.7,40.65502829,16.58240855,si,Tamponamento,Distanza sicurezza,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 1 dicembre 2018,"15,10",Comunale,Matera,via D'addozio altezza civico n.62,40.66898588,16.6096732,si,Scontro frontale laterale,Velocità,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 1 dicembre 2018,"17,15",Comunale,Matera,via la croce alezza civico n.26,40.67290609,16.59911871,si,Investimento di pedone,Velocità,1,0,no,1,0
+2018,Dicembre,Polizia Municipale,Matera,domenica 2 dicembre 2018,"11,05",Comunale,Matera,via Lucana incrocio via P. Minozzi,40.66222312,16.60927355,si,Urto veicolo in sosta,Mano da tenere,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,lunedì 3 dicembre 2018,"8,20",Comunale,Matera,via donizetti altezza civico n.68,40.6828958,16.57901287,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Dicembre,Polizia Municipale,Matera,lunedì 3 dicembre 2018,"17,10",Comunale,Matera,via della tecnica altezza civico n.30,40.67246058,16.57100916,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,martedì 4 dicembre 2018,"9,45",Comunale,Matera,via Giolitti,40.67300577,16.6059798,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Dicembre,Polizia Municipale,Matera,martedì 4 dicembre 2018,"16,00",Comunale,Matera,viale Nazioni Unite altezza civico n.43,40.66616001,16.59542799,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,martedì 4 dicembre 2018,"19,00",Comunale,Matera,via L. Da Vinci incrocio vico 3° nazionale,40.67651485,16.59526706,si,Scontro frontale laterale,Mano da tenere,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,giovedì 6 dicembre 2018,"18,05",Comunale,Matera,via Marconi altezza civico n.111,40.67596358,16.59936816,si,Tamponamento,Velocità,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 8 dicembre 2018,"10,10",Comunale,Matera,via Gattini incrocio via Tasso,40.67143324,16.60726458,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,domenica 9 dicembre 2018,"18,00",Provinciale,S.P. n.6,S.P. 6 incrocio strada per Santuario Picciano,40.71434617,16.48283958,no,Tamponamento,Distrazione,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,lunedì 10 dicembre 2018,"11,35",Comunale,Matera,via I° Maggio altezza civico n.39,40.67040589,16.57046467,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 1 dicembre 2018,"19,15",Comunale,Matera,via I° Maggio,40.67072122,16.5713793,si,Urto veicolo in sosta,Velocità,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,martedì 11 dicembre 2018,"10,00",Comunale,Matera,via XX Settembre incrocio via lucana,40.66861561,16.60607368,si,Altro,Velocità,2,0,no,1,0
+2018,Dicembre,Polizia Municipale,Matera,martedì 11 dicembre 2018,"12,50",Comunale,Matera,viale Europa incrocio via Gioberti,40.66483146,16.59322858,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,giovedì 13 dicembre 2018,"7,50",Comunale,Matera,via Arno altezza civico n.14,40.65956177,16.53268576,si,Scontro frontale,Mancata precedenza,2,0,no,1,0
+2018,Dicembre,Polizia Municipale,Matera,giovedì 13 dicembre 2018,"16,30",Provinciale,S.P. 6,S.P. 6 incrocio strada per S. Picciano,40.71411644,16.48260891,no,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 15 dicembre 2018,"10,45",Comunale,Matera,via Dante altezza via Olivetti,40.67490171,16.5895915,si,Tamponamento,Velocità,3,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 15 dicembre 2018,"19,35",Comunale,Matera,via La martella incrocio svincolo SS.7,40.66971827,16.57776296,si,Scontro frontale laterale,Mancata precedenza,2,0,no,2,0
+2018,Dicembre,Polizia Municipale,Matera,domenica 16 dicembre 2018,"9,15",Comunale,Matera,via Dalla Chiesa incrocio via Borsellino,40.68582469,16.5758425,si,Scontro frontale laterale,Mancata precedenza,2,1,no,2,0
+2018,Dicembre,Polizia Municipale,Matera,domenica 16 dicembre 2018,"18,05",Comunale,Matera,via Marconi fronte civico n.121,40.67637652,16.59918308,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,lunedì 17 dicembre 2018,"12,30",Comunale,Matera,via Dante altezza civico n.38,40.66893298,16.60045445,si,Tamponamento,Distanza sicurezza,2,0,no,1,0
+2018,Dicembre,Polizia Municipale,Matera,martedì 18 dicembre 2018,"8,30",Comunale,Matera,via Falcone incrocio via Borsellino,40.68788501,16.57680273,si,Scontro frontale laterale,Mancata precedenza,3,0,no,2,0
+2018,Dicembre,Polizia Municipale,Matera,mercoledì 19 dicembre 2018,"7,55",Comunale,Matera,via Passarelli incrocio via Lucana,40.66573479,16.60523415,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,giovedì 20 dicembre 2018,"8,30",Comunale,Matera,via Dante incrocio via Bizantini,40.67791232,16.58730626,si,Scontro frontale laterale,Mancata precedenza,3,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,giovedì 20 dicembre 2018,"20,05",Comunale,Matera,via Montescaglioso,,,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,venerdì 21 dicembre 2018,"9,00",Comunale,Matera,via Marconi incrocio via S. Vito,40.6768871,16.5990597,si,Scontro frontale laterale,Mancata precedenza,2,1,no,2,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 22 dicembre 2018,"8,45",Provinciale,S.P n.8,km.4+600,,,no,Fuoriuscita sede stradale,Velocità,1,0,no,1,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 22 dicembre 2018,"9,30",Comunale,Matera,via Rosselli incrocio via Annunziatella,40.67036927,16.60591006,si,Scontro frontale laterale,Mancata precedenza,2,0,no,1,0
+2018,Dicembre,Polizia Municipale,Matera,sabato 22 dicembre 2018,"20,30",Comunale,Matera,via La croce incrocio via Lazazzera,40.67307494,16.59858763,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,lunedì 24 dicembre 2018,"9,25",Comunale,Matera,via annunziatella,,,si,Tamponamento,Distrazione,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,lunedì 24 dicembre 2018,"16,45",Comunale,Matera,via Carlo Levi,,,si,Tamponamento,Velocità,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,giovedì 27 dicembre 2018,"8,45",Comunale,Matera,via Lucana altezza civico n. 196,40.66212546,16.60939425,si,Urto veicolo in sosta,Velocità,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,venerdì 28 dicembre 2018,"11,00",Comunale,Matera,via Don Minzoni altezza civico n.12-14,40.66651808,16.60372138,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Dicembre,Polizia Municipale,Matera,venerdì 28 dicembre 2018,"17,30",Statale,SS. 7,altezza km 590 + 200,,,no,Fuoriuscita sede stradale,Guasto meccanico,1,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,domenica 30 dicembre 2018,"10,30",Comunale,Matera,via L. Protospata incrocio via Rosselli,40.66909167,16.60420686,si,Scontro frontale laterale,Mancata precedenza,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,lunedì 30 dicembre 2019,"16,15",Comunale,Matera,via Sallustio incrocio via Mattei,40.68021494,16.57810092,si,Investimento di pedone,Mancata precedenza,1,0,no,1,0
+2018,Dicembre,Polizia Municipale,Matera,domenica 30 dicembre 2018,"21,15",Comunale,Matera,via L. Protospata,,,si,Urto veicolo in sosta,Guasto meccanico,2,0,si,0,0
+2018,Dicembre,Polizia Municipale,Matera,lunedì 31 dicembre 2018,"0,00",Statale,SS. 99,altezza km. 12+800,,,no,Tamponamento,Velocità,2,0,no,2,0
+2018,Dicembre,Polizia Municipale,Matera,lunedì 31 dicembre 2018,"20,10",Comunale,Matera,via Dei Dauni / via Gravina (rotatoria),40.68184422,16.58094943,si,Tamponamento,Distanza sicurezza,3,0,si,0,0
