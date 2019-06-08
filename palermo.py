@@ -12,6 +12,8 @@ with open("./datiOriginali/palermo.csv", newline="", encoding="ISO-8859-1") as p
         print(header)
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
+            riga[5] = riga[5].replace(",", ".")
+            riga[6] = riga[6].replace(",", ".")
             if riga[2]: #Alcune righe non hanno il Luogo e coordinate sbagliate e quindi le saltiamo
                 #Assegno alla colonna Luogo solo la via senza altre informazioni
                 riga[2] = re.search(r"^[\sA-Z\.\']+", riga[2]).group()
