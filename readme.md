@@ -8,6 +8,19 @@
 * La nostra idea di progetto è quello di creare un modello unico per i sinistri stradali, tale modello è pensato prendendo come riferimento quattro città, ciascuna delle quali situata in una zona divera di Italia, da Nord, al Centro, al Sud e alle isole, confrontando la struttura di ciascuno dataset e unendoli in un unico modello che li rappresenti tutti  seguendo la medesima struttura, si ha la possibilità di filtrare tutti i sinistri  per via, tipologia, giorno della settimana, ecc....
 Un ulteriore passo è quello di una mappa interattiva che mostra dove sono avvenuti i sinistri studiati. Per problemi di disponibilità di dataset aggiornati, alcuni modelli si riferiscono all'anno 2017, altri all'anno 2018.
 
+La nostra idea di progetto è quella di realizzare un modello unificato di dati che permetta di riunire in un unico posto i sinistri stradali che sono avvenuti in Italia in un determinato anno.
+Ad una prima analisi molti portali comunali di open data in Italia pubblicano dati sugli incidenti stradali nei vari anni, ma le tabelle presentano ....
+Il nostro modello conterrà le informazioni principali di dove e come è avvenuto il sinistro, ovvero: 
+* città;
+* data e ora;
+* luogo;
+* numero di persone coinvolte suddivise in: illesi, feriti, prognosi riservata e deceduti;
+* latitudine e longitudine;
+* dinamica dell’incidente.
+
+Una volta implementato, questo modello potrà essere preso come riferimento dai comuni per la pubblicazione dei dati e per l’unificazione con i dati distribuiti da altri comuni, con la possibilità di creare un unico database nazionale, facilmente consultabile e accessibile.
+Un possibile utilizzo del nostro modello può essere quello di rappresentare i dati su una mappa interattiva utilizzando le coordinate contenute nel modello, con la possibilità anche di filtrare i risultati secondo diversi criteri.
+
 * The project proposed is based on the idea of creating a unique mode for accidents, this model is studied taking in account four cities, each of which located on different zone of Italy, North,South, Center,islands. We confront the structure for each dataset, mergin them into a single model that represents them all with the same structure , having the chance of filtering them by address, tipology, day of the week and so on. Another step would be an interactive map that shows where those accident occured. Regrettably, the availability of the dataset was not sufficient so we had to use different years, some referring to the 2017 and others 2018. 
 
 # 1. Raccolta dati
