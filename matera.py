@@ -1,5 +1,6 @@
 #coding=utf-8
 #Script che estrae i dati contenuti nel file matera.csv
+#Author: Vincenzo Guccione
 
 import csv 
 import re
