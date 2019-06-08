@@ -5,7 +5,7 @@
 * **GitHub**, per la sincronizzazione del codice
 
 # Abstract 
-* La nostra idea di progetto è quella di realizzare un modello unificato di dati che permetta di riunire in un unico posto i sinistri stradali che sono avvenuti in Italia in un determinato anno. Tale modello è pensato prendendo come riferimento quattro città, ciascuna delle quali situata in una zona diversa di Italia, da Nord, al Centro, al Sud fino alle isole, confrontando la struttura di ciascun dataset e unendoli in un unico modello che li rappresenti tutti  seguendo la medesima struttura.
+La nostra idea di progetto è quella di realizzare un modello unificato di dati che permetta di riunire in un unico posto i sinistri stradali che sono avvenuti in Italia in un determinato anno. Tale modello è pensato prendendo come riferimento quattro città, ciascuna delle quali situata in una zona diversa di Italia, da Nord, al Centro, al Sud fino alle isole, confrontando la struttura di ciascun dataset e unendoli in un unico modello che li rappresenti tutti  seguendo la medesima struttura.
 Ad una prima analisi molti portali comunali di open data in Italia pubblicano dati sugli incidenti stradali nei vari anni, ma le tabelle presentano discordanze, il che  non le rende immediatamente compatibili.
 Il nostro modello conterrà le informazioni principali di dove e come è avvenuto il sinistro, ovvero: 
 * città;
@@ -14,11 +14,12 @@ Il nostro modello conterrà le informazioni principali di dove e come è avvenut
 * numero di persone coinvolte suddivise in: illesi, feriti, prognosi riservata e deceduti;
 * latitudine e longitudine;
 * dinamica dell’incidente.
+
 Una volta implementato, questo modello potrà essere preso come riferimento dai comuni per la pubblicazione dei dati e per l’unificazione con i dati distribuiti da altri comuni, con la possibilità di creare un unico database nazionale, facilmente consultabile e accessibile.
 Un possibile utilizzo del nostro modello può essere quello di rappresentare i dati su una mappa interattiva utilizzando le coordinate contenute nel modello, con la possibilità anche di filtrare i risultati secondo diversi criteri. Per problemi di disponibilità di dataset aggiornati, alcuni modelli si riferiscono all'anno 2017, altri all'anno 2018.
 
 
-* Our idea for this project is that of realize an unified model which allows to unify in a single file, all the accidents occured in Italy in a certain year. Such model is imagined taking into account four city, every each of them located on different zone of Italy, from North, to Center, to South and the islands, comparing the structure of each of those datasets and merging them into one unified model which represent them all, following the same structure .
+Our idea for this project is that of realize an unified model which allows to unify in a single file, all the accidents occured in Italy in a certain year. Such model is imagined taking into account four city, every each of them located on different zone of Italy, from North, to Center, to South and the islands, comparing the structure of each of those datasets and merging them into one unified model which represent them all, following the same structure .
 At a first look these portals report informations of accidents in many year, but the tables present discrepancies, which does not make them immediately compatible.
 Our model will contain informations about where and how the accident occurred:
 * City;
@@ -28,7 +29,7 @@ Our model will contain informations about where and how the accident occurred:
 * Latitude and longitude;
 * Dynamic of the accident;
 
-* Once implemented, this model could be use as reference by the municipalites for the publication of data and merging of those data with other from other municipalities, with the possibility  of creating a unified database on national level, easily consultable and accessible. Another possible use of this model is the representation of data through an interactive map, using coordinates stored in model, which gave the possibilities to filter the result following determined criteria. Due to availability problem of updated datasets, some models refers to 2017, others to 2018.
+Once implemented, this model could be use as reference by the municipalites for the publication of data and merging of those data with other from other municipalities, with the possibility  of creating a unified database on national level, easily consultable and accessible. Another possible use of this model is the representation of data through an interactive map, using coordinates stored in model, which gave the possibilities to filter the result following determined criteria. Due to availability problem of updated datasets, some models refers to 2017, others to 2018.
 
 # 1. Raccolta dati
 * palermo.csv (http://opendata.comune.palermo.it)
