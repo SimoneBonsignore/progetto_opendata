@@ -14,6 +14,7 @@ Il nostro modello conterrà le informazioni principali di dove e come è avvenut
 * numero di persone coinvolte suddivise in: illesi, feriti, prognosi riservata e deceduti;
 * latitudine e longitudine;
 * dinamica dell’incidente.
+
 Una volta implementato, questo modello potrà essere preso come riferimento dai comuni per la pubblicazione dei dati e per l’unificazione con i dati distribuiti da altri comuni, con la possibilità di creare un unico database nazionale, facilmente consultabile e accessibile.
 Un possibile utilizzo del nostro modello può essere quello di rappresentare i dati su una mappa interattiva utilizzando le coordinate contenute nel modello, con la possibilità anche di filtrare i risultati secondo diversi criteri. Per problemi di disponibilità di dataset aggiornati, alcuni modelli si riferiscono all'anno 2017, altri all'anno 2018.
 
