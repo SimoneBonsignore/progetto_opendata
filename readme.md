@@ -27,7 +27,8 @@ Our model will contain informations about where and how the accident occurred:
 * Number of people involved: unharmed, hurt, reserved prognosis and deceased;
 * Latitude and longitude;
 * Dynamic of the accident;
-Once implemented, this model could be use as reference by the municipalites for the publication of data and merging of those data with other from other municipalities, with the possibility  of creating a unified database on national level, easily consultable and accessible. Another possible use of this model is the representation of data through an interactive map, using coordinates stored in model, which gave the possibilities to filter the result following determined criteria. Due to availability problem of updated datasets, some models refers to 2017, others to 2018.
+
+*Once implemented, this model could be use as reference by the municipalites for the publication of data and merging of those data with other from other municipalities, with the possibility  of creating a unified database on national level, easily consultable and accessible. Another possible use of this model is the representation of data through an interactive map, using coordinates stored in model, which gave the possibilities to filter the result following determined criteria. Due to availability problem of updated datasets, some models refers to 2017, others to 2018.
 
 # 1. Raccolta dati
 * palermo.csv (http://opendata.comune.palermo.it)
