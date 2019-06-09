@@ -12,11 +12,13 @@ Il nostro modello conterrà le informazioni principali di dove e come è avvenut
 * data e ora;
 * luogo;
 * numero di persone coinvolte suddivise in: illesi, feriti, prognosi riservata e deceduti;
-* latitudine e longitudine;
+* coordinate;
 * dinamica dell’incidente.
 
 Una volta implementato, questo modello potrà essere preso come riferimento dai comuni per la pubblicazione dei dati e per l’unificazione con i dati distribuiti da altri comuni, con la possibilità di creare un unico database nazionale, facilmente consultabile e accessibile.
-Un possibile utilizzo del nostro modello può essere quello di rappresentare i dati su una mappa interattiva utilizzando le coordinate contenute nel modello, con la possibilità anche di filtrare i risultati secondo diversi criteri. Per problemi di disponibilità di dataset aggiornati, alcuni modelli si riferiscono all'anno 2017, altri all'anno 2018.
+Un possibile utilizzo del nostro modello può essere quello di rappresentare i dati su una mappa interattiva utilizzando le coordinate contenute nel modello, con la possibilità anche di filtrare i risultati secondo diversi criteri.
+
+*Per problemi di disponibilità di dataset aggiornati, alcuni modelli si riferiscono all'anno 2017, altri all'anno 2018.*
 
 
 Our idea for this project is that of realize an unified model which allows to unify in a single file, all the accidents occured in Italy in a certain year. Such model is imagined taking into account four city, every each of them located on different zone of Italy, from North, to Center, to South and the islands, comparing the structure of each of those datasets and merging them into one unified model which represent them all, following the same structure .
@@ -26,10 +28,12 @@ Our model will contain informations about where and how the accident occurred:
 * Date and hour;
 * Location;
 * Number of people involved: unharmed, hurt, reserved prognosis and deceased;
-* Latitude and longitude;
+* Coordinates;
 * Dynamic of the accident;
 
-Once implemented, this model could be use as reference by the municipalites for the publication of data and merging of those data with other from other municipalities, with the possibility  of creating a unified database on national level, easily consultable and accessible. Another possible use of this model is the representation of data through an interactive map, using coordinates stored in model, which gave the possibilities to filter the result following determined criteria. Due to availability problem of updated datasets, some models refers to 2017, others to 2018.
+Once implemented, this model could be use as reference by the municipalites for the publication of data and merging of those data with other from other municipalities, with the possibility  of creating a unified database on national level, easily consultable and accessible. Another possible use of this model is the representation of data through an interactive map, using coordinates stored in model, which gave the possibilities to filter the result following determined criteria.
+
+*Due to availability problem of updated datasets, some models refers to 2017, others to 2018.*
 
 # 1. Raccolta dati
 * palermo.csv (http://opendata.comune.palermo.it)
