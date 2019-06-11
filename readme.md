@@ -61,11 +61,11 @@ Once implemented, this model could be use as reference by the municipalites for 
   * Città:La riga contenente la località presenta sia la città che la via dove è avvenuto il sinistro, queste due informazioni sono state "separate" rimpiazzando la città con uno spazio vuoto e specificando la città all'inizio di ogni riga durante la scrittura
   *Il nome della città è specificato all'inizio della funzione "writerow" come stringa
   
-  *Input->nomeMese2018.json / Output ->newRoma.csv
-   *Data : la data è scritta nel formato corretto ma ad essa è affiancata anche l'ora, viene perciò eseguito lo splitting di queste due informazioni, prendendo come punto di split lo spazio vuoto tra loro.
-   *Coordinate: latitudine e longitudine vengono concatenate in un unica variabile chiamata "coordinate".
+  * Input->nomeMese2018.json / Output ->newRoma.csv
+   * Data : la data è scritta nel formato corretto ma ad essa è affiancata anche l'ora, viene perciò eseguito lo splitting di queste due informazioni, prendendo come punto di split lo spazio vuoto tra loro.
+   * Coordinate: latitudine e longitudine vengono concatenate in un unica variabile chiamata "coordinate".
    
-   *Input->merger.py / Output -> sinistri2018.csv
+   * Input->merger.py / Output -> sinistri2018.csv
    
    
   
