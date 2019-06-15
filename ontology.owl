@@ -1,0 +1,461 @@
+@prefix : <http://www.w3.org/2019/6/standardaccidentstructure#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sas: <http://www.w3.org/2019/6/standardaccidentstructure> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@base <http://www.w3.org/2019/6/standardaccidentstructure> .
+
+<http://www.w3.org/2019/6/standardaccidentstructure> rdf:type owl:Ontology ;
+                                                      rdfs:comment "Un'ontologia per definire un sinistro stradale"@it ;
+                                                      rdfs:label "Standard Accident Structure"^^xsd:string .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#location
+wgs84_pos:location rdf:type owl:AnnotationProperty ;
+                   rdfs:subPropertyOf foaf:based_near ;
+                   rdfs:range wgs84_pos:SpatialThing .
+
+
+###  http://xmlns.com/foaf/0.1/based_near
+foaf:based_near rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#coinvolge
+:coinvolge rdf:type owl:ObjectProperty ;
+           rdfs:domain :Sinistri ;
+           rdfs:range :Persona ,
+                      :Veicolo ;
+           rdfs:comment "La relazione che lega la classe Sinistro alle classi Persona e Veicolo"@it ;
+           rdfs:label "coinvolge"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#conduce
+:conduce rdf:type owl:ObjectProperty ;
+         rdfs:domain :Persona ;
+         rdfs:range :Veicolo ;
+         rdfs:comment "la relazione che lega Persona con Veicolo"@it ;
+         rdfs:label "conduce"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#localizzato
+:localizzato rdf:type owl:ObjectProperty ;
+             rdfs:domain :Sinistri ;
+             rdfs:range :Luogo ;
+             rdfs:comment "La relazione che lega Sinistro a Luogo"@it ;
+             rdfs:label "localizzato"@it .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#causa
+:causa rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Sinistri ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Per quale motivo è avvenuto il sinistro stradale"@it ;
+       rdfs:label "causa"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#città
+:città rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Luogo ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Città nella quale è avvenuto il sinistro"@it ;
+       rdfs:label "città"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#coordinate
+:coordinate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Luogo ;
+            rdfs:comment "Coordinate del luogo del sinistro, utili per essere utilizzate da software di mappamento"@it ;
+            rdfs:label "coordinate"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#data
+:data rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Momento ;
+      rdfs:range xsd:date ;
+      rdfs:comment "Giorno nella quale è avvenuto il sinistro"@it ;
+      rdfs:label "data"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#deceduta
+:deceduta rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Persona ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "Indica se la persona coinvolta nel sinistro è deceduta"@it ;
+          rdfs:label "deceduta"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#ferita
+:ferita rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Persona ;
+        rdfs:range xsd:boolean ;
+        rdfs:comment "Indica se la persona coinvolta nel sinistro è rimasta lievementa ferita"@it ;
+        rdfs:label "ferita"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#fondo_stradale
+:fondo_stradale rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Condizione_atmosferica ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:oneOf [ rdf:type rdf:List ;
+                                         rdf:first "asciutto" ;
+                                         rdf:rest [ rdf:type rdf:List ;
+                                                    rdf:first "bagnato" ;
+                                                    rdf:rest [ rdf:type rdf:List ;
+                                                               rdf:first "umido" ;
+                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                          rdf:first "viscido da liquido oleoso" ;
+                                                                          rdf:rest rdf:nil
+                                                                        ]
+                                                             ]
+                                                  ]
+                                       ]
+                           ] ;
+                rdfs:comment "Condizione del fondo stradale sulla quale è avvenuto il sinistro"@it ;
+                rdfs:label "fondo stradale"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#illesa
+:illesa rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Persona ;
+        rdfs:range xsd:boolean ;
+        rdfs:comment "Indica se la persona coinvolta nel sinistro è rimasta illesa"@it ;
+        rdfs:label "illesa"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#illuminazione
+:illuminazione rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Luogo ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:oneOf [ rdf:type rdf:List ;
+                                        rdf:first "assente" ;
+                                        rdf:rest [ rdf:type rdf:List ;
+                                                   rdf:first "buona" ;
+                                                   rdf:rest [ rdf:type rdf:List ;
+                                                              rdf:first "ore diurne" ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                         rdf:first "sufficiente" ;
+                                                                         rdf:rest rdf:nil
+                                                                       ]
+                                                            ]
+                                                 ]
+                                      ]
+                          ] ;
+               rdfs:comment "Illuminazione stradale presente nel luogo del sinistro"@it ;
+               rdfs:label "illuminazione"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#meteo
+:meteo rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Condizione_atmosferica ;
+       rdfs:range [ rdf:type rdfs:Datatype ;
+                    owl:oneOf [ rdf:type rdf:List ;
+                                rdf:first "grandine" ;
+                                rdf:rest [ rdf:type rdf:List ;
+                                           rdf:first "neve" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "nuvoloso" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "pioggia" ;
+                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                            rdf:first "poco nuvoloso" ;
+                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                       rdf:first "sereno" ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "temporale" ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ]
+                              ]
+                  ] ;
+       rdfs:comment "Condizione atmosferica in atto durante il sinistro"@it ;
+       rdfs:label "meteo"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#modello
+:modello rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Veicolo ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Modello del veicolo"@it ;
+         rdfs:label "modello"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#ora
+:ora rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Momento ;
+     rdfs:range xsd:dateTime ;
+     rdfs:comment "Ora nella quale è avvenuto il sinistro"@it ;
+     rdfs:label "ora"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#pavimentazione
+:pavimentazione rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Luogo ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:oneOf [ rdf:type rdf:List ;
+                                         rdf:first "acciotolata" ;
+                                         rdf:rest [ rdf:type rdf:List ;
+                                                    rdf:first "asfaltata" ;
+                                                    rdf:rest [ rdf:type rdf:List ;
+                                                               rdf:first "bianca" ;
+                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                          rdf:first "in cubetti di porfido" ;
+                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                     rdf:first "lastricata" ;
+                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                rdf:first "pavé" ;
+                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                           rdf:first "sanpietrini" ;
+                                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                                      rdf:first "selciato" ;
+                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                 rdf:first "terra" ;
+                                                                                                                                 rdf:rest rdf:nil
+                                                                                                                               ]
+                                                                                                                    ]
+                                                                                                         ]
+                                                                                              ]
+                                                                                   ]
+                                                                        ]
+                                                             ]
+                                                  ]
+                                       ]
+                           ] ;
+                rdfs:comment "Tipologia di pavimentazione stradale sulla quale è avvenuto il sinistro"@it ;
+                rdfs:label "pavimentazione"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#prognosi_riservata
+:prognosi_riservata rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Persona ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment "Indica se la persona coinvolta nel sinistro è stata ricoverata in prognosi riservata"@it ;
+                    rdfs:label "prognosi riservata"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#targa
+:targa rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Veicolo ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Targa del veicolo"@it ;
+       rdfs:label "targa"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#tipo
+:tipo rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Sinistri ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Tipologia di sinistro stradale"@it ;
+      rdfs:label "tipo"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#via
+:via rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Luogo ;
+     rdfs:range xsd:string ;
+     rdfs:comment "Via nella quale è avvenuto il sinistro"@it ;
+     rdfs:label "via"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#visibilità
+:visibilità rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Condizione_atmosferica ;
+            rdfs:range [ rdf:type rdfs:Datatype ;
+                         owl:oneOf [ rdf:type rdf:List ;
+                                     rdf:first "buona" ;
+                                     rdf:rest [ rdf:type rdf:List ;
+                                                rdf:first "ottima" ;
+                                                rdf:rest [ rdf:type rdf:List ;
+                                                           rdf:first "scarsa" ;
+                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                      rdf:first "sufficiente" ;
+                                                                      rdf:rest rdf:nil
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                       ] ;
+            rdfs:comment "Visibilità al momento del sinistro"@it ;
+            rdfs:label "visibilità"@it .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#Condizione_atmosferica
+:Condizione_atmosferica rdf:type owl:Class ;
+                        rdfs:comment "La condizione meteo al momento del sinistro"@it ;
+                        rdfs:label "Condizione atmosferica"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#Luogo
+:Luogo rdf:type owl:Class ;
+       rdfs:comment "Informazioni sul luogo del sinistro"@it ;
+       rdfs:label "Luogo"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#Momento
+:Momento rdf:type owl:Class ;
+         rdfs:comment "Informazioni sul momento del sinistro"@it ;
+         rdfs:label "Momento"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#Persona
+:Persona rdf:type owl:Class ;
+         rdfs:comment "Informazioni sul numero di persone coinvolte"@it ;
+         rdfs:label "Persona"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#Sinistri
+:Sinistri rdf:type owl:Class ;
+          rdfs:comment "Sinistro o incidente stradale"@it ;
+          rdfs:label "Sinistro"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#Veicolo
+:Veicolo rdf:type owl:Class ;
+         rdfs:comment "Informazioni sul veicolo coinvolto nel sinistro"@it ;
+         rdfs:label "Veicolo"@it .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+wgs84_pos: dc:date "$Date: 2009/04/20 15:00:30 $" ;
+           rdfs:label "geo" ;
+           dc:description """A vocabulary for representing latitude, longitude and 
+ altitude information in the WGS84 geodetic reference datum. 
+ Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details.""" ;
+           rdfs:comment """
+Recent changes to this namespace:
+$Log: wgs84_pos.rdf,v $
+Revision 1.22  2009/04/20 15:00:30  timbl
+Remove the time bits which have been deal with elsewhere eg in iCal.
+
+Revision 1.21  2009/04/20 12:52:47  timbl
+try again
+
+Revision 1.20  2009/04/20 12:42:11  timbl
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)
+
+Revision 1.19  2009/04/20 12:36:31  timbl
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)
+
+Revision 1.18  2006/02/01 22:01:04  danbri
+Clarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid
+
+Revision 1.17  2004/02/06 17:38:12  danbri
+Fixed a bad commit screwup
+
+Revision 1.15  2003/04/19 11:24:08  danbri
+Fixed the typo even more.
+
+Revision 1.14  2003/04/19 11:16:56  danbri
+fixed a typo
+
+Revision 1.13  2003/02/19 22:27:27  connolly
+relaxed domain constraints on lat/long/alt from Point to SpatialThing
+
+Revision 1.12  2003/01/12 01:41:41  danbri
+Trying local copy of XSLT doc.
+
+Revision 1.11  2003/01/12 01:20:18  danbri
+added a link to morten's xslt rdfs viewer.
+
+Revision 1.10  2003/01/11 18:56:49  danbri
+Removed datatype range from lat and long properties, since they would
+have required each occurance of the property to mention the datatype.
+
+Revision 1.9  2003/01/11 11:41:31  danbri
+Another typo; repaired rdfs:Property to rdf:Property x4
+
+Revision 1.8  2003/01/11 11:05:02  danbri
+Added an rdfs:range for each lat/long/alt property,
+http://www.w3.org/2001/XMLSchema#float
+
+Revision 1.7  2003/01/10 20:25:16  danbri
+Longer rdfs:comment for Point, trying to be Earth-centric and neutral about
+coordinate system(s) at the same time. Feedback welcomed.
+
+Revision 1.6  2003/01/10 20:18:30  danbri
+Added CVS log comments into the RDF/XML as an rdfs:comment property of the
+vocabulary. Note that this is not common practice (but seems both harmless
+and potentially useful).
+
+
+revision 1.5
+date: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 -5
+Updated schema:
+Added a dc:date, added url for more info. Changed the rdfs:label of the
+namespace from gp to geo. Added a class Point, set as the rdfs:domain of
+each property. Added XML comment on the lat_long property suggesting that
+we might not need it (based on #rdfig commentary from implementors).
+
+revision 1.4
+date: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 -5
+Fixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in
+#rdfig for catching this error.
+
+revision 1.3
+date: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 -3
+fixed buglet in vocab, added more wgs links
+
+revision 1.2
+date: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 -4
+Removed alt from the as-a-flat-string property, and switched from
+space separated to comma separated.
+
+revision 1.1
+date: 2003/01/10 10:53:23;  author: danbri;  state: Exp;
+basic geo vocab
+
+""" ;
+           dc:title "WGS84 Geo Positioning: an RDF vocabulary" .
+
+
+wgs84_pos:lat_long rdfs:comment "A comma-separated representation of a latitude, longitude coordinate." ;
+                   rdfs:label "lat/long" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
