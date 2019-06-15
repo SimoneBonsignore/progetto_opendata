@@ -9,8 +9,7 @@ citta = "Roma"
 
 with open("./datiElaborati/newRoma.csv", "w", newline="", encoding="UTF-8") as newRoma:
     writer = csv.writer(newRoma, delimiter=",")
-    writer.writerow(["Citta'", "Data", "Ora", "Luogo", "Coordinate", "Illesi", "Feriti", "Riservata", "Decessi", "Natura"])
-    
+    writer.writerow(["Citta'", "Data", "Ora", "Luogo", "Coordinate", "Illesi", "Feriti", "Riservata", "Decessi", "Tipo","Causa","Visibilità","Fondo_stradale","Meteo","Pavimentazione","Illuminazione"])
     for mese in mesi:
         print("------------------------------------------------------------")
         print("------------------------ " + mese + " ----------------------")
@@ -23,4 +22,4 @@ with open("./datiElaborati/newRoma.csv", "w", newline="", encoding="UTF-8") as n
                     data_ora[1] = datetime.datetime.strptime(data_ora[1], "%H:%M:%S.%f").strftime("%H:%M")
                     coordinate = "(" + sinistro['Latitudine']  + "," + sinistro['Longitudine'] + ")"
                     print("Scrivo la riga: " + citta + " " + data_ora[0] + " " + data_ora[1] + " " + coordinate + " " + sinistro['Longitudine'] + " " + sinistro['NUM_ILLESI'] + " " + sinistro['NUM_FERITI'] + " " + sinistro['NUM_RISERVATA'] + " " + sinistro['NUM_MORTI'] + " " + sinistro['NaturaIncidente'])
-                    writer.writerow([citta , data_ora[0] , data_ora[1] , sinistro['Strada1'] , coordinate , sinistro['NUM_ILLESI'] , sinistro['NUM_FERITI'] , sinistro['NUM_RISERVATA'] , sinistro['NUM_MORTI'] , sinistro['NaturaIncidente']])
+                    writer.writerow([citta , data_ora[0] , data_ora[1] , sinistro['Strada1'] , coordinate , sinistro['NUM_ILLESI'] , sinistro['NUM_FERITI'] , sinistro['NUM_RISERVATA'] , sinistro['NUM_MORTI'] , sinistro['NaturaIncidente'],None,sinistro['Visibilita'],sinistro['FondoStradale'],sinistro['CondizioneAtmosferica'],sinistro['Pavimentazione'],sinistro['Illuminazione']])
