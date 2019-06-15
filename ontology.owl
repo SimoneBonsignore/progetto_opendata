@@ -57,15 +57,23 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:domain :Sinistri ;
            rdfs:range :Persona ,
                       :Veicolo ;
-           rdfs:comment "La relazione che lega la classe Sinistro alle classi Persona e Veicolo"@it ;
+           rdfs:comment "Relazione che lega Sinistro con Persona e Veicolo"@it ;
            rdfs:label "coinvolge"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#condotto
+:condotto rdf:type owl:ObjectProperty ;
+          rdfs:domain :Veicolo ;
+          rdfs:range :Persona ;
+          rdfs:comment "Relazione che lega Veicolo a Persona"@it ;
+          rdfs:label "condotto"@it .
 
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#conduce
 :conduce rdf:type owl:ObjectProperty ;
          rdfs:domain :Persona ;
          rdfs:range :Veicolo ;
-         rdfs:comment "la relazione che lega Persona con Veicolo"@it ;
+         rdfs:comment "Relazione che lega Persona con Veicolo"@it ;
          rdfs:label "conduce"@it .
 
 
@@ -73,13 +81,21 @@ xsd:date rdf:type rdfs:Datatype .
 :localizzato rdf:type owl:ObjectProperty ;
              rdfs:domain :Sinistri ;
              rdfs:range :Luogo ;
-             rdfs:comment "La relazione che lega Sinistro a Luogo"@it ;
+             rdfs:comment "Relazione che lega Sinistro con Luogo"@it ;
              rdfs:label "localizzato"@it .
 
 
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#ID
+:ID rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Sinistri ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identificativo univoco del sinistro"@it ;
+    rdfs:label "ID"@it .
+
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#causa
 :causa rdf:type owl:DatatypeProperty ;
@@ -106,7 +122,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#data
 :data rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Momento ;
+      rdfs:domain :Sinistri ;
       rdfs:range xsd:date ;
       rdfs:comment "Giorno nella quale è avvenuto il sinistro"@it ;
       rdfs:label "data"@it .
@@ -221,8 +237,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#ora
 :ora rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Momento ;
-     rdfs:range xsd:dateTime ;
+     rdfs:domain :Sinistri ;
+     rdfs:range xsd:date ;
      rdfs:comment "Ora nella quale è avvenuto il sinistro"@it ;
      rdfs:label "ora"@it .
 
@@ -334,12 +350,6 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:label "Luogo"@it .
 
 
-###  http://www.w3.org/2019/6/standardaccidentstructure#Momento
-:Momento rdf:type owl:Class ;
-         rdfs:comment "Informazioni sul momento del sinistro"@it ;
-         rdfs:label "Momento"@it .
-
-
 ###  http://www.w3.org/2019/6/standardaccidentstructure#Persona
 :Persona rdf:type owl:Class ;
          rdfs:comment "Informazioni sul numero di persone coinvolte"@it ;
@@ -348,14 +358,40 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#Sinistri
 :Sinistri rdf:type owl:Class ;
+          owl:hasKey ( :ID
+                     ) ;
           rdfs:comment "Sinistro o incidente stradale"@it ;
           rdfs:label "Sinistro"@it .
 
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#Veicolo
 :Veicolo rdf:type owl:Class ;
+         owl:hasKey ( :targa
+                    ) ;
          rdfs:comment "Informazioni sul veicolo coinvolto nel sinistro"@it ;
          rdfs:label "Veicolo"@it .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#RM12345
+:RM12345 rdf:type owl:NamedIndividual ,
+                  :Sinistri ;
+         :localizzato :Roma ;
+         :città "Roma"@it ;
+         :data "2018-01-01"^^xsd:date ;
+         :ora "00:00"^^xsd:date ;
+         :pavimentazione "Asfaltata"@it ;
+         :tipo "Veicolo in marcia contro veicoli in sosta"@it ;
+         :via "VIALE DELL'ASTRONOMIA"@it .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#Roma
+:Roma rdf:type owl:NamedIndividual ,
+               :Luogo ;
+      :illuminazione "Sufficiente"@it .
 
 
 #################################################################
