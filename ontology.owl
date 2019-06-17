@@ -54,7 +54,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#coinvolge
 :coinvolge rdf:type owl:ObjectProperty ;
-           rdfs:domain :Sinistri ;
+           rdfs:domain :Sinistro ;
            rdfs:range :Persona ,
                       :Veicolo ;
            rdfs:comment "Relazione che lega Sinistro con Persona e Veicolo"@it ;
@@ -63,6 +63,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#condotto
 :condotto rdf:type owl:ObjectProperty ;
+          owl:inverseOf :conduce ;
           rdfs:domain :Veicolo ;
           rdfs:range :Persona ;
           rdfs:comment "Relazione che lega Veicolo a Persona"@it ;
@@ -79,7 +80,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#localizzato
 :localizzato rdf:type owl:ObjectProperty ;
-             rdfs:domain :Sinistri ;
+             rdfs:domain :Sinistro ;
              rdfs:range :Luogo ;
              rdfs:comment "Relazione che lega Sinistro con Luogo"@it ;
              rdfs:label "localizzato"@it .
@@ -91,7 +92,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#ID
 :ID rdf:type owl:DatatypeProperty ;
-    rdfs:domain :Sinistri ;
+    rdfs:domain :Sinistro ;
     rdfs:range xsd:string ;
     rdfs:comment "Identificativo univoco del sinistro"@it ;
     rdfs:label "ID"@it .
@@ -99,7 +100,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#causa
 :causa rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Sinistri ;
+       rdfs:domain :Sinistro ;
        rdfs:range xsd:string ;
        rdfs:comment "Per quale motivo è avvenuto il sinistro stradale"@it ;
        rdfs:label "causa"@it .
@@ -122,7 +123,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#data
 :data rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Sinistri ;
+      rdfs:domain :Sinistro ;
       rdfs:range xsd:date ;
       rdfs:comment "Giorno nella quale è avvenuto il sinistro"@it ;
       rdfs:label "data"@it .
@@ -146,7 +147,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#fondo_stradale
 :fondo_stradale rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Condizione_atmosferica ;
+                rdfs:domain :Luogo ;
                 rdfs:range [ rdf:type rdfs:Datatype ;
                              owl:oneOf [ rdf:type rdf:List ;
                                          rdf:first "asciutto" ;
@@ -198,7 +199,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#meteo
 :meteo rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Condizione_atmosferica ;
+       rdfs:domain :Sinistro ;
        rdfs:range [ rdf:type rdfs:Datatype ;
                     owl:oneOf [ rdf:type rdf:List ;
                                 rdf:first "grandine" ;
@@ -237,7 +238,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#ora
 :ora rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Sinistri ;
+     rdfs:domain :Sinistro ;
      rdfs:range xsd:date ;
      rdfs:comment "Ora nella quale è avvenuto il sinistro"@it ;
      rdfs:label "ora"@it .
@@ -288,6 +289,25 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:label "prognosi riservata"@it .
 
 
+###  http://www.w3.org/2019/6/standardaccidentstructure#sesso
+:sesso rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Persona ;
+       rdfs:range [ rdf:type rdfs:Datatype ;
+                    owl:oneOf [ rdf:type rdf:List ;
+                                rdf:first "donna" ;
+                                rdf:rest [ rdf:type rdf:List ;
+                                           rdf:first "non rilevato" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "uomo" ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+                              ]
+                  ] ;
+       rdfs:comment "Sesso della persona coinvolta nel sinistro"@it ;
+       rdfs:label "sesso"@it .
+
+
 ###  http://www.w3.org/2019/6/standardaccidentstructure#targa
 :targa rdf:type owl:DatatypeProperty ;
        rdfs:domain :Veicolo ;
@@ -298,7 +318,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#tipo
 :tipo rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Sinistri ;
+      rdfs:domain :Sinistro ;
       rdfs:range xsd:string ;
       rdfs:comment "Tipologia di sinistro stradale"@it ;
       rdfs:label "tipo"@it .
@@ -314,7 +334,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#visibilità
 :visibilità rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Condizione_atmosferica ;
+            rdfs:domain :Sinistro ;
             rdfs:range [ rdf:type rdfs:Datatype ;
                          owl:oneOf [ rdf:type rdf:List ;
                                      rdf:first "buona" ;
@@ -338,12 +358,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://www.w3.org/2019/6/standardaccidentstructure#Condizione_atmosferica
-:Condizione_atmosferica rdf:type owl:Class ;
-                        rdfs:comment "La condizione meteo al momento del sinistro"@it ;
-                        rdfs:label "Condizione atmosferica"@it .
-
-
 ###  http://www.w3.org/2019/6/standardaccidentstructure#Luogo
 :Luogo rdf:type owl:Class ;
        rdfs:comment "Informazioni sul luogo del sinistro"@it ;
@@ -356,8 +370,8 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "Persona"@it .
 
 
-###  http://www.w3.org/2019/6/standardaccidentstructure#Sinistri
-:Sinistri rdf:type owl:Class ;
+###  http://www.w3.org/2019/6/standardaccidentstructure#Sinistro
+:Sinistro rdf:type owl:Class ;
           owl:hasKey ( :ID
                      ) ;
           rdfs:comment "Sinistro o incidente stradale"@it ;
@@ -376,22 +390,41 @@ xsd:date rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
-###  http://www.w3.org/2019/6/standardaccidentstructure#RM12345
-:RM12345 rdf:type owl:NamedIndividual ,
-                  :Sinistri ;
-         :localizzato :Roma ;
-         :città "Roma"@it ;
-         :data "2018-01-01"^^xsd:date ;
-         :ora "00:00"^^xsd:date ;
-         :pavimentazione "Asfaltata"@it ;
-         :tipo "Veicolo in marcia contro veicoli in sosta"@it ;
-         :via "VIALE DELL'ASTRONOMIA"@it .
+###  http://www.w3.org/2019/6/standardaccidentstructure#Auto1
+:Auto1 rdf:type owl:NamedIndividual ,
+                :Veicolo ;
+       :condotto :Persona1 ;
+       :modello "Fiat Panda" ;
+       :targa "AA000AA" .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#Persona1
+:Persona1 rdf:type owl:NamedIndividual ,
+                   :Persona ;
+          :conduce :Auto1 ;
+          :illesa "true"^^xsd:boolean ;
+          :sesso "uomo" .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#Persona2
+:Persona2 rdf:type owl:NamedIndividual ,
+                   :Persona ;
+          :ferita "true"^^xsd:boolean ;
+          :sesso "donna" .
+
+
+###  http://www.w3.org/2019/6/standardaccidentstructure#RM201800000
+:RM201800000 rdf:type owl:NamedIndividual ,
+                      :Sinistro ;
+             :coinvolge :Persona1 ,
+                        :Persona2 ;
+             :localizzato :Roma ;
+             rdfs:comment "Esempio di istanza"@it .
 
 
 ###  http://www.w3.org/2019/6/standardaccidentstructure#Roma
 :Roma rdf:type owl:NamedIndividual ,
-               :Luogo ;
-      :illuminazione "Sufficiente"@it .
+               :Luogo .
 
 
 #################################################################
