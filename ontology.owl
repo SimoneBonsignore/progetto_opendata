@@ -387,47 +387,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
-#    Individuals
-#################################################################
-
-###  http://www.w3.org/2019/6/standardaccidentstructure#Auto1
-:Auto1 rdf:type owl:NamedIndividual ,
-                :Veicolo ;
-       :condotto :Persona1 ;
-       :modello "Fiat Panda" ;
-       :targa "AA000AA" .
-
-
-###  http://www.w3.org/2019/6/standardaccidentstructure#Persona1
-:Persona1 rdf:type owl:NamedIndividual ,
-                   :Persona ;
-          :conduce :Auto1 ;
-          :illesa "true"^^xsd:boolean ;
-          :sesso "uomo" .
-
-
-###  http://www.w3.org/2019/6/standardaccidentstructure#Persona2
-:Persona2 rdf:type owl:NamedIndividual ,
-                   :Persona ;
-          :ferita "true"^^xsd:boolean ;
-          :sesso "donna" .
-
-
-###  http://www.w3.org/2019/6/standardaccidentstructure#RM201800000
-:RM201800000 rdf:type owl:NamedIndividual ,
-                      :Sinistro ;
-             :coinvolge :Persona1 ,
-                        :Persona2 ;
-             :localizzato :Roma ;
-             rdfs:comment "Esempio di istanza"@it .
-
-
-###  http://www.w3.org/2019/6/standardaccidentstructure#Roma
-:Roma rdf:type owl:NamedIndividual ,
-               :Luogo .
-
-
-#################################################################
 #    Annotations
 #################################################################
 
