@@ -8,8 +8,8 @@ import datetime
 import locale
 locale.setlocale(locale.LC_ALL, 'it_IT') #Imposto la localizzazione della data sul formato italiano
 
-with open("./datiOriginali/matera.csv", newline="", encoding="UTF-8") as matera: #Apro il csv d'origine
-    with open('./datiElaborati/newMatera.csv', 'w', newline="") as newMatera: #Creo il nuovo csv in modalità scrittura
+with open("../datiOriginali/matera.csv", newline="", encoding="UTF-8") as matera: #Apro il csv d'origine
+    with open('../datiElaborati/newMatera.csv', 'w', newline="") as newMatera: #Creo il nuovo csv in modalità scrittura
         lettore = csv.reader(matera, delimiter=",")
         header = next(lettore)
         writer = csv.writer(newMatera, delimiter=",")

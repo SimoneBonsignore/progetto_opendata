@@ -7,8 +7,8 @@ corrente =0
 precedente=0
 for nomeMese in mesi:
     print(nomeMese)
-    with open("./datiOriginali/"+nomeMese+".csv", newline="",encoding="UTF-8") as RM: #per ogni mese leggiamo i dati
-        with open('./datiElaborati/veicoli/new'+nomeMese+'Veicoli.csv','w',newline="") as newRMVeicoli: #i dati sono scritti in un nuovo csv 
+    with open("../datiOriginali/"+nomeMese+".csv", newline="",encoding="UTF-8") as RM: #per ogni mese leggiamo i dati
+        with open('../datiElaborati/veicoli/new'+nomeMese+'Veicoli.csv','w',newline="") as newRMVeicoli: #i dati sono scritti in un nuovo csv 
             lettore = csv.reader(RM, delimiter=";")
             header = next(lettore)
             writer = csv.writer(newRMVeicoli, delimiter=",")
@@ -18,7 +18,7 @@ for nomeMese in mesi:
                 #print(f"Scrivo la riga: {riga[0],riga[28]}")
                 writer.writerow([riga[0],riga[28],None,None]) 
 
-        with open('./datiElaborati/persona/new'+nomeMese+'Persona.csv','w',newline="") as newRMPersona:
+        with open('../datiElaborati/persona/new'+nomeMese+'Persona.csv','w',newline="") as newRMPersona:
             RM.seek(0)    #seek porta all'inizio del file aperto ogni volta che dobbiamo scrivere un nuovo csv
             lettore = csv.reader(RM, delimiter=";")
             header = next(lettore)
@@ -29,7 +29,7 @@ for nomeMese in mesi:
                 #print(f"Scrivo la riga: {riga[0],riga[28]}")
                 writer.writerow([riga[0],riga[30],riga[31],riga[32]])
         
-        with open('./datiElaborati/luogo/new'+nomeMese+'Luogo.csv','w',newline="") as newRMLuogo:
+        with open('../datiElaborati/luogo/new'+nomeMese+'Luogo.csv','w',newline="") as newRMLuogo:
             RM.seek(0)    
             lettore = csv.reader(RM, delimiter=";")
             header = next(lettore)
@@ -41,7 +41,7 @@ for nomeMese in mesi:
                 #print(f"Scrivo la riga: {riga[0],riga[28]}")
                 writer.writerow([riga[0],"Roma",riga[4],riga[13],riga[14],riga[19],coordinate])
 
-        with open('./datiElaborati/sinistro/new'+nomeMese+'Sinistro.csv','w',newline="") as newRMSinistro:
+        with open('../datiElaborati/sinistro/new'+nomeMese+'Sinistro.csv','w',newline="") as newRMSinistro:
             RM.seek(0)    
             lettore = csv.reader(RM, delimiter=";")
             header = next(lettore)

@@ -5,13 +5,13 @@ import csv
 citta = ["Bergamo", "Matera", "Palermo", "Roma"]
 
 #Creo il nuovo csv con tutti i dati uniti    
-with open("./datiElaborati/sinistri2018.csv", "w", newline="") as sinistri2018:
+with open("../datiElaborati/sinistri2018.csv", "w", newline="") as sinistri2018:
     writer = csv.writer(sinistri2018, delimiter=",") 
     writer.writerow(["Citta'", "Data", "Ora", "Luogo", "Coordinate", "Illesi", "Feriti", "Riservata", "Decessi", "Tipo","Causa","Visibilità","Fondo_stradale","Meteo","Pavimentazione","Illuminazione"])
     
     for city in citta:
         print(city)
-        with open("./datiElaborati/new"+city+".csv", newline="") as c:  
+        with open("../datiElaborati/new"+city+".csv", newline="") as c:  
             lettore = csv.reader(c, delimiter=",")
             next(lettore)                                                  
             dati = [(linea[:]) for linea in lettore]

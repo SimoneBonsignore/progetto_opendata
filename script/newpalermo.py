@@ -3,7 +3,7 @@
 import csv
 import datetime
 N=0
-with open("./datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P: #per ogni mese leggiamo i dati
+with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P: #per ogni mese leggiamo i dati
     with open('./datiElaborati/veicoli/newPalermoVeicoli.csv','w',newline="") as newPVeicoli: #i dati sono scritti in un nuovo csv 
         lettore = csv.reader(P, delimiter=";")
         header = next(lettore)
@@ -16,7 +16,7 @@ with open("./datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P: #per
             writer.writerow([codice,None,None,None]) 
             N+=1
             
-    with open('./datiElaborati/persona/newPalermoPersona.csv','w',newline="") as newPPersona:
+    with open('../datiElaborati/persona/newPalermoPersona.csv','w',newline="") as newPPersona:
         P.seek(0)    #seek porta all'inizio del file aperto ogni volta che dobbiamo scrivere un nuovo csv
         N=0
         lettore = csv.reader(P, delimiter=";")
@@ -30,7 +30,7 @@ with open("./datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P: #per
             writer.writerow([codice,None,None,None])
             N+=1
            
-    with open('./datiElaborati/luogo/newPalermoLuogo.csv','w',newline="") as newPLuogo:
+    with open('../datiElaborati/luogo/newPalermoLuogo.csv','w',newline="") as newPLuogo:
         P.seek(0) 
         N=0   
         lettore = csv.reader(P, delimiter=";")
@@ -45,7 +45,7 @@ with open("./datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P: #per
             writer.writerow([codice,"Palermo",riga[2],None,None,None,coordinate])
             N+=1
             
-    with open('./datiElaborati/sinistro/newPalermoSinistro.csv','w',newline="") as newPSinistro:
+    with open('../datiElaborati/sinistro/newPalermoSinistro.csv','w',newline="") as newPSinistro:
         P.seek(0) 
         N=0   
         lettore = csv.reader(P, delimiter=";")

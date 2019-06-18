@@ -3,8 +3,8 @@
 import csv 
 import datetime
 
-with open("./datiOriginali/bergamo.csv", newline="", encoding="UTF-8") as bergamo: #Apro il csv d'origine
-    with open('./datiElaborati/newBergamo.csv', 'w', newline="",encoding ="UTF-8") as newBergamo: #Creo il nuovo csv in modalità scrittura
+with open("../datiOriginali/bergamo.csv", newline="", encoding="UTF-8") as bergamo: #Apro il csv d'origine
+    with open('../datiElaborati/newBergamo.csv', 'w', newline="",encoding ="UTF-8") as newBergamo: #Creo il nuovo csv in modalità scrittura
         lettore =csv.reader(bergamo,delimiter=",")
         header= next(lettore)
         writer= csv.writer(newBergamo,delimiter=",")
