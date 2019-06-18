@@ -1,996 +1,937 @@
+@prefix : <http://www.w3.org/ontologies/2012/6/ra.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ra: <ra:http://www.w3.org/2012/7/ra3.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2012/7/ra3.owl> .
 
-Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
-Prefix: owl: <http://www.w3.org/2002/07/owl#>
-Prefix: xml: <http://www.w3.org/XML/1998/namespace>
-Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-Prefix: dc: <http://purl.org/dc/elements/1.1/>
-Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-Prefix: : <http://www.w3.org/ontologies/2012/6/ra.owl#>
-Prefix: ra: <ra:http://www.w3.org/2012/7/ra3.owl#>
-
-Ontology: <http://www.w3.org/2012/7/ra3.owl>
-
-
-AnnotationProperty: rdfs:comment
-
-    
-Datatype: xsd:positiveInteger
-
-    
-Datatype: xsd:anyURI
-
-    
-Datatype: xsd:date
-
-    
-Datatype: rdf:PlainLiteral
-
-    
-Datatype: xsd:boolean
-
-    
-Datatype: xsd:string
-
-    
-Datatype: xsd:integer
-
-    
-ObjectProperty: ra:drives
-
-    SubPropertyOf: 
-        ra:isIn
-    
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        ra:Vehicle
-    
-    
-ObjectProperty: isPassengerOf
-
-    SubPropertyOf: 
-        ra:isIn
-    
-    Range: 
-        ra:Vehicle
-    
-    
-ObjectProperty: ra:involves
-
-    Annotations: 
-        rdfs:comment "involves Person, Vehicle, Animal, NonLivingThing like a stone on the road, another RoadAccident, etc"
-    
-    Domain: 
-        ra:RoadAccident
-    
-    Range: 
-        owl:Thing
-    
-    
-ObjectProperty: ra:carries
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        owl:Thing
-    
-    
-ObjectProperty: ra:insures
-
-    Domain: 
-        ra:InsuranceCompany
-    
-    Range: 
-        owl:Thing
-    
-    InverseOf: 
-        ra:insuredBy
-    
-    
-ObjectProperty: ra:isIn
-
-    Annotations: 
-        rdfs:comment "anything can be in anything"@en
-    
-    EquivalentTo: 
-        ra:isOn
-    
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        owl:Thing
-    
-    
-ObjectProperty: ra:location
-
-    Domain: 
-        ra:Event
-    
-    Range: 
-        ra:Location
-    
-    
-ObjectProperty: ra:isOn
-
-    EquivalentTo: 
-        ra:isIn
-    
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        owl:Thing
-    
-    
-ObjectProperty: ra:drivenBy
-
-    Domain: 
-        ra:Vehicle
-    
-    
-ObjectProperty: ra:isOwnedBy
-
-    Annotations: 
-        rdfs:comment "a person cannot be owned"
-    
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        ra:Person
-    
-    
-ObjectProperty: ra:deliveredBy
-
-    Domain: 
-        ra:OfficialID
-    
-    Range: 
-        ra:Organization
-    
-    
-ObjectProperty: ra:insuredBy
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        ra:InsuranceCompany
-    
-    InverseOf: 
-        ra:insures
-    
-    
-ObjectProperty: ra:isPartOf
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        owl:Thing
-    
-    
-ObjectProperty: ra:includes
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        owl:Thing
-    
-    
-ObjectProperty: ra:delivers
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        owl:Thing
-    
-    
-ObjectProperty: ra:owns
-
-    Annotations: 
-        rdfs:comment "only Person and org owns things, several possible"
-    
-    Domain: 
-        ra:Person
-    
-    Range: 
-        owl:Thing
-    
-    
-ObjectProperty: ra:involvedIn
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        ra:RoadAccident
-    
-    
-DataProperty: ra:insuranceType
-
-    Annotations: 
-        rdfs:comment "name of coverage package in the given insurance"
-    
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:ageInyears
-
-    Annotations: 
-        rdfs:comment "age at event time"
-    
-    Range: 
-        xsd:positiveInteger
-    
-    
-DataProperty: ra:lastName
-
-    Domain: 
-        ra:LivingBeing
-    
-    Range: 
-        xsd:string
-    
-    EquivalentTo: 
-        ra:Name
-    
-    
-DataProperty: ra:vehicleCategory
-
-    Domain: 
-        ra:Vehicle
-    
-    Range: 
-        {"bicycle" , "bus" , "car" , "motocycle" , "truck"}
-    
-    
-DataProperty: ra:driverLicenceCategory
-
-    Domain: 
-        ra:DriverLicence
-    
-    Range: 
-        {"lightvehicle" , "motorcycle" , "truck"}
-    
-    
-DataProperty: ra:positionInVehicle
-
-    Range: 
-        {"backseat" , "front passenger" , "truck platform"}
-    
-    
-DataProperty: ra:accidentDetails
-
-    Domain: 
-        ra:RoadAccident
-    
-    Range: 
-        xsd:anyURI
-    
-    
-DataProperty: ra:vehicleColor
-
-    Domain: 
-        ra:Vehicle
-    
-    Range: 
-        {"darkgrey" , "green" , "lightgrey"}
-    
-    
-DataProperty: ra:orgAddress
-
-    Domain: 
-        ra:Organization
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:vehicleProblem
-
-    Domain: 
-        ra:Vehicle
-    
-    Range: 
-        {"brake" , "deadengine" , "flattire"}
-    
-    
-DataProperty: ra:relatedDamage
-
-    Annotations: 
-        rdfs:comment "apply to non living thing, cars, robot, same as injury for person/animal"
-    
-    Domain: 
-        ra:NonLivingThing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:parked
-
-    Domain: 
-        ra:Vehicle
-    
-    Range: 
-        xsd:boolean
-    
-    
-DataProperty: ra:birthDate
-
-    Domain: 
-        ra:LivingBeing
-    
-    EquivalentTo: 
-        ra:makeDate
-    
-    
-DataProperty: ra:animalRace
-
-    Annotations: 
-        rdfs:comment "Person are not Animal in my universe"
-    
-    Range: 
-        {"boar" , "cat" , "deer" , "dog" , "donkey" , "horse"}
-    
-    
-DataProperty: ra:relatedInjuryDesc
-
-    Annotations: 
-        rdfs:comment "sms size description of injury"
-    
-    Domain: 
-        ra:LivingBeing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:insuranceID
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:Name
-
-    Annotations: 
-        rdfs:comment "same as lastName if not present"
-    
-    Domain: 
-        ra:LivingBeing
-    
-    Range: 
-        xsd:string
-    
-    EquivalentTo: 
-        ra:lastName
-    
-    
-DataProperty: ra:isWitness
-
-    Annotations: 
-        rdfs:comment "robot and animal cannot be witness or declares something in my universe"
-    
-    Domain: 
-        ra:Person
-    
-    Range: 
-        xsd:boolean
-    
-    
-DataProperty: ra:speedUnit
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        {"kmh" , "mph"}
-    
-    
-DataProperty: ra:vehicleBrand
-
-    Domain: 
-        ra:Vehicle
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:email
-
-    Domain: 
-        ra:LivingBeing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:orgShortName
-
-    Domain: 
-        ra:Organization
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:trafficViolation
-
-    Annotations: 
-        rdfs:comment "robot, animal, pedestrian included"
-    
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        {"crossingfordidden" , "priority" , "redlight" , "speed" , "stop"}
-    
-    
-DataProperty: ra:driverLicenceNumber
-
-    Domain: 
-        ra:DriverLicence
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:gps
-
-    Annotations: 
-        rdfs:comment "e.g. lat:45.0 long:-6.5"
-    
-    Domain: 
-        ra:Location
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:weatherCondition
-
-    Domain: 
-        ra:RoadAccident
-    
-    Range: 
-        {"earthquake" , "flood" , "ice" , "mud" , "normal" , "rain" , "smoke" , "snow" , "wind"}
-    
-    
-DataProperty: ra:isRemote
-
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:boolean
-    
-    
-DataProperty: ra:passengerProtection
-
-    Annotations: 
-        rdfs:comment "use None to say that the passenger didn't have one"
-    
-    Range: 
-        {"airbag" , "arceau" , "helmet" , "seatbelt"}
-    
-    
-DataProperty: ra:deliveredDate
-
-    Domain: 
-        ra:OfficialID
-    
-    Range: 
-        xsd:date
-    
-    
-DataProperty: ra:vehicleID
-
-    Domain: 
-        ra:Vehicle
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:makeDate
-
-    Annotations: 
-        rdfs:comment "creation or delivered date"
-    
-    Domain: 
-        ra:NonLivingThing
-    
-    Range: 
-        xsd:date
-    
-    EquivalentTo: 
-        ra:birthDate
-    
-    
-DataProperty: ra:speed
-
-    Annotations: 
-        rdfs:comment "speed in speedunit, default kmh"@en
-    
-    Domain: 
-        owl:Thing
-    
-    Range: 
-        xsd:integer
-    
-    
-DataProperty: ra:isSerious
-
-    Domain: 
-        ra:RoadAccident
-    
-    Range: 
-        xsd:boolean
-    
-    
-DataProperty: ra:relatedInjury
-
-    Annotations: 
-        rdfs:comment "use some kind of existing classification"
-    
-    Domain: 
-        ra:LivingBeing
-    
-    Range: 
-        {"fatal" , "light" , "none" , "severe"}
-    
-    
-DataProperty: ra:declares
-
-    Domain: 
-        ra:Person
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:driverProblem
-
-    Range: 
-        {"asleep" , "heartattack" , "lostcontrol" , "mistake" , "notlooking" , "onthephone"}
-    
-    
-DataProperty: ra:orgFullName
-
-    Domain: 
-        ra:Organization
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:isOnRoadType
-
-    Annotations: 
-        rdfs:comment "roadType of Road the accident happens on"
-    
-    Domain: 
-        ra:RoadAccident
-    
-    Range: 
-        {"freeway" , "motorway" , "street"}
-    
-    
-DataProperty: ra:SSN
-
-    Annotations: 
-        rdfs:comment "every living being can have a social security number, a person HAS one"
-    
-    Domain: 
-        ra:LivingBeing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:address
-
-    Domain: 
-        ra:Location
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:firstName
-
-    Domain: 
-        ra:LivingBeing
-    
-    Range: 
-        xsd:string
-    
-    
-DataProperty: ra:lightCondition
-
-    Domain: 
-        ra:RoadAccident
-    
-    Range: 
-        {"darkness" , "daylight" , "inbetween" , "unknown"}
-    
-    
-DataProperty: ra:date
-
-    Domain: 
-        ra:Event
-    
-    Range: 
-        xsd:date
-    
-    
-DataProperty: ra:validityDate
-
-    Domain: 
-        ra:OfficialID
-    
-    Range: 
-        xsd:date
-    
-    
-DataProperty: ra:isInService
-
-    Annotations: 
-        rdfs:comment "someone working at the time of the even. dog can work by themselves"
-    
-    Domain: 
-        ra:LivingBeing
-    
-    Range: 
-        xsd:boolean
-    
-    
-Class: owl:Thing
-
-    
-Class: ra:Infant
-
-    SubClassOf: 
-        ra:Child
-    
-    
-Class: ra:LivingBeing
-
-    DisjointWith: 
-        ra:NonLivingThing
-    
-    
-Class: ra:Teenager
-
-    SubClassOf: 
-        ra:Child
-    
-    
-Class: ra:Event
-
-    SubClassOf: 
-        ra:NonLivingThing
-    
-    
-Class: ra:Child
-
-    SubClassOf: 
-        ra:Person
-    
-    
-Class: ra:RoadAccident
-
-    SubClassOf: 
-        ra:Event
-    
-    
-Class: ra:DriverLicence
-
-    SubClassOf: 
-        ra:OfficialID
-    
-    HasKey: 
-        ra:driverLicenceNumber
-    
-    
-Class: ra:Location
-
-    SubClassOf: 
-        ra:NonLivingThing
-    
-    
-Class: ra:Senior
-
-    SubClassOf: 
-        ra:Adult
-    
-    
-Class: ra:InsuranceCert
-
-    SubClassOf: 
-        ra:OfficialID
-    
-    
-Class: ra:Woman
-
-    SubClassOf: 
-        ra:Person
-    
-    DisjointWith: 
-        ra:Man
-    
-    
-Class: ra:OfficialAgency
-
-    SubClassOf: 
-        ra:Organization
-    
-    
-Class: ra:Robot
-
-    SubClassOf: 
-        ra:NonLivingThing
-    
-    
-Class: ra:Organization
-
-    SubClassOf: 
-        ra:NonLivingThing
-    
-    
-Class: ra:Document
-
-    SubClassOf: 
-        ra:NonLivingThing
-    
-    
-Class: ra:Person
-
-    SubClassOf: 
-        ra:LivingBeing
-    
-    DisjointWith: 
-        ra:Animal
-    
-    
-Class: ra:InsuranceCompany
-
-    SubClassOf: 
-        ra:OfficialAgency
-    
-    HasKey: 
-        ra:orgShortName
-    
-    
-Class: ra:Man
-
-    SubClassOf: 
-        ra:Person
-    
-    DisjointWith: 
-        ra:Woman
-    
-    
-Class: ra:Animal
-
-    SubClassOf: 
-        ra:LivingBeing
-    
-    DisjointWith: 
-        ra:Person
-    
-    
-Class: ra:Vehicle
-
-    SubClassOf: 
-        ra:NonLivingThing
-    
-    HasKey: 
-        ra:vehicleID
-    
-    
-Class: ra:NonLivingThing
-
-    Annotations: 
-        rdfs:comment "Top class for non living thing like vehicle, robot, etc"
-    
-    DisjointWith: 
-        ra:LivingBeing
-    
-    
-Class: ra:OfficialID
-
-    SubClassOf: 
-        ra:Document
-    
-    
-Class: ra:Adult
-
-    SubClassOf: 
-        ra:Person
-    
-    
-Individual: TrashCan
-
-    Types: 
-        ra:NonLivingThing
-    
-    
-Individual: VETSUP
-
-    Types: 
-        ra:InsuranceCompany
-    
-    Facts:  
-     ra:insures  Nala
-    
-    
-Individual: Carpentras
-
-    Types: 
-        ra:Location
-    
-    
-Individual: Nala
-
-    Types: 
-        ra:Animal
-    
-    Facts:  
-     ra:involvedIn  RA170560,
-     ra:isOn  Alice,
-     ra:insuredBy  VETSUP,
-     ra:isOwnedBy  DanielD,
-     ra:passengerProtection  "none",
-     ra:relatedInjuryDesc  "broken nail and vomit on fur",
-     ra:insuranceID  "mieaou007",
-     ra:ageInyears  "17",
-     ra:relatedInjury  "light",
-     ra:positionInVehicle  "backseat",
-     ra:animalRace  "maine coon female cat",
-     ra:Name  "Nala"
-    
-    
-Individual: RA170560
-
-    Types: 
-        ra:RoadAccident
-    
-    Facts:  
-     ra:location  Carpentras,
-     ra:involves  Laurie,
-     ra:involves  Yaya,
-     ra:involves  GreenPunto,
-     ra:involves  Nala,
-     ra:involves  Alice,
-     ra:involves  DanielD,
-     ra:date  "17/05/1960",
-     ra:isOnRoadType  "motorway",
-     ra:address  "11 rue du temple",
-     ra:weatherCondition  "rain",
-     ra:gps  "lat 43 long 6",
-     ra:accidentDetails  "http://dardailler.net",
-     ra:lightCondition  "night",
-     ra:isSerious  "false"
-    
-    
-Individual: Yaya
-
-    Types: 
-        ra:Vehicle
-    
-    Facts:  
-     ra:insuredBy  MAIF,
-     ra:isOwnedBy  DanielD,
-     ra:parked  "yes",
-     ra:vehicleColor  "lightgrey",
-     ra:speed  "0",
-     ra:relatedDamage  "back door left side bumped",
-     ra:vehicleBrand  "Toyota",
-     ra:vehicleCategory  "car",
-     ra:vehicleID  "765 DD 12"
-    
-    
-Individual: GreenPunto
-
-    Types: 
-        ra:Vehicle
-    
-    Facts:  
-     ra:involvedIn  RA170560,
-     ra:insuredBy  MAIF,
-     ra:carries  Alice,
-     ra:carries  Laurie,
-     ra:isOwnedBy  DanielD,
-     ra:drivenBy  Laurie,
-     ra:speedUnit  "kmh",
-     ra:speed  "-20",
-     ra:vehicleColor  "green metal",
-     ra:isOnRoadType  "street one way",
-     ra:parked  "false",
-     ra:relatedDamage  "back paint gone on right side",
-     ra:vehicleBrand  "Fiat",
-     ra:vehicleProblem  "rear mirro broken",
-     ra:vehicleID  "876 GH 71",
-     ra:vehicleCategory  "car"
-    
-    
-Individual: DanielD
-
-    Types: 
-        ra:Man
-    
-    Facts:  
-     ra:insuredBy  MAIF,
-     ra:owns  Nala,
-     ra:owns  GreenPunto,
-     ra:owns  Yaya,
-     ra:insuranceID  "2326779P"@fr,
-     ra:email  "danield@w3.org"@fr,
-     ra:declares  "Laurie can't see a thing"@fr,
-     ra:isWitness  "true"@fr,
-     ra:insuranceType  "full full full"@en,
-     ra:firstName  "Daniel",
-     ra:SSN  "160031294"@fr,
-     ra:isRemote  "yes"@fr
-    
-    
-Individual: Alice
-
-    Types: 
-        ra:Teenager,
-        ra:Woman
-    
-    Facts:  
-     isPassengerOf  GreenPunto,
-     ra:involvedIn  RA170560,
-     ra:carries  Nala,
-     ra:relatedInjury  "none",
-     ra:isWitness  "yes",
-     ra:firstName  "Alice",
-     ra:positionInVehicle  "backseat",
-     ra:declares  "Laurie! stop !! Ya la voiture de Papa derriÃ¨re !"@fr,
-     ra:passengerProtection  "none"
-    
-    
-Individual: MAIF
-
-    Types: 
-        ra:InsuranceCompany
-    
-    Facts:  
-     ra:insures  Laurie,
-     ra:insures  DanielD,
-     ra:orgAddress  "Le Cannet"
-    
-    
-Individual: Laurie
-
-    Types: 
-        ra:Woman
-    
-    Facts:  
-     ra:insuredBy  MAIF,
-     ra:involvedIn  RA170560,
-     ra:drives  GreenPunto,
-     ra:declares  "the read mirror was broken !",
-     ra:insuranceID  "2326779P",
-     ra:trafficViolation  "wrongway",
-     ra:driverProblem  "not looking back",
-     ra:SSN  "28806031",
-     ra:passengerProtection  "seatbelt",
-     ra:firstName  "Laurie"
+<http://www.w3.org/2012/7/ra3.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+rdf:PlainLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyURI
+xsd:anyURI rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#boolean
+xsd:boolean rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integer
+xsd:integer rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#positiveInteger
+xsd:positiveInteger rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#isPassengerOf
+:isPassengerOf rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf ra:isIn ;
+               rdfs:range ra:Vehicle .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#carries
+ra:carries rdf:type owl:ObjectProperty ;
+           rdfs:domain owl:Thing ;
+           rdfs:range owl:Thing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#deliveredBy
+ra:deliveredBy rdf:type owl:ObjectProperty ;
+               rdfs:domain ra:OfficialID ;
+               rdfs:range ra:Organization .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#delivers
+ra:delivers rdf:type owl:ObjectProperty ;
+            rdfs:domain owl:Thing ;
+            rdfs:range owl:Thing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#drivenBy
+ra:drivenBy rdf:type owl:ObjectProperty ;
+            rdfs:domain ra:Vehicle .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#drives
+ra:drives rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf ra:isIn ;
+          rdfs:domain owl:Thing ;
+          rdfs:range ra:Vehicle .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#includes
+ra:includes rdf:type owl:ObjectProperty ;
+            rdfs:domain owl:Thing ;
+            rdfs:range owl:Thing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#insuredBy
+ra:insuredBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf ra:insures ;
+             rdfs:domain owl:Thing ;
+             rdfs:range ra:InsuranceCompany .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#insures
+ra:insures rdf:type owl:ObjectProperty ;
+           rdfs:domain ra:InsuranceCompany ;
+           rdfs:range owl:Thing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#involvedIn
+ra:involvedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain owl:Thing ;
+              rdfs:range ra:RoadAccident .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#involves
+ra:involves rdf:type owl:ObjectProperty ;
+            rdfs:domain ra:RoadAccident ;
+            rdfs:range owl:Thing ;
+            rdfs:comment "involves Person, Vehicle, Animal, NonLivingThing like a stone on the road, another RoadAccident, etc" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#isIn
+ra:isIn rdf:type owl:ObjectProperty ;
+        owl:equivalentProperty ra:isOn ;
+        rdfs:domain owl:Thing ;
+        rdfs:range owl:Thing ;
+        rdfs:comment "anything can be in anything"@en .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#isOn
+ra:isOn rdf:type owl:ObjectProperty ;
+        rdfs:domain owl:Thing ;
+        rdfs:range owl:Thing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#isOwnedBy
+ra:isOwnedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain owl:Thing ;
+             rdfs:range ra:Person ;
+             rdfs:comment "a person cannot be owned" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#isPartOf
+ra:isPartOf rdf:type owl:ObjectProperty ;
+            rdfs:domain owl:Thing ;
+            rdfs:range owl:Thing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#location
+ra:location rdf:type owl:ObjectProperty ;
+            rdfs:domain ra:Event ;
+            rdfs:range ra:Location .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#owns
+ra:owns rdf:type owl:ObjectProperty ;
+        rdfs:domain ra:Person ;
+        rdfs:range owl:Thing ;
+        rdfs:comment "only Person and org owns things, several possible" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Name
+ra:Name rdf:type owl:DatatypeProperty ;
+        owl:equivalentProperty ra:lastName ;
+        rdfs:domain ra:LivingBeing ;
+        rdfs:range xsd:string ;
+        rdfs:comment "same as lastName if not present" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#SSN
+ra:SSN rdf:type owl:DatatypeProperty ;
+       rdfs:domain ra:LivingBeing ;
+       rdfs:range xsd:string ;
+       rdfs:comment "every living being can have a social security number, a person HAS one" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#accidentDetails
+ra:accidentDetails rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ra:RoadAccident ;
+                   rdfs:range xsd:anyURI .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#address
+ra:address rdf:type owl:DatatypeProperty ;
+           rdfs:domain ra:Location ;
+           rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#ageInyears
+ra:ageInyears rdf:type owl:DatatypeProperty ;
+              rdfs:range xsd:positiveInteger ;
+              rdfs:comment "age at event time" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#animalRace
+ra:animalRace rdf:type owl:DatatypeProperty ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:oneOf [ rdf:type rdf:List ;
+                                       rdf:first "boar" ;
+                                       rdf:rest [ rdf:type rdf:List ;
+                                                  rdf:first "cat" ;
+                                                  rdf:rest [ rdf:type rdf:List ;
+                                                             rdf:first "deer" ;
+                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                        rdf:first "dog" ;
+                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                   rdf:first "donkey" ;
+                                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                                              rdf:first "horse" ;
+                                                                                              rdf:rest rdf:nil
+                                                                                            ]
+                                                                                 ]
+                                                                      ]
+                                                           ]
+                                                ]
+                                     ]
+                         ] ;
+              rdfs:comment "Person are not Animal in my universe" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#birthDate
+ra:birthDate rdf:type owl:DatatypeProperty ;
+             owl:equivalentProperty ra:makeDate ;
+             rdfs:domain ra:LivingBeing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#date
+ra:date rdf:type owl:DatatypeProperty ;
+        rdfs:domain ra:Event ;
+        rdfs:range xsd:date .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#declares
+ra:declares rdf:type owl:DatatypeProperty ;
+            rdfs:domain ra:Person ;
+            rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#deliveredDate
+ra:deliveredDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ra:OfficialID ;
+                 rdfs:range xsd:date .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#driverLicenceCategory
+ra:driverLicenceCategory rdf:type owl:DatatypeProperty ;
+                         rdfs:domain ra:DriverLicence ;
+                         rdfs:range [ rdf:type rdfs:Datatype ;
+                                      owl:oneOf [ rdf:type rdf:List ;
+                                                  rdf:first "lightvehicle" ;
+                                                  rdf:rest [ rdf:type rdf:List ;
+                                                             rdf:first "motorcycle" ;
+                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                        rdf:first "truck" ;
+                                                                        rdf:rest rdf:nil
+                                                                      ]
+                                                           ]
+                                                ]
+                                    ] .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#driverLicenceNumber
+ra:driverLicenceNumber rdf:type owl:DatatypeProperty ;
+                       rdfs:domain ra:DriverLicence ;
+                       rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#driverProblem
+ra:driverProblem rdf:type owl:DatatypeProperty ;
+                 rdfs:range [ rdf:type rdfs:Datatype ;
+                              owl:oneOf [ rdf:type rdf:List ;
+                                          rdf:first "asleep" ;
+                                          rdf:rest [ rdf:type rdf:List ;
+                                                     rdf:first "heartattack" ;
+                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                rdf:first "lostcontrol" ;
+                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                           rdf:first "mistake" ;
+                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                      rdf:first "notlooking" ;
+                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                 rdf:first "onthephone" ;
+                                                                                                 rdf:rest rdf:nil
+                                                                                               ]
+                                                                                    ]
+                                                                         ]
+                                                              ]
+                                                   ]
+                                        ]
+                            ] .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#email
+ra:email rdf:type owl:DatatypeProperty ;
+         rdfs:domain ra:LivingBeing ;
+         rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#firstName
+ra:firstName rdf:type owl:DatatypeProperty ;
+             rdfs:domain ra:LivingBeing ;
+             rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#gps
+ra:gps rdf:type owl:DatatypeProperty ;
+       rdfs:domain ra:Location ;
+       rdfs:range xsd:string ;
+       rdfs:comment "e.g. lat:45.0 long:-6.5" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#insuranceID
+ra:insuranceID rdf:type owl:DatatypeProperty ;
+               rdfs:domain owl:Thing ;
+               rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#insuranceType
+ra:insuranceType rdf:type owl:DatatypeProperty ;
+                 rdfs:domain owl:Thing ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "name of coverage package in the given insurance" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#isInService
+ra:isInService rdf:type owl:DatatypeProperty ;
+               rdfs:domain ra:LivingBeing ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "someone working at the time of the even. dog can work by themselves" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#isOnRoadType
+ra:isOnRoadType rdf:type owl:DatatypeProperty ;
+                rdfs:domain ra:RoadAccident ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:oneOf [ rdf:type rdf:List ;
+                                         rdf:first "freeway" ;
+                                         rdf:rest [ rdf:type rdf:List ;
+                                                    rdf:first "motorway" ;
+                                                    rdf:rest [ rdf:type rdf:List ;
+                                                               rdf:first "street" ;
+                                                               rdf:rest rdf:nil
+                                                             ]
+                                                  ]
+                                       ]
+                           ] ;
+                rdfs:comment "roadType of Road the accident happens on" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#isRemote
+ra:isRemote rdf:type owl:DatatypeProperty ;
+            rdfs:domain owl:Thing ;
+            rdfs:range xsd:boolean .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#isSerious
+ra:isSerious rdf:type owl:DatatypeProperty ;
+             rdfs:domain ra:RoadAccident ;
+             rdfs:range xsd:boolean .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#isWitness
+ra:isWitness rdf:type owl:DatatypeProperty ;
+             rdfs:domain ra:Person ;
+             rdfs:range xsd:boolean ;
+             rdfs:comment "robot and animal cannot be witness or declares something in my universe" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#lastName
+ra:lastName rdf:type owl:DatatypeProperty ;
+            rdfs:domain ra:LivingBeing ;
+            rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#lightCondition
+ra:lightCondition rdf:type owl:DatatypeProperty ;
+                  rdfs:domain ra:RoadAccident ;
+                  rdfs:range [ rdf:type rdfs:Datatype ;
+                               owl:oneOf [ rdf:type rdf:List ;
+                                           rdf:first "darkness" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "daylight" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "inbetween" ;
+                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                            rdf:first "unknown" ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ]
+                             ] .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#makeDate
+ra:makeDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain ra:NonLivingThing ;
+            rdfs:range xsd:date ;
+            rdfs:comment "creation or delivered date" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#orgAddress
+ra:orgAddress rdf:type owl:DatatypeProperty ;
+              rdfs:domain ra:Organization ;
+              rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#orgFullName
+ra:orgFullName rdf:type owl:DatatypeProperty ;
+               rdfs:domain ra:Organization ;
+               rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#orgShortName
+ra:orgShortName rdf:type owl:DatatypeProperty ;
+                rdfs:domain ra:Organization ;
+                rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#parked
+ra:parked rdf:type owl:DatatypeProperty ;
+          rdfs:domain ra:Vehicle ;
+          rdfs:range xsd:boolean .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#passengerProtection
+ra:passengerProtection rdf:type owl:DatatypeProperty ;
+                       rdfs:range [ rdf:type rdfs:Datatype ;
+                                    owl:oneOf [ rdf:type rdf:List ;
+                                                rdf:first "airbag" ;
+                                                rdf:rest [ rdf:type rdf:List ;
+                                                           rdf:first "arceau" ;
+                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                      rdf:first "helmet" ;
+                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                 rdf:first "seatbelt" ;
+                                                                                 rdf:rest rdf:nil
+                                                                               ]
+                                                                    ]
+                                                         ]
+                                              ]
+                                  ] ;
+                       rdfs:comment "use None to say that the passenger didn't have one" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#positionInVehicle
+ra:positionInVehicle rdf:type owl:DatatypeProperty ;
+                     rdfs:range [ rdf:type rdfs:Datatype ;
+                                  owl:oneOf [ rdf:type rdf:List ;
+                                              rdf:first "backseat" ;
+                                              rdf:rest [ rdf:type rdf:List ;
+                                                         rdf:first "front passenger" ;
+                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                    rdf:first "truck platform" ;
+                                                                    rdf:rest rdf:nil
+                                                                  ]
+                                                       ]
+                                            ]
+                                ] .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#relatedDamage
+ra:relatedDamage rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ra:NonLivingThing ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "apply to non living thing, cars, robot, same as injury for person/animal" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#relatedInjury
+ra:relatedInjury rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ra:LivingBeing ;
+                 rdfs:range [ rdf:type rdfs:Datatype ;
+                              owl:oneOf [ rdf:type rdf:List ;
+                                          rdf:first "fatal" ;
+                                          rdf:rest [ rdf:type rdf:List ;
+                                                     rdf:first "light" ;
+                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                rdf:first "none" ;
+                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                           rdf:first "severe" ;
+                                                                           rdf:rest rdf:nil
+                                                                         ]
+                                                              ]
+                                                   ]
+                                        ]
+                            ] ;
+                 rdfs:comment "use some kind of existing classification" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#relatedInjuryDesc
+ra:relatedInjuryDesc rdf:type owl:DatatypeProperty ;
+                     rdfs:domain ra:LivingBeing ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "sms size description of injury" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#speed
+ra:speed rdf:type owl:DatatypeProperty ;
+         rdfs:domain owl:Thing ;
+         rdfs:range xsd:integer ;
+         rdfs:comment "speed in speedunit, default kmh"@en .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#speedUnit
+ra:speedUnit rdf:type owl:DatatypeProperty ;
+             rdfs:domain owl:Thing ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:oneOf [ rdf:type rdf:List ;
+                                      rdf:first "kmh" ;
+                                      rdf:rest [ rdf:type rdf:List ;
+                                                 rdf:first "mph" ;
+                                                 rdf:rest rdf:nil
+                                               ]
+                                    ]
+                        ] .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#trafficViolation
+ra:trafficViolation rdf:type owl:DatatypeProperty ;
+                    rdfs:domain owl:Thing ;
+                    rdfs:range [ rdf:type rdfs:Datatype ;
+                                 owl:oneOf [ rdf:type rdf:List ;
+                                             rdf:first "crossingfordidden" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "priority" ;
+                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                   rdf:first "redlight" ;
+                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                              rdf:first "speed" ;
+                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                         rdf:first "stop" ;
+                                                                                         rdf:rest rdf:nil
+                                                                                       ]
+                                                                            ]
+                                                                 ]
+                                                      ]
+                                           ]
+                               ] ;
+                    rdfs:comment "robot, animal, pedestrian included" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#validityDate
+ra:validityDate rdf:type owl:DatatypeProperty ;
+                rdfs:domain ra:OfficialID ;
+                rdfs:range xsd:date .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#vehicleBrand
+ra:vehicleBrand rdf:type owl:DatatypeProperty ;
+                rdfs:domain ra:Vehicle ;
+                rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#vehicleCategory
+ra:vehicleCategory rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ra:Vehicle ;
+                   rdfs:range [ rdf:type rdfs:Datatype ;
+                                owl:oneOf [ rdf:type rdf:List ;
+                                            rdf:first "bicycle" ;
+                                            rdf:rest [ rdf:type rdf:List ;
+                                                       rdf:first "bus" ;
+                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                  rdf:first "car" ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "motocycle" ;
+                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                        rdf:first "truck" ;
+                                                                                        rdf:rest rdf:nil
+                                                                                      ]
+                                                                           ]
+                                                                ]
+                                                     ]
+                                          ]
+                              ] .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#vehicleColor
+ra:vehicleColor rdf:type owl:DatatypeProperty ;
+                rdfs:domain ra:Vehicle ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:oneOf [ rdf:type rdf:List ;
+                                         rdf:first "darkgrey" ;
+                                         rdf:rest [ rdf:type rdf:List ;
+                                                    rdf:first "green" ;
+                                                    rdf:rest [ rdf:type rdf:List ;
+                                                               rdf:first "lightgrey" ;
+                                                               rdf:rest rdf:nil
+                                                             ]
+                                                  ]
+                                       ]
+                           ] .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#vehicleID
+ra:vehicleID rdf:type owl:DatatypeProperty ;
+             rdfs:domain ra:Vehicle ;
+             rdfs:range xsd:string .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#vehicleProblem
+ra:vehicleProblem rdf:type owl:DatatypeProperty ;
+                  rdfs:domain ra:Vehicle ;
+                  rdfs:range [ rdf:type rdfs:Datatype ;
+                               owl:oneOf [ rdf:type rdf:List ;
+                                           rdf:first "brake" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "deadengine" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "flattire" ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ]
+                             ] .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#weatherCondition
+ra:weatherCondition rdf:type owl:DatatypeProperty ;
+                    rdfs:domain ra:RoadAccident ;
+                    rdfs:range [ rdf:type rdfs:Datatype ;
+                                 owl:oneOf [ rdf:type rdf:List ;
+                                             rdf:first "earthquake" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "flood" ;
+                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                   rdf:first "ice" ;
+                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                              rdf:first "mud" ;
+                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                         rdf:first "normal" ;
+                                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                                    rdf:first "rain" ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first "smoke" ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first "snow" ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first "wind" ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                                                             ]
+                                                                                                  ]
+                                                                                       ]
+                                                                            ]
+                                                                 ]
+                                                      ]
+                                           ]
+                               ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdf:type owl:Class .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Adult
+ra:Adult rdf:type owl:Class ;
+         rdfs:subClassOf ra:Person .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Animal
+ra:Animal rdf:type owl:Class ;
+          rdfs:subClassOf ra:LivingBeing ;
+          owl:disjointWith ra:Person .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Child
+ra:Child rdf:type owl:Class ;
+         rdfs:subClassOf ra:Person .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Document
+ra:Document rdf:type owl:Class ;
+            rdfs:subClassOf ra:NonLivingThing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#DriverLicence
+ra:DriverLicence rdf:type owl:Class ;
+                 rdfs:subClassOf ra:OfficialID ;
+                 owl:hasKey ( ra:driverLicenceNumber
+                            ) .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Event
+ra:Event rdf:type owl:Class ;
+         rdfs:subClassOf ra:NonLivingThing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Infant
+ra:Infant rdf:type owl:Class ;
+          rdfs:subClassOf ra:Child .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#InsuranceCert
+ra:InsuranceCert rdf:type owl:Class ;
+                 rdfs:subClassOf ra:OfficialID .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#InsuranceCompany
+ra:InsuranceCompany rdf:type owl:Class ;
+                    rdfs:subClassOf ra:OfficialAgency ;
+                    owl:hasKey ( ra:orgShortName
+                               ) .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#LivingBeing
+ra:LivingBeing rdf:type owl:Class ;
+               owl:disjointWith ra:NonLivingThing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Location
+ra:Location rdf:type owl:Class ;
+            rdfs:subClassOf ra:NonLivingThing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Man
+ra:Man rdf:type owl:Class ;
+       rdfs:subClassOf ra:Person ;
+       owl:disjointWith ra:Woman .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#NonLivingThing
+ra:NonLivingThing rdf:type owl:Class ;
+                  rdfs:comment "Top class for non living thing like vehicle, robot, etc" .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#OfficialAgency
+ra:OfficialAgency rdf:type owl:Class ;
+                  rdfs:subClassOf ra:Organization .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#OfficialID
+ra:OfficialID rdf:type owl:Class ;
+              rdfs:subClassOf ra:Document .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Organization
+ra:Organization rdf:type owl:Class ;
+                rdfs:subClassOf ra:NonLivingThing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Person
+ra:Person rdf:type owl:Class ;
+          rdfs:subClassOf ra:LivingBeing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#RoadAccident
+ra:RoadAccident rdf:type owl:Class ;
+                rdfs:subClassOf ra:Event .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Robot
+ra:Robot rdf:type owl:Class ;
+         rdfs:subClassOf ra:NonLivingThing .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Senior
+ra:Senior rdf:type owl:Class ;
+          rdfs:subClassOf ra:Adult .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Teenager
+ra:Teenager rdf:type owl:Class ;
+            rdfs:subClassOf ra:Child .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Vehicle
+ra:Vehicle rdf:type owl:Class ;
+           rdfs:subClassOf ra:NonLivingThing ;
+           owl:hasKey ( ra:vehicleID
+                      ) .
+
+
+###  ra:http://www.w3.org/2012/7/ra3.owl#Woman
+ra:Woman rdf:type owl:Class ;
+         rdfs:subClassOf ra:Person .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#Alice
+:Alice rdf:type owl:NamedIndividual ,
+                ra:Teenager ,
+                ra:Woman ;
+       :isPassengerOf :GreenPunto ;
+       ra:carries :Nala ;
+       ra:involvedIn :RA170560 ;
+       ra:declares "Laurie! stop !! Ya la voiture de Papa derriÃ¨re !"@fr ;
+       ra:firstName "Alice" ;
+       ra:isWitness "yes" ;
+       ra:passengerProtection "none" ;
+       ra:positionInVehicle "backseat" ;
+       ra:relatedInjury "none" .
+
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#Carpentras
+:Carpentras rdf:type owl:NamedIndividual ,
+                     ra:Location .
+
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#DanielD
+:DanielD rdf:type owl:NamedIndividual ,
+                  ra:Man ;
+         ra:insuredBy :MAIF ;
+         ra:owns :GreenPunto ,
+                 :Nala ,
+                 :Yaya ;
+         ra:SSN "160031294"@fr ;
+         ra:declares "Laurie can't see a thing"@fr ;
+         ra:email "danield@w3.org"@fr ;
+         ra:firstName "Daniel" ;
+         ra:insuranceID "2326779P"@fr ;
+         ra:insuranceType "full full full"@en ;
+         ra:isRemote "yes"@fr ;
+         ra:isWitness "true"@fr .
+
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#GreenPunto
+:GreenPunto rdf:type owl:NamedIndividual ,
+                     ra:Vehicle ;
+            ra:carries :Alice ,
+                       :Laurie ;
+            ra:drivenBy :Laurie ;
+            ra:insuredBy :MAIF ;
+            ra:involvedIn :RA170560 ;
+            ra:isOwnedBy :DanielD ;
+            ra:isOnRoadType "street one way" ;
+            ra:parked "false" ;
+            ra:relatedDamage "back paint gone on right side" ;
+            ra:speed "-20" ;
+            ra:speedUnit "kmh" ;
+            ra:vehicleBrand "Fiat" ;
+            ra:vehicleCategory "car" ;
+            ra:vehicleColor "green metal" ;
+            ra:vehicleID "876 GH 71" ;
+            ra:vehicleProblem "rear mirro broken" .
+
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#Laurie
+:Laurie rdf:type owl:NamedIndividual ,
+                 ra:Woman ;
+        ra:drives :GreenPunto ;
+        ra:insuredBy :MAIF ;
+        ra:involvedIn :RA170560 ;
+        ra:SSN "28806031" ;
+        ra:declares "the read mirror was broken !" ;
+        ra:driverProblem "not looking back" ;
+        ra:firstName "Laurie" ;
+        ra:insuranceID "2326779P" ;
+        ra:passengerProtection "seatbelt" ;
+        ra:trafficViolation "wrongway" .
+
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#MAIF
+:MAIF rdf:type owl:NamedIndividual ,
+               ra:InsuranceCompany ;
+      ra:insures :DanielD ,
+                 :Laurie ;
+      ra:orgAddress "Le Cannet" .
+
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#Nala
+:Nala rdf:type owl:NamedIndividual ,
+               ra:Animal ;
+      ra:insuredBy :VETSUP ;
+      ra:involvedIn :RA170560 ;
+      ra:isOn :Alice ;
+      ra:isOwnedBy :DanielD ;
+      ra:Name "Nala" ;
+      ra:ageInyears "17" ;
+      ra:animalRace "maine coon female cat" ;
+      ra:insuranceID "mieaou007" ;
+      ra:passengerProtection "none" ;
+      ra:positionInVehicle "backseat" ;
+      ra:relatedInjury "light" ;
+      ra:relatedInjuryDesc "broken nail and vomit on fur" .
+
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#RA170560
+:RA170560 rdf:type owl:NamedIndividual ,
+                   ra:RoadAccident ;
+          ra:involves :Alice ,
+                      :DanielD ,
+                      :GreenPunto ,
+                      :Laurie ,
+                      :Nala ,
+                      :Yaya ;
+          ra:location :Carpentras ;
+          ra:accidentDetails "http://dardailler.net" ;
+          ra:address "11 rue du temple" ;
+          ra:date "17/05/1960" ;
+          ra:gps "lat 43 long 6" ;
+          ra:isOnRoadType "motorway" ;
+          ra:isSerious "false" ;
+          ra:lightCondition "night" ;
+          ra:weatherCondition "rain" .
+
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#TrashCan
+:TrashCan rdf:type owl:NamedIndividual ,
+                   ra:NonLivingThing .
+
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#VETSUP
+:VETSUP rdf:type owl:NamedIndividual ,
+                 ra:InsuranceCompany ;
+        ra:insures :Nala .
+
+
+###  http://www.w3.org/ontologies/2012/6/ra.owl#Yaya
+:Yaya rdf:type owl:NamedIndividual ,
+               ra:Vehicle ;
+      ra:insuredBy :MAIF ;
+      ra:isOwnedBy :DanielD ;
+      ra:parked "yes" ;
+      ra:relatedDamage "back door left side bumped" ;
+      ra:speed "0" ;
+      ra:vehicleBrand "Toyota" ;
+      ra:vehicleCategory "car" ;
+      ra:vehicleColor "lightgrey" ;
+      ra:vehicleID "765 DD 12" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
