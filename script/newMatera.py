@@ -39,7 +39,7 @@ with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M: #per
         lettore = csv.reader(M, delimiter=",")
         header = next(lettore)
         writer = csv.writer(newMLuogo, delimiter=",")
-        writer.writerow(["ID","Citta'","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
+        writer.writerow(["ID","Citta","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
             coordinate = "(" + riga[9] + "," + riga[10] + ")"

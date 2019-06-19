@@ -36,7 +36,7 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
         lettore = csv.reader(B, delimiter=",")
         header = next(lettore)
         writer = csv.writer(newBLuogo, delimiter=",")
-        writer.writerow(["ID","Citta'","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
+        writer.writerow(["ID","Citta","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
             riga[4] = riga[4].replace("BERGAMO", "")

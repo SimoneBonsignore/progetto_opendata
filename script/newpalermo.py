@@ -4,7 +4,7 @@ import csv
 import datetime
 N=0
 with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P: #per ogni mese leggiamo i dati
-    with open('./datiElaborati/veicoli/newPalermoVeicoli.csv','w',newline="") as newPVeicoli: #i dati sono scritti in un nuovo csv 
+    with open('../datiElaborati/veicoli/newPalermoVeicoli.csv','w',newline="") as newPVeicoli: #i dati sono scritti in un nuovo csv 
         lettore = csv.reader(P, delimiter=";")
         header = next(lettore)
         writer = csv.writer(newPVeicoli, delimiter=",")
@@ -36,7 +36,7 @@ with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P: #pe
         lettore = csv.reader(P, delimiter=";")
         header = next(lettore)
         writer = csv.writer(newPLuogo, delimiter=",")
-        writer.writerow(["ID","Citta'","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
+        writer.writerow(["ID","Citta","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
             coordinate = "(" + riga[6] + "," + riga[5] + ")"
