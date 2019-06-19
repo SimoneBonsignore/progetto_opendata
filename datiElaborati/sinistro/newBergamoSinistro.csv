@@ -1,4 +1,4 @@
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilità,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
+ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 BG0,2017-12-31,20:20,,,,,5,0,0,0
 BG1,2017-12-31,23:55,,,,,3,0,0,0
 BG2,2017-12-30,13:20,,,,,4,1,0,0
