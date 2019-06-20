@@ -62,7 +62,7 @@ for nomeMese in mesi:
                 corrente = riga[0] 
                 if corrente != precedente: #confronta i numeri di protocollo in quanto ripetuti per ogni persona coinvolta
                     data_ora = riga[2].split(" ") 
-                    data = datetime.datetime.strptime(data_ora[0], "%d/%m/%Y").strftime("%d-%m-%Y") #Converto la data
+                    data = datetime.datetime.strptime(data_ora[0], "%d/%m/%Y").strftime("%Y-%m-%d") #Converto la data
                     if len(data_ora) > 1:
                         orario = data_ora[1]    #Salvo l'ora se è specificata
                     else:
