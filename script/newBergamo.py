@@ -11,9 +11,10 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
         writer.writerow(["ID","Modello","Targa","Tipo veicolo"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            codice="BG"+str(N) #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
-            writer.writerow([codice,None,None,None]) 
-            N+=1
+            if '2017' in riga[1]:
+                codice="BG"+str(N) #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
+                writer.writerow([codice,None,None,None]) 
+                N+=1
             
     with open('../datiElaborati/persona/newBergamoPersona.csv','w',newline="") as newBPersona:
         B.seek(0)    #seek porta all'inizio del file aperto ogni volta che dobbiamo scrivere un nuovo csv
@@ -24,9 +25,10 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
         writer.writerow(["ID","TipoPersona","Sesso","TipoLesione"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            codice="BG"+str(N)
-            writer.writerow([codice,None,None,None])
-            N+=1
+            if '2017' in riga[1]:
+                codice="BG"+str(N)
+                writer.writerow([codice,None,None,None])
+                N+=1
            
     with open('../datiElaborati/luogo/newBergamoLuogo.csv','w',newline="") as newBLuogo:
         B.seek(0) 
@@ -37,10 +39,11 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
         writer.writerow(["ID","Citta","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            riga[4] = riga[4].replace("BERGAMO", "") #cancelliamo BERGAMO mantenendo solo la via
-            codice="BG"+str(N)
-            writer.writerow([codice,"Bergamo",riga[4],None,None,None,riga[14]])
-            N+=1
+            if '2017' in riga[1]:
+                riga[4] = riga[4].replace("BERGAMO", "") #cancelliamo BERGAMO mantenendo solo la via
+                codice="BG"+str(N)
+                writer.writerow([codice,"Bergamo",riga[4],None,None,None,riga[14]])
+                N+=1
             
     with open('../datiElaborati/sinistro/newBergamoSinistro.csv','w',newline="") as newBSinistro:
         B.seek(0) 
@@ -51,7 +54,8 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
         writer.writerow(["ID","Data","Ora","Tipo","Causa","Meteo","Visibilita","N.Illesi","N.Feriti","N.PrognosiRiservata","N.Deceduti"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            riga[2]=datetime.datetime.strptime(riga[2], "%d/%m/%Y").strftime("%Y-%m-%d") #Converte le date nel formato corretto
-            codice="BG"+str(N)
-            writer.writerow([codice,riga[2],riga[3],None,None,None,None,riga[6],riga[7],riga[8],riga[9]])
-            N+=1
+            if '2017' in riga[1]:         
+                riga[2]=datetime.datetime.strptime(riga[2], "%d/%m/%Y").strftime("%Y-%m-%d") #Converte le date nel formato corretto
+                codice="BG"+str(N)
+                writer.writerow([codice,riga[2],riga[3],None,None,None,None,riga[6],riga[7],riga[8],riga[9]])
+                N+=1
