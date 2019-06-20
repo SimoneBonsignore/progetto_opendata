@@ -6,8 +6,12 @@ import locale
 locale.setlocale(locale.LC_ALL, 'it_IT') #Imposto la localizzazione della data sul formato italiano
 
 N=0
-with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M: #per ogni mese leggiamo i dati
-    with open('../datiElaborati/veicoli/newMateraVeicoli.csv','w',newline="") as newMVeicoli: #i dati sono scritti in un nuovo csv 
+
+print("\n\nMatera")
+with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M:
+
+    print("Scrivo i veicoli")
+    with open('../datiElaborati/veicoli/newMateraVeicoli.csv','w',newline="", encoding="UTF-8") as newMVeicoli: #i dati sono scritti in un nuovo csv 
         lettore = csv.reader(M, delimiter=",")
         header = next(lettore)
         writer = csv.writer(newMVeicoli, delimiter=",")
@@ -17,8 +21,9 @@ with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M: #per
             codice="MT"+str(N) #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
             writer.writerow([codice,None,None,None]) 
             N+=1
-            
-    with open('../datiElaborati/persona/newMateraPersona.csv','w',newline="") as newMPersona:
+    
+    print("Scrivo le persone")
+    with open('../datiElaborati/persona/newMateraPersona.csv','w',newline="", encoding="UTF-8") as newMPersona:
         M.seek(0)    #seek porta all'inizio del file aperto ogni volta che dobbiamo scrivere un nuovo csv
         N=0
         lettore = csv.reader(M, delimiter=",")
@@ -30,8 +35,9 @@ with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M: #per
             codice="MT"+str(N)
             writer.writerow([codice,None,None,None])
             N+=1
-           
-    with open('../datiElaborati/luogo/newMateraLuogo.csv','w',newline="") as newMLuogo:
+
+    print("Scrivo i luoghi")    
+    with open('../datiElaborati/luogo/newMateraLuogo.csv','w',newline="", encoding="UTF-8") as newMLuogo:
         M.seek(0) 
         N=0   
         lettore = csv.reader(M, delimiter=",")
@@ -44,8 +50,9 @@ with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M: #per
             codice="MT"+str(N)
             writer.writerow([codice,"Matera",riga[8],None,None,None,coordinate])
             N+=1
-            
-    with open('../datiElaborati/sinistro/newMateraSinistro.csv','w',newline="") as newMSinistro:
+
+    print("Scrivo i sinistri")            
+    with open('../datiElaborati/sinistro/newMateraSinistro.csv','w',newline="", encoding="UTF-8") as newMSinistro:
         M.seek(0) 
         N=0   
         lettore = csv.reader(M, delimiter=",")

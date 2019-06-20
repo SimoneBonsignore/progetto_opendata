@@ -2,9 +2,13 @@
 #creazione di quattro csv contenenti Veicoli,Luogo,Persona,Sinistro
 import csv
 import datetime
-N=0 
-with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #per ogni mese leggiamo i dati
-    with open('../datiElaborati/veicoli/newBergamoVeicoli.csv','w',newline="") as newBVeicoli: #i dati sono scritti in un nuovo csv 
+N=0
+
+print("\n\nBergamo")
+with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B:
+    
+    print("Scrivo i veicoli")
+    with open('../datiElaborati/veicoli/newBergamoVeicoli.csv','w',newline="", encoding="UTF-8") as newBVeicoli: #i dati sono scritti in un nuovo csv 
         lettore = csv.reader(B, delimiter=",")
         header = next(lettore)
         writer = csv.writer(newBVeicoli, delimiter=",")
@@ -16,7 +20,8 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
                 writer.writerow([codice,None,None,None]) 
                 N+=1
             
-    with open('../datiElaborati/persona/newBergamoPersona.csv','w',newline="") as newBPersona:
+    print("Scrivo le persone")        
+    with open('../datiElaborati/persona/newBergamoPersona.csv','w',newline="", encoding="UTF-8") as newBPersona:
         B.seek(0)    #seek porta all'inizio del file aperto ogni volta che dobbiamo scrivere un nuovo csv
         N=0
         lettore = csv.reader(B, delimiter=",")
@@ -29,8 +34,9 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
                 codice="BG"+str(N)
                 writer.writerow([codice,None,None,None])
                 N+=1
-           
-    with open('../datiElaborati/luogo/newBergamoLuogo.csv','w',newline="") as newBLuogo:
+
+    print("Scrivo i luoghi")       
+    with open('../datiElaborati/luogo/newBergamoLuogo.csv','w',newline="", encoding="UTF-8") as newBLuogo:
         B.seek(0) 
         N=0   
         lettore = csv.reader(B, delimiter=",")
@@ -44,8 +50,9 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
                 codice="BG"+str(N)
                 writer.writerow([codice,"Bergamo",riga[4],None,None,None,riga[14]])
                 N+=1
-            
-    with open('../datiElaborati/sinistro/newBergamoSinistro.csv','w',newline="") as newBSinistro:
+
+    print("Scrivo i sinistri")            
+    with open('../datiElaborati/sinistro/newBergamoSinistro.csv','w',newline="", encoding="UTF-8") as newBSinistro:
         B.seek(0) 
         N=0   
         lettore = csv.reader(B, delimiter=",")
