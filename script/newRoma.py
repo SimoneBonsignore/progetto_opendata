@@ -44,10 +44,13 @@ for nomeMese in mesi:
             writer.writerow(["ID","Citta","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
-                coordinate = "(" + riga[24] + "," + riga[25] + ")" #latitudine e longitudine vengono concatenate
-                #print(f"Scrivo la riga: {riga[0],riga[28]}")
-                writer.writerow([riga[0],"Roma",riga[4],riga[13],riga[14],riga[19],coordinate])
-
+                corrente = riga[0] 
+                if corrente != precedente:
+                    coordinate = "(" + riga[24] + "," + riga[25] + ")" #latitudine e longitudine vengono concatenate
+                    #print(f"Scrivo la riga: {riga[0],riga[28]}")
+                    writer.writerow([riga[0],"Roma",riga[4],riga[13],riga[14],riga[19],coordinate])
+                    precedente = corrente
+                    
         with open('../datiElaborati/sinistro/newRomaSinistro.csv', fileMode, newline="") as newRMSinistro:
             RM.seek(0)    
             lettore = csv.reader(RM, delimiter=";")
