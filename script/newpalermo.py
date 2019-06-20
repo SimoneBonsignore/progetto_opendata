@@ -11,7 +11,7 @@ with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P: #pe
         writer.writerow(["ID","Modello","Targa","Tipo veicolo"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            codice="PA"+str(N)
+            codice="PA"+str(N) #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
             #print(f"Scrivo la riga: {riga[0],riga[28]}")
             writer.writerow([codice,None,None,None]) 
             N+=1
@@ -39,9 +39,8 @@ with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P: #pe
         writer.writerow(["ID","Citta","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            coordinate = "(" + riga[6] + "," + riga[5] + ")"
+            coordinate = "(" + riga[6] + "," + riga[5] + ")" #latitudine e longitudine vengono concatenate per formare un unica variabile
             codice="PA"+str(N)
-            #print(f"Scrivo la riga: {riga[0],riga[28]}")
             writer.writerow([codice,"Palermo",riga[2],None,None,None,coordinate])
             N+=1
             

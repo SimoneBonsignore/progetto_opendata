@@ -7,7 +7,7 @@ mesi = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", 
 corrente = 0
 precedente = 0
 
-for nomeMese in mesi:
+for nomeMese in mesi: 
     
     if "Gennaio" in nomeMese:
         fileMode = "w"
@@ -44,7 +44,7 @@ for nomeMese in mesi:
             writer.writerow(["ID","Citta","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
-                coordinate = "(" + riga[24] + "," + riga[25] + ")"
+                coordinate = "(" + riga[24] + "," + riga[25] + ")" #latitudine e longitudine vengono concatenate
                 #print(f"Scrivo la riga: {riga[0],riga[28]}")
                 writer.writerow([riga[0],"Roma",riga[4],riga[13],riga[14],riga[19],coordinate])
 
@@ -56,9 +56,9 @@ for nomeMese in mesi:
             writer.writerow(["ID","Data","Ora","Tipo","Causa","Meteo","Visibilita","N.Illesi","N.Feriti","N.PrognosiRiservata","N.Deceduti"])
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
-                corrente = riga[0]
-                if corrente != precedente:
-                    data_ora = riga[2].split(" ")
+                corrente = riga[0] 
+                if corrente != precedente: #confronta i numeri di protocollo in quanto ripetuti per ogni persona coinvolta
+                    data_ora = riga[2].split(" ") 
                     data = datetime.datetime.strptime(data_ora[0], "%d/%m/%Y").strftime("%d-%m-%Y") #Converto la data
                     if len(data_ora) > 1:
                         orario = data_ora[1]    #Salvo l'ora se è specificata

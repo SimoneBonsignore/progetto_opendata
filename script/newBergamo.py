@@ -2,7 +2,7 @@
 #creazione di quattro csv contenenti Veicoli,Luogo,Persona,Sinistro
 import csv
 import datetime
-N=0
+N=0 
 with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #per ogni mese leggiamo i dati
     with open('../datiElaborati/veicoli/newBergamoVeicoli.csv','w',newline="") as newBVeicoli: #i dati sono scritti in un nuovo csv 
         lettore = csv.reader(B, delimiter=",")
@@ -11,8 +11,7 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
         writer.writerow(["ID","Modello","Targa","Tipo veicolo"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            codice="BG"+str(N)
-            #print(f"Scrivo la riga: {riga[0],riga[28]}")
+            codice="BG"+str(N) #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
             writer.writerow([codice,None,None,None]) 
             N+=1
             
@@ -26,7 +25,6 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
             codice="BG"+str(N)
-            #print(f"Scrivo la riga: {riga[0],riga[28]}")
             writer.writerow([codice,None,None,None])
             N+=1
            
@@ -39,9 +37,8 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B: #pe
         writer.writerow(["ID","Citta","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            riga[4] = riga[4].replace("BERGAMO", "")
+            riga[4] = riga[4].replace("BERGAMO", "") #cancelliamo BERGAMO mantenendo solo la via
             codice="BG"+str(N)
-            #print(f"Scrivo la riga: {riga[0],riga[28]}")
             writer.writerow([codice,"Bergamo",riga[4],None,None,None,riga[14]])
             N+=1
             
