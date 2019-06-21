@@ -26,7 +26,7 @@ MT23,2018-01-24,20:00,Urto contro ostacolo fisso,Improvviso malore,,,,0,,0
 MT24,2018-01-25,11:15,Scontro frontale laterale,Mano da tenere,,,,1,,0
 MT25,2018-01-26,07:40,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT26,2018-01-27,12:10,Investimento di pedone,Mancata precedenza,,,,1,,0
-MT27,2018-01-29,07:55,Tamponamento,Velocit‡,,,,1,,0
+MT27,2018-01-29,07:55,Tamponamento,Velocit√†,,,,1,,0
 MT28,2018-01-30,09:30,Scontro frontale laterale,Distrazione,,,,0,,0
 MT29,2018-01-30,16:00,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT30,2018-01-31,13:45,Scontro frontale laterale,Mancata precedenza,,,,0,,0
@@ -37,14 +37,14 @@ MT34,2018-02-07,13:20,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT35,2018-02-07,16:15,Scontro frontale laterale,Mano da tenere,,,,3,,0
 MT36,2018-02-07,19:35,Investimento di pedone,Distrazione,,,,1,,0
 MT37,2018-02-12,17:45,Scontro frontale laterale,Mancata precedenza,,,,2,,0
-MT38,2018-02-13,08:10,Fuoriuscita sede stradale,Velocit‡,,,,1,,0
+MT38,2018-02-13,08:10,Fuoriuscita sede stradale,Velocit√†,,,,1,,0
 MT39,2018-02-13,11:40,Scontro frontale laterale,Mano da tenere,,,,0,,0
 MT40,2018-02-14,15:50,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT41,2018-02-14,17:30,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT42,2018-02-16,11:40,Tamponamento,Distrazione,,,,0,,0
 MT43,2018-02-17,12:40,Urto veicolo in sosta,Guasto meccanico,,,,0,,0
 MT44,2018-02-20,09:00,Tamponamento,Distanza sicurezza,,,,3,,0
-MT45,2018-02-20,14:45,Scontro frontale laterale,Velocit‡,,,,1,,0
+MT45,2018-02-20,14:45,Scontro frontale laterale,Velocit√†,,,,1,,0
 MT46,2018-02-21,08:55,Urto veicolo in sosta,Guasto meccanico,,,,0,,0
 MT47,2018-02-21,19:35,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT48,2018-02-24,13:10,Scontro frontale laterale,Mancata precedenza,,,,0,,0
@@ -57,7 +57,7 @@ MT54,2018-03-01,14:50,Scontro frontale laterale,Distrazione,,,,0,,0
 MT55,2018-03-02,10:41,Urto contro ostacolo fisso,Improvviso malore,,,,1,,0
 MT56,2018-03-02,16:45,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT57,2018-03-03,18:15,Scontro frontale laterale,Altro,,,,0,,0
-MT58,2018-03-04,08:30,Urto contro ostacolo fisso,Velocit‡,,,,0,,0
+MT58,2018-03-04,08:30,Urto contro ostacolo fisso,Velocit√†,,,,0,,0
 MT59,2018-03-07,13:20,Scontro frontale laterale,Altro,,,,0,,0
 MT60,2018-03-08,08:10,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT61,2018-03-08,11:15,Scontro frontale laterale,Mancata precedenza,,,,1,,0
@@ -69,11 +69,11 @@ MT66,2018-03-14,08:30,Scontro frontale laterale,Mancata precedenza,,,,2,,0
 MT67,2018-03-15,11:55,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT68,2018-03-17,10:35,Scontro frontale laterale,Distanza sicurezza,,,,0,,0
 MT69,2018-03-19,10:40,Tamponamento,Distanza sicurezza,,,,0,,0
-MT70,2018-03-19,18:30,Scontro frontale laterale,Velocit‡,,,,2,,0
+MT70,2018-03-19,18:30,Scontro frontale laterale,Velocit√†,,,,2,,0
 MT71,2018-03-21,08:35,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT72,2018-03-26,13:25,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT73,2018-03-26,16:10,Scontro frontale laterale,Mancata precedenza,,,,0,,0
-MT74,2018-03-28,15:30,Scontro frontale laterale,Velocit‡,,,,2,,0
+MT74,2018-03-28,15:30,Scontro frontale laterale,Velocit√†,,,,2,,0
 MT75,2018-03-29,16:51,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT76,2018-03-30,16:20,Scontro frontale laterale,Distrazione,,,,0,,0
 MT77,2018-04-03,15:53,Investimento di pedone,Mancata precedenza,,,,1,,0
@@ -87,20 +87,20 @@ MT84,2018-04-11,13:20,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT85,2018-04-12,09:00,Scontro frontale laterale,Mancata precedenza,,,,1,,0
 MT86,2018-04-14,18:00,Tamponamento,Distanza sicurezza,,,,1,,0
 MT87,2018-04-16,08:55,Scontro frontale laterale,Mancata precedenza,,,,0,,0
-MT88,2018-04-16,20:05,Scontro frontale laterale,Velocit‡,,,,0,,0
+MT88,2018-04-16,20:05,Scontro frontale laterale,Velocit√†,,,,0,,0
 MT89,2018-04-17,12:15,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT90,2018-04-17,15:15,Scontro frontale laterale,Mancata precedenza,,,,3,,0
 MT91,2018-04-18,14:15,Scontro frontale laterale,Distanza sicurezza,,,,0,,0
 MT92,2018-04-18,19:30,Investimento di pedone,Mancata precedenza,,,,1,,0
-MT93,2018-04-19,15:30,Scontro frontale laterale,Velocit‡,,,,0,,0
+MT93,2018-04-19,15:30,Scontro frontale laterale,Velocit√†,,,,0,,0
 MT94,2018-04-20,08:25,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT95,2018-04-21,19:15,Scontro frontale laterale,Mancata precedenza,,,,1,,0
-MT96,2018-04-22,09:30,Scontro frontale laterale,Velocit‡,,,,2,,0
+MT96,2018-04-22,09:30,Scontro frontale laterale,Velocit√†,,,,2,,0
 MT97,2018-04-23,14:25,Scontro frontale laterale,Mancata precedenza,,,,1,,0
 MT98,2018-04-23,17:05,Tamponamento,Distanza sicurezza,,,,0,,0
 MT99,2018-04-24,17:20,Tamponamento,Distrazione,,,,0,,0
 MT100,2018-04-27,09:50,Scontro frontale laterale,Mancata precedenza,,,,0,,0
-MT101,2018-04-27,13:15,Fuoriuscita sede stradale,Velocit‡,,,,0,,0
+MT101,2018-04-27,13:15,Fuoriuscita sede stradale,Velocit√†,,,,0,,0
 MT102,2018-04-28,11:00,Scontro frontale laterale,Distrazione,,,,0,,0
 MT103,2018-04-28,18:00,Tamponamento,Distrazione,,,,0,,0
 MT104,2018-04-30,11:05,Tamponamento,Distrazione,,,,0,,0
@@ -144,22 +144,22 @@ MT141,2018-06-14,07:30,Tamponamento,Distanza sicurezza,,,,0,,0
 MT142,2018-06-14,20:35,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT143,2018-06-15,10:15,Tamponamento,Distanza sicurezza,,,,1,,0
 MT144,2018-06-15,13:40,Tamponamento,Distrazione,,,,0,,0
-MT145,2018-06-15,20:10,Investimento di pedone,Velocit‡,,,,1,,0
-MT146,2018-06-17,09:35,Scontro frontale laterale,Velocit‡,,,,1,,0
+MT145,2018-06-15,20:10,Investimento di pedone,Velocit√†,,,,1,,0
+MT146,2018-06-17,09:35,Scontro frontale laterale,Velocit√†,,,,1,,0
 MT147,2018-06-18,11:20,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT148,2018-06-20,07:55,Scontro frontale,Contromano,,,,1,,0
-MT149,2018-06-21,10:40,Tamponamento,Velocit‡,,,,1,,0
+MT149,2018-06-21,10:40,Tamponamento,Velocit√†,,,,1,,0
 MT150,2018-06-22,12:45,Scontro frontale laterale,Mancata precedenza,,,,1,,0
-MT151,2018-06-22,19:30,Tamponamento,Velocit‡,,,,0,,0
+MT151,2018-06-22,19:30,Tamponamento,Velocit√†,,,,0,,0
 MT152,2018-06-23,12:10,Scontro frontale laterale,Mancata precedenza,,,,2,,0
 MT153,2018-06-25,08:30,Tamponamento,Distanza sicurezza,,,,0,,0
 MT154,2018-06-27,11:20,Investimento di pedone,Mancata precedenza,,,,0,,0
 MT155,2018-06-28,13:50,Scontro frontale laterale,Mancata precedenza,,,,1,,0
 MT156,2018-06-29,10:12,Scontro frontale laterale,Mancata precedenza,,,,1,,0
 MT157,2018-07-04,13:15,Tamponamento,Distrazione,,,,0,,0
-MT158,2018-07-04,17:25,Scontro frontale laterale,Velocit‡,,,,0,,0
-MT159,2018-07-05,07:50,Fuoriuscita sede stradale,Velocit‡,,,,1,,0
-MT160,2018-07-05,12:45,Fuoriuscita sede stradale,Velocit‡,,,,1,,0
+MT158,2018-07-04,17:25,Scontro frontale laterale,Velocit√†,,,,0,,0
+MT159,2018-07-05,07:50,Fuoriuscita sede stradale,Velocit√†,,,,1,,0
+MT160,2018-07-05,12:45,Fuoriuscita sede stradale,Velocit√†,,,,1,,0
 MT161,2018-07-05,17:20,Scontro frontale laterale,Mancata precedenza,,,,2,,0
 MT162,2018-07-06,09:35,Fuoriuscita sede stradale,Altro,,,,2,,0
 MT163,2018-07-06,17:15,Tamponamento,Distanza sicurezza,,,,0,,0
@@ -199,9 +199,9 @@ MT196,2018-08-17,14:15,Tamponamento,Distrazione,,,,0,,0
 MT197,2018-08-18,20:25,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT198,2018-08-20,09:15,Tamponamento,Distanza sicurezza,,,,2,,0
 MT199,2018-08-20,21:25,Tamponamento,Distanza sicurezza,,,,0,,0
-MT200,2018-08-21,17:45,Fuoriuscita sede stradale,Velocit‡,,,,1,,0
+MT200,2018-08-21,17:45,Fuoriuscita sede stradale,Velocit√†,,,,1,,0
 MT201,2018-08-23,10:30,Tamponamento,Distanza sicurezza,,,,0,,0
-MT202,2018-08-25,19:45,Fuoriuscita sede stradale,Velocit‡,,,,1,,0
+MT202,2018-08-25,19:45,Fuoriuscita sede stradale,Velocit√†,,,,1,,0
 MT203,2018-08-29,12:50,Urto veicolo in sosta,Distrazione,,,,0,,0
 MT204,2018-08-29,20:20,Fuoriuscita sede stradale,Distrazione,,,,2,,0
 MT205,2018-08-30,10:10,Fuoriuscita sede stradale,Altro,,,,0,,0
@@ -234,7 +234,7 @@ MT231,2018-09-27,11:30,Scontro frontale laterale,Mano da tenere,,,,0,,0
 MT232,2018-09-27,18:30,Tamponamento,Distrazione,,,,0,,0
 MT233,2018-09-28,14:30,Scontro frontale laterale,Mancata precedenza,,,,1,,0
 MT234,2018-10-01,10:00,Tamponamento,Distrazione,,,,0,,0
-MT235,2018-10-05,07:15,Fuoriuscita sede stradale,Velocit‡,,,,1,,0
+MT235,2018-10-05,07:15,Fuoriuscita sede stradale,Velocit√†,,,,1,,0
 MT236,2018-10-06,12:45,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT237,2018-10-06,20:40,Tamponamento,Stato di ebbrezza,,,,0,,0
 MT238,2018-10-07,11:00,Scontro frontale laterale,Mancata precedenza,,,,2,,0
@@ -245,7 +245,7 @@ MT242,2018-10-10,11:30,Tamponamento,Distrazione,,,,0,,0
 MT243,2018-10-10,14:00,Tamponamento,Improvviso malore,,,,0,,0
 MT244,2018-10-10,16:00,Scontro frontale laterale,Mancata precedenza,,,,2,,0
 MT245,2018-10-12,09:15,Tamponamento,Distrazione,,,,0,,0
-MT246,2018-10-12,11:20,Fuoriuscita sede stradale,Velocit‡,,,,1,,0
+MT246,2018-10-12,11:20,Fuoriuscita sede stradale,Velocit√†,,,,1,,0
 MT247,2018-10-16,15:30,Scontro frontale laterale,Mano da tenere,,,,0,,0
 MT248,2018-10-20,17:30,Scontro frontale laterale,Mancata precedenza,,,,2,,0
 MT249,2018-10-21,09:25,Tamponamento,Distanza sicurezza,,,,1,,0
@@ -265,9 +265,9 @@ MT262,2018-11-07,12:05,Fuoriuscita sede stradale,Altro,,,,0,,0
 MT263,2018-11-09,13:00,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT264,2018-11-10,17:45,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT265,2018-11-12,14:23,Altro,Anomalie Strada,,,,0,,0
-MT266,2018-11-13,11:50,Tamponamento,Velocit‡,,,,0,,0
+MT266,2018-11-13,11:50,Tamponamento,Velocit√†,,,,0,,0
 MT267,2018-11-14,10:50,Scontro frontale laterale,Mancata precedenza,,,,0,,0
-MT268,2018-11-16,18:30,Scontro frontale laterale,Velocit‡,,,,0,,0
+MT268,2018-11-16,18:30,Scontro frontale laterale,Velocit√†,,,,0,,0
 MT269,2018-11-17,14:10,Scontro frontale laterale,Mancata precedenza,,,,1,,0
 MT270,2018-11-20,11:15,Tamponamento,Distrazione,,,,0,,0
 MT271,2018-11-21,08:25,Scontro frontale laterale,Mancata precedenza,,,,1,,0
@@ -276,10 +276,10 @@ MT273,2018-11-23,13:00,Scontro frontale laterale,Mancata precedenza,,,,1,,0
 MT274,2018-11-23,17:40,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT275,2018-11-24,09:15,Scontro frontale,Contromano,,,,2,,0
 MT276,2018-11-24,19:35,Investimento di pedone,Mancata precedenza,,,,1,,0
-MT277,2018-11-25,12:20,Scontro frontale laterale,Velocit‡,,,,1,,0
+MT277,2018-11-25,12:20,Scontro frontale laterale,Velocit√†,,,,1,,0
 MT278,2018-11-25,19:00,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT279,2018-11-26,09:30,Tamponamento,Distrazione,,,,0,,0
-MT280,2018-11-26,15:05,Tamponamento,Velocit‡,,,,2,,0
+MT280,2018-11-26,15:05,Tamponamento,Velocit√†,,,,2,,0
 MT281,2018-11-27,16:00,Scontro frontale laterale,Mancata precedenza,,,,1,,0
 MT282,2018-11-28,09:15,Investimento di pedone,Distrazione,,,,1,,0
 MT283,2018-11-28,20:05,Investimento di pedone,Mancata precedenza,,,,1,,0
@@ -287,24 +287,24 @@ MT284,2018-11-30,08:20,Tamponamento,Distanza sicurezza,,,,2,,0
 MT285,2018-11-30,16:20,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT286,2018-12-01,11:45,Tamponamento,Distrazione,,,,0,,0
 MT287,2018-12-01,11:45,Tamponamento,Distanza sicurezza,,,,0,,0
-MT288,2018-12-01,15:10,Scontro frontale laterale,Velocit‡,,,,0,,0
-MT289,2018-12-01,17:15,Investimento di pedone,Velocit‡,,,,1,,0
+MT288,2018-12-01,15:10,Scontro frontale laterale,Velocit√†,,,,0,,0
+MT289,2018-12-01,17:15,Investimento di pedone,Velocit√†,,,,1,,0
 MT290,2018-12-02,11:05,Urto veicolo in sosta,Mano da tenere,,,,0,,0
 MT291,2018-12-03,08:20,Scontro frontale laterale,Mancata precedenza,,,,1,,0
 MT292,2018-12-03,17:10,Tamponamento,Distrazione,,,,0,,0
 MT293,2018-12-04,09:45,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT294,2018-12-04,16:00,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT295,2018-12-04,19:00,Scontro frontale laterale,Mano da tenere,,,,0,,0
-MT296,2018-12-06,18:05,Tamponamento,Velocit‡,,,,0,,0
+MT296,2018-12-06,18:05,Tamponamento,Velocit√†,,,,0,,0
 MT297,2018-12-08,10:10,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT298,2018-12-09,18:00,Tamponamento,Distrazione,,,,0,,0
 MT299,2018-12-10,11:35,Scontro frontale laterale,Mancata precedenza,,,,0,,0
-MT300,2018-12-01,19:15,Urto veicolo in sosta,Velocit‡,,,,0,,0
-MT301,2018-12-11,10:00,Altro,Velocit‡,,,,1,,0
+MT300,2018-12-01,19:15,Urto veicolo in sosta,Velocit√†,,,,0,,0
+MT301,2018-12-11,10:00,Altro,Velocit√†,,,,1,,0
 MT302,2018-12-11,12:50,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT303,2018-12-13,07:50,Scontro frontale,Mancata precedenza,,,,1,,0
 MT304,2018-12-13,16:30,Scontro frontale laterale,Mancata precedenza,,,,0,,0
-MT305,2018-12-15,10:45,Tamponamento,Velocit‡,,,,0,,0
+MT305,2018-12-15,10:45,Tamponamento,Velocit√†,,,,0,,0
 MT306,2018-12-15,19:35,Scontro frontale laterale,Mancata precedenza,,,,2,,0
 MT307,2018-12-16,09:15,Scontro frontale laterale,Mancata precedenza,,,,2,,0
 MT308,2018-12-16,18:05,Tamponamento,Distrazione,,,,0,,0
@@ -314,16 +314,16 @@ MT311,2018-12-19,07:55,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT312,2018-12-20,08:30,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT313,2018-12-20,20:05,Tamponamento,Distrazione,,,,0,,0
 MT314,2018-12-21,09:00,Scontro frontale laterale,Mancata precedenza,,,,2,,0
-MT315,2018-12-22,08:45,Fuoriuscita sede stradale,Velocit‡,,,,1,,0
+MT315,2018-12-22,08:45,Fuoriuscita sede stradale,Velocit√†,,,,1,,0
 MT316,2018-12-22,09:30,Scontro frontale laterale,Mancata precedenza,,,,1,,0
 MT317,2018-12-22,20:30,Tamponamento,Distrazione,,,,0,,0
 MT318,2018-12-24,09:25,Tamponamento,Distrazione,,,,0,,0
-MT319,2018-12-24,16:45,Tamponamento,Velocit‡,,,,0,,0
-MT320,2018-12-27,08:45,Urto veicolo in sosta,Velocit‡,,,,0,,0
+MT319,2018-12-24,16:45,Tamponamento,Velocit√†,,,,0,,0
+MT320,2018-12-27,08:45,Urto veicolo in sosta,Velocit√†,,,,0,,0
 MT321,2018-12-28,11:00,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT322,2018-12-28,17:30,Fuoriuscita sede stradale,Guasto meccanico,,,,0,,0
 MT323,2018-12-30,10:30,Scontro frontale laterale,Mancata precedenza,,,,0,,0
 MT324,2019-12-30,16:15,Investimento di pedone,Mancata precedenza,,,,1,,0
 MT325,2018-12-30,21:15,Urto veicolo in sosta,Guasto meccanico,,,,0,,0
-MT326,2018-12-31,00:00,Tamponamento,Velocit‡,,,,2,,0
+MT326,2018-12-31,00:00,Tamponamento,Velocit√†,,,,2,,0
 MT327,2018-12-31,20:10,Tamponamento,Distanza sicurezza,,,,0,,0
