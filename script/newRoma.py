@@ -25,7 +25,7 @@ for nomeMese in mesi:
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
                 #print(f"Scrivo la riga: {riga[0],riga[28]}")
-                writer.writerow([riga[0],riga[28],None,None]) 
+                writer.writerow([riga[0],None,None,riga[28]]) 
 
         print("Scrivo le persone di " +nomeMese)
         with open('../datiElaborati/persona/newRomaPersona.csv', fileMode, newline="", encoding="UTF-8") as newRMPersona:

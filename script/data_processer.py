@@ -14,41 +14,15 @@ sas = Namespace("http://www.standardaccidentstructure.org/ontology/")
 base_uri = "http://www.standardaccidentstructure.org/resource/"
 g.bind("sas", sas)
 
-geo = Namespace("http://www.w3.org/2003/01/geo/wgs84_pos#")
-g.bind('geo', geo)
-
 sinistri = list()
 luoghi = list()
+veicoli = list()
+persone = list()
 
-# Dataset sinistri: elaborazione e caricamento su un dizionario
+personeCopia = list()
 
-print("\n\nCreo le istanze di sinistro")
-with open('../datiElaborati/sinistri.csv') as sinistro:
-        lettore = csv.DictReader(sinistro)
-        for riga in lettore:
-                uri_sinistro = base_uri + 'sinistro/' + riga['ID']
-                #print("Creo l'istanza sinistro: " + uri_sinistro)
-                classeSinistro = sas.Sinistro
-                g.add([URIRef(uri_sinistro), RDF.type, classeSinistro])         #Creo l'istanza della classe
-
-                #Popolo l'istanza con gli attributi
-                g.add([URIRef(uri_sinistro), sas.data, Literal(riga['Data'])])
-                g.add([URIRef(uri_sinistro), sas.ora, Literal(riga['Ora'])])
-                g.add([URIRef(uri_sinistro), sas.tipo, Literal(riga['Tipo'])])
-                g.add([URIRef(uri_sinistro), sas.causa, Literal(riga['Causa'])])
-                g.add([URIRef(uri_sinistro), sas.meteo, Literal(riga['Meteo'])])
-                g.add([URIRef(uri_sinistro), sas.visibilita, Literal(riga['Visibilita'])])
-                g.add([URIRef(uri_sinistro), sas.illesa, Literal(riga['N.Illesi'])])
-                g.add([URIRef(uri_sinistro), sas.ferita, Literal(riga['N.Feriti'])])
-                g.add([URIRef(uri_sinistro), sas.prognosi_riservata, Literal(riga['N.PrognosiRiservata'])])
-                g.add([URIRef(uri_sinistro), sas.deceduta, Literal(riga['N.Deceduti'])])
-
-                sinistro = dict()
-                sinistro['uri'] = uri_sinistro
-                sinistri.append(sinistro)
-
-print("Creo le istanze di luogo")
-#Dataset luogo: elaborazione e caricamento su un dizionario
+#Dataset luoghi: elaborazione e caricamento su un dizionario
+print("\n\nCreo le istanze di luogo")
 with open('../datiElaborati/luoghi.csv') as luogo:
         lettore = csv.DictReader(luogo)
         for riga in lettore:
@@ -73,33 +47,96 @@ with open('../datiElaborati/luoghi.csv') as luogo:
                 g.add([URIRef(uri_luogo), sas.coordinate, Literal(riga['Coordinate'])])
 
 
+#Dataset veicoli: elaborazione e caricamento su un dizionario
+print("Creo le istanze di veicolo")
+with open('../datiElaborati/veicoli.csv') as veicolo:
+        lettore = csv.DictReader(veicolo)
+        count = 0 
+        for riga in lettore:
 
+                #Alcuni ID sono duplicati perche si riferiscono allo stesso sinistri quindi aggiungo un numero univoco
+                uri_veicolo = base_uri + 'veicolo/' + str(count) + "-" + riga['ID']  
+                count = count + 1
+                #print("\rCreo l'istanza veicolo: " + uri_veicolo)
+                classeVeicolo = sas.Veicolo
+                g.add([URIRef(uri_veicolo), RDF.type, classeVeicolo])       #Creo l'istanza della classe
 
+                #Popolo l'istanza con gli attributi
+                g.add([URIRef(uri_veicolo), sas.modello, Literal(riga['Modello'])])
+                g.add([URIRef(uri_veicolo), sas.targa, Literal(riga['Targa'])])
+                g.add([URIRef(uri_veicolo), sas.tipo_veicolo, Literal(riga['Tipo veicolo'])])
 
-"""
-        g.add([URIRef(uri_parafarmacia), RDF.type, classeParafarmacia])
-        g.add([URIRef(uri_parafarmacia), ppa.denominazione, Literal(row['DENOMINAZIONESITO'])])
+#Dataset persone: elaborazione e caricamento su un dizionario
+print("Creo le istanze di persona")
+arrayPersona = []
+with open('../datiElaborati/persone.csv') as persona:
+        lettore = csv.DictReader(persona)
+        count = 0 
+        for riga in lettore:
 
-        posizioneGPS = BNode()
-        g.add([posizioneGPS, RDF.type, URIRef(geo.point)])
-        g.add([posizioneGPS, geo.lat, Literal(row['LAT'])])
-        g.add([posizioneGPS, geo.long, Literal(row['LNG'])])
-        g.add([URIRef(uri_parafarmacia), ppa.posizioneGPS, posizioneGPS])
+                #Alcuni ID sono duplicati perche si riferiscono allo stesso sinistri quindi aggiungo un numero univoco
+                uri_persona = base_uri + 'persona/' + str(count) + "-" + riga['ID']  
+                count = count + 1
+                #print("\rCreo l'istanza persona: " + uri_persona)
+                classePersona = sas.Persona
+                g.add([URIRef(uri_persona), RDF.type, classePersona])       #Creo l'istanza della classe
 
-        g.add([URIRef(uri_parafarmacia), ppa.indirizzo, Literal(row['INDIRIZZO'])])
-        g.add([URIRef(uri_parafarmacia), ppa.CAP, Literal(row['CAP'])])
-        g.add([URIRef(uri_parafarmacia), ppa.citta, URIRef(uri_palermo)])
+                #Popolo l'istanza con gli attributi
+                g.add([URIRef(uri_persona), sas.tipo_persona, Literal(riga['TipoPersona'])])
+                g.add([URIRef(uri_persona), sas.sesso, Literal(riga['Sesso'])])
+                g.add([URIRef(uri_persona), sas.tipo_lesione, Literal(riga['TipoLesione'])])
 
-        dataUltimoAggiornamento = row['ULTIMOAGGIORNAMENTO']+'-01'
-        g.add([URIRef(uri_parafarmacia), ppa.ultimoAggiornamento, Literal(dataUltimoAggiornamento)])
+                #Collego la persona al veicolo che stava conducendo
+                uri_veicolo = base_uri + 'veicolo/' + str(count) + "-" + riga['ID']  
+                g.add([URIRef(uri_persona), sas.conduce, URIRef(uri_veicolo)])
 
+                arrayPersona.append(uri_persona)
 
-        parafarmacia = dict()
-        parafarmacia['uri'] = uri_parafarmacia
-        parafarmacia['lat'] = row['LAT']
-        parafarmacia['long'] = row['LNG']
-        parafarmacie.append(parafarmacia)
-        """
+#print(arrayPersona)
+
+# Dataset sinistri: elaborazione e caricamento su un dizionario
+print("Creo le istanze di sinistro")
+with open('../datiElaborati/sinistri.csv') as sinistro:
+        lettore = csv.DictReader(sinistro)
+        for riga in lettore:
+                uri_sinistro = base_uri + 'sinistro/' + riga['ID']
+                #print("Creo l'istanza sinistro: " + uri_sinistro)
+                classeSinistro = sas.Sinistro
+                g.add([URIRef(uri_sinistro), RDF.type, classeSinistro])         #Creo l'istanza della classe
+
+                #Popolo l'istanza con gli attributi
+                g.add([URIRef(uri_sinistro), sas.data, Literal(riga['Data'])])
+                g.add([URIRef(uri_sinistro), sas.ora, Literal(riga['Ora'])])
+                g.add([URIRef(uri_sinistro), sas.tipo, Literal(riga['Tipo'])])
+                g.add([URIRef(uri_sinistro), sas.causa, Literal(riga['Causa'])])
+                g.add([URIRef(uri_sinistro), sas.meteo, Literal(riga['Meteo'])])
+                g.add([URIRef(uri_sinistro), sas.visibilita, Literal(riga['Visibilita'])])
+                g.add([URIRef(uri_sinistro), sas.illesa, Literal(riga['N.Illesi'])])
+                g.add([URIRef(uri_sinistro), sas.ferita, Literal(riga['N.Feriti'])])
+                g.add([URIRef(uri_sinistro), sas.prognosi_riservata, Literal(riga['N.PrognosiRiservata'])])
+                g.add([URIRef(uri_sinistro), sas.deceduta, Literal(riga['N.Deceduti'])])
+
+                #Collego il sinistro ad un luogo definito in precedenza
+                uri_luogo = base_uri + 'luogo/' + riga['ID']
+                g.add([URIRef(uri_sinistro), sas.localizzato, URIRef(uri_luogo)])
+
+                #Collego il sinistro alle persone coinvolte
+                for persona in arrayPersona:                       
+                        if persona.split("-")[1] == riga['ID']:
+                                print("##########################################################################")
+                                print("Collego la persona: " + persona + " al sinistro " + riga['ID'])
+                                #g.add([URIRef(uri_sinistro), sas.coinvolge, URIRef(persona['uri'])])
+                                print("####################### Cancello ###############################")
+                                print(persona)
+                                arrayPersona.remove(persona)
+                                print("####################### Array pulito ###############################")
+                                print(arrayPersona)
+
+                
+
+"""           
+#Serializzazione dell'ontologia e salvataggio
 print("Serializzo l'ontologia. Attendi...")
 g.serialize(destination='../standardaccidentstructure.ttl', format='turtle')
 print("\nOntologia creata con SUCCESSO\n")
+"""

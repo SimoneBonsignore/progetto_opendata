@@ -11,8 +11,8 @@
 @base <http://www.standartaccidentstructure.org/ontology> .
 
 <http://www.standartaccidentstructure.org/ontology> rdf:type owl:Ontology ;
-                                                      rdfs:comment "Un'ontologia per definire un sinistro stradale"@it ;
-                                                      rdfs:label "Standard Accident Structure"^^xsd:string .
+                                                     rdfs:comment "Un'ontologia per definire un sinistro stradale"@it ;
+                                                     rdfs:label "Standard Accident Structure"^^xsd:string .
 
 #################################################################
 #    Annotation properties
@@ -53,37 +53,37 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://www.standartaccidentstructure.org/ontology#coinvolge
-<http://www.standartaccidentstructure.org/ontology#coinvolge> rdf:type owl:ObjectProperty ;
-                                                         rdfs:domain <http://www.standartaccidentstructure.org/ontology#Sinistro> ;
-                                                         rdfs:range <http://www.standartaccidentstructure.org/ontology#Persona> ,
-                                                                    <http://www.standartaccidentstructure.org/ontology#Veicolo> ;
-                                                         rdfs:comment "Relazione che lega Sinistro con Persona e Veicolo"@it ;
-                                                         rdfs:label "coinvolge"@it .
+:coinvolge rdf:type owl:ObjectProperty ;
+           rdfs:domain :Sinistro ;
+           rdfs:range :Persona ,
+                      :Veicolo ;
+           rdfs:comment "Relazione che lega Sinistro con Persona e Veicolo"@it ;
+           rdfs:label "coinvolge"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#condotto
-<http://www.standartaccidentstructure.org/ontology#condotto> rdf:type owl:ObjectProperty ;
-                                                        owl:inverseOf <http://www.standartaccidentstructure.org/ontology#conduce> ;
-                                                        rdfs:domain <http://www.standartaccidentstructure.org/ontology#Veicolo> ;
-                                                        rdfs:range <http://www.standartaccidentstructure.org/ontology#Persona> ;
-                                                        rdfs:comment "Relazione che lega Veicolo a Persona"@it ;
-                                                        rdfs:label "condotto"@it .
+:condotto rdf:type owl:ObjectProperty ;
+          owl:inverseOf :conduce ;
+          rdfs:domain :Veicolo ;
+          rdfs:range :Persona ;
+          rdfs:comment "Relazione che lega Veicolo a Persona"@it ;
+          rdfs:label "condotto"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#conduce
-<http://www.standartaccidentstructure.org/ontology#conduce> rdf:type owl:ObjectProperty ;
-                                                       rdfs:domain <http://www.standartaccidentstructure.org/ontology#Persona> ;
-                                                       rdfs:range <http://www.standartaccidentstructure.org/ontology#Veicolo> ;
-                                                       rdfs:comment "Relazione che lega Persona con Veicolo"@it ;
-                                                       rdfs:label "conduce"@it .
+:conduce rdf:type owl:ObjectProperty ;
+         rdfs:domain :Persona ;
+         rdfs:range :Veicolo ;
+         rdfs:comment "Relazione che lega Persona con Veicolo"@it ;
+         rdfs:label "conduce"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#localizzato
-<http://www.standartaccidentstructure.org/ontology#localizzato> rdf:type owl:ObjectProperty ;
-                                                           rdfs:domain <http://www.standartaccidentstructure.org/ontology#Sinistro> ;
-                                                           rdfs:range <http://www.standartaccidentstructure.org/ontology#Luogo> ;
-                                                           rdfs:comment "Relazione che lega Sinistro con Luogo"@it ;
-                                                           rdfs:label "localizzato"@it .
+:localizzato rdf:type owl:ObjectProperty ;
+             rdfs:domain :Sinistro ;
+             rdfs:range :Luogo ;
+             rdfs:comment "Relazione che lega Sinistro con Luogo"@it ;
+             rdfs:label "localizzato"@it .
 
 
 #################################################################
@@ -91,299 +91,317 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 ###  http://www.standartaccidentstructure.org/ontology#ID
-<http://www.standartaccidentstructure.org/ontology#ID> rdf:type owl:DatatypeProperty ;
-                                                  rdfs:domain <http://www.standartaccidentstructure.org/ontology#Sinistro> ;
-                                                  rdfs:range xsd:string ;
-                                                  rdfs:comment "Identificativo univoco del sinistro"@it ;
-                                                  rdfs:label "ID"@it .
+:ID rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Sinistro ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Identificativo univoco del sinistro"@it ;
+    rdfs:label "ID"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#causa
-<http://www.standartaccidentstructure.org/ontology#causa> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain <http://www.standartaccidentstructure.org/ontology#Sinistro> ;
-                                                     rdfs:range xsd:string ;
-                                                     rdfs:comment "Per quale motivo è avvenuto il sinistro stradale"@it ;
-                                                     rdfs:label "causa"@it .
+:causa rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Sinistro ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Per quale motivo è avvenuto il sinistro stradale"@it ;
+       rdfs:label "causa"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#città
-<http://www.standartaccidentstructure.org/ontology#città> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain <http://www.standartaccidentstructure.org/ontology#Luogo> ;
-                                                     rdfs:range xsd:string ;
-                                                     rdfs:comment "Città nella quale è avvenuto il sinistro"@it ;
-                                                     rdfs:label "città"@it .
+:città rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Luogo ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Città nella quale è avvenuto il sinistro"@it ;
+       rdfs:label "città"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#coordinate
-<http://www.standartaccidentstructure.org/ontology#coordinate> rdf:type owl:DatatypeProperty ;
-                                                          rdfs:domain <http://www.standartaccidentstructure.org/ontology#Luogo> ;
-                                                          rdfs:comment "Coordinate del luogo del sinistro, utili per essere utilizzate da software di mappamento"@it ;
-                                                          rdfs:label "coordinate"@it .
+:coordinate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Luogo ;
+            rdfs:comment "Coordinate del luogo del sinistro, utili per essere utilizzate da software di mappamento"@it ;
+            rdfs:label "coordinate"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#data
-<http://www.standartaccidentstructure.org/ontology#data> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain <http://www.standartaccidentstructure.org/ontology#Sinistro> ;
-                                                    rdfs:range xsd:date ;
-                                                    rdfs:comment "Giorno nella quale è avvenuto il sinistro"@it ;
-                                                    rdfs:label "data"@it .
+:data rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Sinistro ;
+      rdfs:range xsd:date ;
+      rdfs:comment "Giorno nella quale è avvenuto il sinistro"@it ;
+      rdfs:label "data"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#deceduta
-<http://www.standartaccidentstructure.org/ontology#deceduta> rdf:type owl:DatatypeProperty ;
-                                                        rdfs:domain <http://www.standartaccidentstructure.org/ontology#Persona> ;
-                                                        rdfs:range xsd:boolean ;
-                                                        rdfs:comment "Indica se la persona coinvolta nel sinistro è deceduta"@it ;
-                                                        rdfs:label "deceduta"@it .
+:deceduta rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Persona ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "Indica se la persona coinvolta nel sinistro è deceduta"@it ;
+          rdfs:label "deceduta"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#ferita
-<http://www.standartaccidentstructure.org/ontology#ferita> rdf:type owl:DatatypeProperty ;
-                                                      rdfs:domain <http://www.standartaccidentstructure.org/ontology#Persona> ;
-                                                      rdfs:range xsd:boolean ;
-                                                      rdfs:comment "Indica se la persona coinvolta nel sinistro è rimasta lievementa ferita"@it ;
-                                                      rdfs:label "ferita"@it .
+:ferita rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Persona ;
+        rdfs:range xsd:boolean ;
+        rdfs:comment "Indica se la persona coinvolta nel sinistro è rimasta lievementa ferita"@it ;
+        rdfs:label "ferita"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#fondo_stradale
-<http://www.standartaccidentstructure.org/ontology#fondo_stradale> rdf:type owl:DatatypeProperty ;
-                                                              rdfs:domain <http://www.standartaccidentstructure.org/ontology#Luogo> ;
-                                                              rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                           owl:oneOf [ rdf:type rdf:List ;
-                                                                                       rdf:first "asciutto" ;
-                                                                                       rdf:rest [ rdf:type rdf:List ;
-                                                                                                  rdf:first "bagnato" ;
-                                                                                                  rdf:rest [ rdf:type rdf:List ;
-                                                                                                             rdf:first "umido" ;
-                                                                                                             rdf:rest [ rdf:type rdf:List ;
-                                                                                                                        rdf:first "viscido da liquido oleoso" ;
-                                                                                                                        rdf:rest rdf:nil
-                                                                                                                      ]
-                                                                                                           ]
-                                                                                                ]
-                                                                                     ]
-                                                                         ] ;
-                                                              rdfs:comment "Condizione del fondo stradale sulla quale è avvenuto il sinistro"@it ;
-                                                              rdfs:label "fondo stradale"@it .
+:fondo_stradale rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Luogo ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:oneOf [ rdf:type rdf:List ;
+                                         rdf:first "asciutto" ;
+                                         rdf:rest [ rdf:type rdf:List ;
+                                                    rdf:first "bagnato" ;
+                                                    rdf:rest [ rdf:type rdf:List ;
+                                                               rdf:first "umido" ;
+                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                          rdf:first "viscido da liquido oleoso" ;
+                                                                          rdf:rest rdf:nil
+                                                                        ]
+                                                             ]
+                                                  ]
+                                       ]
+                           ] ;
+                rdfs:comment "Condizione del fondo stradale sulla quale è avvenuto il sinistro"@it ;
+                rdfs:label "fondo stradale"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#illesa
-<http://www.standartaccidentstructure.org/ontology#illesa> rdf:type owl:DatatypeProperty ;
-                                                      rdfs:domain <http://www.standartaccidentstructure.org/ontology#Persona> ;
-                                                      rdfs:range xsd:boolean ;
-                                                      rdfs:comment "Indica se la persona coinvolta nel sinistro è rimasta illesa"@it ;
-                                                      rdfs:label "illesa"@it .
+:illesa rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Persona ;
+        rdfs:range xsd:boolean ;
+        rdfs:comment "Indica se la persona coinvolta nel sinistro è rimasta illesa"@it ;
+        rdfs:label "illesa"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#illuminazione
-<http://www.standartaccidentstructure.org/ontology#illuminazione> rdf:type owl:DatatypeProperty ;
-                                                             rdfs:domain <http://www.standartaccidentstructure.org/ontology#Luogo> ;
-                                                             rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                          owl:oneOf [ rdf:type rdf:List ;
-                                                                                      rdf:first "assente" ;
-                                                                                      rdf:rest [ rdf:type rdf:List ;
-                                                                                                 rdf:first "buona" ;
-                                                                                                 rdf:rest [ rdf:type rdf:List ;
-                                                                                                            rdf:first "ore diurne" ;
-                                                                                                            rdf:rest [ rdf:type rdf:List ;
-                                                                                                                       rdf:first "sufficiente" ;
-                                                                                                                       rdf:rest rdf:nil
-                                                                                                                     ]
-                                                                                                          ]
-                                                                                               ]
-                                                                                    ]
-                                                                        ] ;
-                                                             rdfs:comment "Illuminazione stradale presente nel luogo del sinistro"@it ;
-                                                             rdfs:label "illuminazione"@it .
+:illuminazione rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Luogo ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:oneOf [ rdf:type rdf:List ;
+                                        rdf:first "assente" ;
+                                        rdf:rest [ rdf:type rdf:List ;
+                                                   rdf:first "buona" ;
+                                                   rdf:rest [ rdf:type rdf:List ;
+                                                              rdf:first "ore diurne" ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                         rdf:first "sufficiente" ;
+                                                                         rdf:rest rdf:nil
+                                                                       ]
+                                                            ]
+                                                 ]
+                                      ]
+                          ] ;
+               rdfs:comment "Illuminazione stradale presente nel luogo del sinistro"@it ;
+               rdfs:label "illuminazione"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#meteo
-<http://www.standartaccidentstructure.org/ontology#meteo> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain <http://www.standartaccidentstructure.org/ontology#Sinistro> ;
-                                                     rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                  owl:oneOf [ rdf:type rdf:List ;
-                                                                              rdf:first "grandine" ;
-                                                                              rdf:rest [ rdf:type rdf:List ;
-                                                                                         rdf:first "neve" ;
-                                                                                         rdf:rest [ rdf:type rdf:List ;
-                                                                                                    rdf:first "nuvoloso" ;
-                                                                                                    rdf:rest [ rdf:type rdf:List ;
-                                                                                                               rdf:first "pioggia" ;
-                                                                                                               rdf:rest [ rdf:type rdf:List ;
-                                                                                                                          rdf:first "poco nuvoloso" ;
-                                                                                                                          rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                     rdf:first "sereno" ;
-                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                rdf:first "temporale" ;
-                                                                                                                                                rdf:rest rdf:nil
-                                                                                                                                              ]
-                                                                                                                                   ]
-                                                                                                                        ]
-                                                                                                             ]
-                                                                                                  ]
-                                                                                       ]
-                                                                            ]
-                                                                ] ;
-                                                     rdfs:comment "Condizione atmosferica in atto durante il sinistro"@it ;
-                                                     rdfs:label "meteo"@it .
+:meteo rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Sinistro ;
+       rdfs:range [ rdf:type rdfs:Datatype ;
+                    owl:oneOf [ rdf:type rdf:List ;
+                                rdf:first "grandine" ;
+                                rdf:rest [ rdf:type rdf:List ;
+                                           rdf:first "neve" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "nuvoloso" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "pioggia" ;
+                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                            rdf:first "poco nuvoloso" ;
+                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                       rdf:first "sereno" ;
+                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                  rdf:first "temporale" ;
+                                                                                                  rdf:rest rdf:nil
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ]
+                              ]
+                  ] ;
+       rdfs:comment "Condizione atmosferica in atto durante il sinistro"@it ;
+       rdfs:label "meteo"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#modello
-<http://www.standartaccidentstructure.org/ontology#modello> rdf:type owl:DatatypeProperty ;
-                                                       rdfs:domain <http://www.standartaccidentstructure.org/ontology#Veicolo> ;
-                                                       rdfs:range xsd:string ;
-                                                       rdfs:comment "Modello del veicolo"@it ;
-                                                       rdfs:label "modello"@it .
+:modello rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Veicolo ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Modello del veicolo"@it ;
+         rdfs:label "modello"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#ora
-<http://www.standartaccidentstructure.org/ontology#ora> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain <http://www.standartaccidentstructure.org/ontology#Sinistro> ;
-                                                   rdfs:range xsd:date ;
-                                                   rdfs:comment "Ora nella quale è avvenuto il sinistro"@it ;
-                                                   rdfs:label "ora"@it .
+:ora rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Sinistro ;
+     rdfs:range xsd:date ;
+     rdfs:comment "Ora nella quale è avvenuto il sinistro"@it ;
+     rdfs:label "ora"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#pavimentazione
-<http://www.standartaccidentstructure.org/ontology#pavimentazione> rdf:type owl:DatatypeProperty ;
-                                                              rdfs:domain <http://www.standartaccidentstructure.org/ontology#Luogo> ;
-                                                              rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                           owl:oneOf [ rdf:type rdf:List ;
-                                                                                       rdf:first "acciotolata" ;
-                                                                                       rdf:rest [ rdf:type rdf:List ;
-                                                                                                  rdf:first "asfaltata" ;
-                                                                                                  rdf:rest [ rdf:type rdf:List ;
-                                                                                                             rdf:first "bianca" ;
-                                                                                                             rdf:rest [ rdf:type rdf:List ;
-                                                                                                                        rdf:first "in cubetti di porfido" ;
-                                                                                                                        rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                   rdf:first "lastricata" ;
-                                                                                                                                   rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                              rdf:first "pavé" ;
-                                                                                                                                              rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                         rdf:first "sanpietrini" ;
-                                                                                                                                                         rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                                    rdf:first "selciato" ;
-                                                                                                                                                                    rdf:rest [ rdf:type rdf:List ;
-                                                                                                                                                                               rdf:first "terra" ;
-                                                                                                                                                                               rdf:rest rdf:nil
-                                                                                                                                                                             ]
-                                                                                                                                                                  ]
-                                                                                                                                                       ]
-                                                                                                                                            ]
-                                                                                                                                 ]
-                                                                                                                      ]
-                                                                                                           ]
-                                                                                                ]
-                                                                                     ]
-                                                                         ] ;
-                                                              rdfs:comment "Tipologia di pavimentazione stradale sulla quale è avvenuto il sinistro"@it ;
-                                                              rdfs:label "pavimentazione"@it .
+:pavimentazione rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Luogo ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:oneOf [ rdf:type rdf:List ;
+                                         rdf:first "acciotolata" ;
+                                         rdf:rest [ rdf:type rdf:List ;
+                                                    rdf:first "asfaltata" ;
+                                                    rdf:rest [ rdf:type rdf:List ;
+                                                               rdf:first "bianca" ;
+                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                          rdf:first "in cubetti di porfido" ;
+                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                     rdf:first "lastricata" ;
+                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                rdf:first "pavé" ;
+                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                           rdf:first "sanpietrini" ;
+                                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                                      rdf:first "selciato" ;
+                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                 rdf:first "terra" ;
+                                                                                                                                 rdf:rest rdf:nil
+                                                                                                                               ]
+                                                                                                                    ]
+                                                                                                         ]
+                                                                                              ]
+                                                                                   ]
+                                                                        ]
+                                                             ]
+                                                  ]
+                                       ]
+                           ] ;
+                rdfs:comment "Tipologia di pavimentazione stradale sulla quale è avvenuto il sinistro"@it ;
+                rdfs:label "pavimentazione"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#prognosi_riservata
-<http://www.standartaccidentstructure.org/ontology#prognosi_riservata> rdf:type owl:DatatypeProperty ;
-                                                                  rdfs:domain <http://www.standartaccidentstructure.org/ontology#Persona> ;
-                                                                  rdfs:range xsd:boolean ;
-                                                                  rdfs:comment "Indica se la persona coinvolta nel sinistro è stata ricoverata in prognosi riservata"@it ;
-                                                                  rdfs:label "prognosi riservata"@it .
+:prognosi_riservata rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Persona ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment "Indica se la persona coinvolta nel sinistro è stata ricoverata in prognosi riservata"@it ;
+                    rdfs:label "prognosi riservata"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#sesso
-<http://www.standartaccidentstructure.org/ontology#sesso> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain <http://www.standartaccidentstructure.org/ontology#Persona> ;
-                                                     rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                  owl:oneOf [ rdf:type rdf:List ;
-                                                                              rdf:first "donna" ;
-                                                                              rdf:rest [ rdf:type rdf:List ;
-                                                                                         rdf:first "non rilevato" ;
-                                                                                         rdf:rest [ rdf:type rdf:List ;
-                                                                                                    rdf:first "uomo" ;
-                                                                                                    rdf:rest rdf:nil
-                                                                                                  ]
-                                                                                       ]
-                                                                            ]
-                                                                ] ;
-                                                     rdfs:comment "Sesso della persona coinvolta nel sinistro"@it ;
-                                                     rdfs:label "sesso"@it .
+:sesso rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Persona ;
+       rdfs:range [ rdf:type rdfs:Datatype ;
+                    owl:oneOf [ rdf:type rdf:List ;
+                                rdf:first "donna" ;
+                                rdf:rest [ rdf:type rdf:List ;
+                                           rdf:first "non rilevato" ;
+                                           rdf:rest [ rdf:type rdf:List ;
+                                                      rdf:first "uomo" ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+                              ]
+                  ] ;
+       rdfs:comment "Sesso della persona coinvolta nel sinistro"@it ;
+       rdfs:label "sesso"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#targa
-<http://www.standartaccidentstructure.org/ontology#targa> rdf:type owl:DatatypeProperty ;
-                                                     rdfs:domain <http://www.standartaccidentstructure.org/ontology#Veicolo> ;
-                                                     rdfs:range xsd:string ;
-                                                     rdfs:comment "Targa del veicolo"@it ;
-                                                     rdfs:label "targa"@it .
+:targa rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Veicolo ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Targa del veicolo"@it ;
+       rdfs:label "targa"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#tipo
-<http://www.standartaccidentstructure.org/ontology#tipo> rdf:type owl:DatatypeProperty ;
-                                                    rdfs:domain <http://www.standartaccidentstructure.org/ontology#Sinistro> ;
-                                                    rdfs:range xsd:string ;
-                                                    rdfs:comment "Tipologia di sinistro stradale"@it ;
-                                                    rdfs:label "tipo"@it .
+:tipo rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Sinistro ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Tipologia di sinistro stradale"@it ;
+      rdfs:label "tipo"@it .
+
+
+###  http://www.standartaccidentstructure.org/ontology#tipo_persona
+:tipo_persona rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Persona ;
+              rdfs:range xsd:string ;
+              rdfs:comment """Tipo di persona coinvolta nel sinistro.
+Ad esempio: conducente, passeggero, pedone, ecc..."""@it ;
+              rdfs:label "tipo persona"@it .
+
+
+###  http://www.standartaccidentstructure.org/ontology#tipo_veicolo
+:tipo_veicolo rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Veicolo ;
+              rdfs:range xsd:string ;
+              rdfs:comment """Tipologia di veicolo.
+Ad esempio: auto privata, pubblica, motociclo, ecc..."""@it ;
+              rdfs:label "tipo veicolo"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#via
-<http://www.standartaccidentstructure.org/ontology#via> rdf:type owl:DatatypeProperty ;
-                                                   rdfs:domain <http://www.standartaccidentstructure.org/ontology#Luogo> ;
-                                                   rdfs:range xsd:string ;
-                                                   rdfs:comment "Via nella quale è avvenuto il sinistro"@it ;
-                                                   rdfs:label "via"@it .
+:via rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Luogo ;
+     rdfs:range xsd:string ;
+     rdfs:comment "Via nella quale è avvenuto il sinistro"@it ;
+     rdfs:label "via"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#visibilità
-<http://www.standartaccidentstructure.org/ontology#visibilità> rdf:type owl:DatatypeProperty ;
-                                                          rdfs:domain <http://www.standartaccidentstructure.org/ontology#Sinistro> ;
-                                                          rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                       owl:oneOf [ rdf:type rdf:List ;
-                                                                                   rdf:first "buona" ;
-                                                                                   rdf:rest [ rdf:type rdf:List ;
-                                                                                              rdf:first "ottima" ;
-                                                                                              rdf:rest [ rdf:type rdf:List ;
-                                                                                                         rdf:first "scarsa" ;
-                                                                                                         rdf:rest [ rdf:type rdf:List ;
-                                                                                                                    rdf:first "sufficiente" ;
-                                                                                                                    rdf:rest rdf:nil
-                                                                                                                  ]
-                                                                                                       ]
-                                                                                            ]
-                                                                                 ]
-                                                                     ] ;
-                                                          rdfs:comment "Visibilità al momento del sinistro"@it ;
-                                                          rdfs:label "visibilità"@it .
+:visibilità rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Sinistro ;
+            rdfs:range [ rdf:type rdfs:Datatype ;
+                         owl:oneOf [ rdf:type rdf:List ;
+                                     rdf:first "buona" ;
+                                     rdf:rest [ rdf:type rdf:List ;
+                                                rdf:first "ottima" ;
+                                                rdf:rest [ rdf:type rdf:List ;
+                                                           rdf:first "scarsa" ;
+                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                      rdf:first "sufficiente" ;
+                                                                      rdf:rest rdf:nil
+                                                                    ]
+                                                         ]
+                                              ]
+                                   ]
+                       ] ;
+            rdfs:comment "Visibilità al momento del sinistro"@it ;
+            rdfs:label "visibilità"@it .
 
 
 #################################################################
 #    Classes
 #################################################################
 
+###  http://www.standartaccidentstructure.org/ontology#Luogo
+:Luogo rdf:type owl:Class ;
+       rdfs:comment "Informazioni sul luogo del sinistro"@it ;
+       rdfs:label "Luogo"@it .
+
+
 ###  http://www.standartaccidentstructure.org/ontology#Persona
-<http://www.standartaccidentstructure.org/ontology#Persona> rdf:type owl:Class ;
-                                                       rdfs:comment "Informazioni sul numero di persone coinvolte"@it ;
-                                                       rdfs:label "Persona"@it .
+:Persona rdf:type owl:Class ;
+         rdfs:comment "Informazioni sul numero di persone coinvolte"@it ;
+         rdfs:label "Persona"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#Sinistro
-<http://www.standartaccidentstructure.org/ontology#Sinistro> rdf:type owl:Class ;
-                                                        owl:hasKey ( <http://www.standartaccidentstructure.org/ontology#ID>
-                                                                   ) ;
-                                                        rdfs:comment "Sinistro o incidente stradale"@it ;
-                                                        rdfs:label "Sinistro"@it .
+:Sinistro rdf:type owl:Class ;
+          owl:hasKey ( :ID
+                     ) ;
+          rdfs:comment "Sinistro o incidente stradale"@it ;
+          rdfs:label "Sinistro"@it .
 
 
 ###  http://www.standartaccidentstructure.org/ontology#Veicolo
-<http://www.standartaccidentstructure.org/ontology#Veicolo> rdf:type owl:Class ;
-                                                       owl:hasKey ( <http://www.standartaccidentstructure.org/ontology#targa>
-                                                                  ) ;
-                                                       rdfs:comment "Informazioni sul veicolo coinvolto nel sinistro"@it ;
-                                                       rdfs:label "Veicolo"@it .
-
-
-###  <http://www.standartaccidentstructure.org/ontology#Luogo
-<http://www.standartaccidentstructure.org/ontology#Luogo> rdf:type owl:Class ;
-                                                           rdfs:comment "Informazioni sul luogo del sinistro"@it ;
-                                                           rdfs:label "Luogo"@it .
+:Veicolo rdf:type owl:Class ;
+         owl:hasKey ( :targa
+                    ) ;
+         rdfs:comment "Informazioni sul veicolo coinvolto nel sinistro"@it ;
+         rdfs:label "Veicolo"@it .
 
 
 #################################################################
