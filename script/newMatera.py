@@ -11,7 +11,7 @@ print("\n\nMatera")
 with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M:
 
     print("Scrivo i veicoli")
-    with open('../datiElaborati/veicoli/newMateraVeicoli.csv','w',newline="", encoding="UTF-8") as newMVeicoli: #i dati sono scritti in un nuovo csv 
+    with open('../datiElaborati/veicolo/newMateraVeicolo.csv','w',newline="", encoding="UTF-8") as newMVeicoli: #i dati sono scritti in un nuovo csv 
         lettore = csv.reader(M, delimiter=",")
         header = next(lettore)
         writer = csv.writer(newMVeicoli, delimiter=",")

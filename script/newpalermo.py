@@ -8,7 +8,7 @@ print("\n\nPalermo")
 with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P:
     
     print("Scrivo i veicoli")
-    with open('../datiElaborati/veicoli/newPalermoVeicoli.csv','w',newline="", encoding="UTF-8") as newPVeicoli: #i dati sono scritti in un nuovo csv 
+    with open('../datiElaborati/veicolo/newPalermoVeicolo.csv','w',newline="", encoding="UTF-8") as newPVeicoli: #i dati sono scritti in un nuovo csv 
         lettore = csv.reader(P, delimiter=";")
         header = next(lettore)
         writer = csv.writer(newPVeicoli, delimiter=",")
