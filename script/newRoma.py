@@ -17,7 +17,7 @@ for nomeMese in mesi:
 
     with open("../datiOriginali/"+nomeMese+".csv", newline="",encoding="UTF-8") as RM: #per ogni mese leggiamo i dati
         print("Scrivo i veicoli di " +nomeMese)
-        with open('../datiElaborati/veicoli/newRomaVeicoli.csv', fileMode, newline="", encoding="UTF-8") as newRMVeicoli: #i dati sono scritti in un nuovo csv 
+        with open('../datiElaborati/veicolo/newRomaVeicolo.csv', fileMode, newline="", encoding="UTF-8") as newRMVeicoli: #i dati sono scritti in un nuovo csv 
             lettore = csv.reader(RM, delimiter=";")
             header = next(lettore)
             writer = csv.writer(newRMVeicoli, delimiter=",")
