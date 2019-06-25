@@ -16,7 +16,7 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B:
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
             if '2017' in riga[1]:
-                codice="BG"+str(N) #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
+                codice=("BG"+riga[2]+riga[3]+str(N)).replace("/", "").replace(":","") #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
                 writer.writerow([codice,None,None,None]) 
                 N+=1
             
@@ -31,7 +31,7 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B:
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
             if '2017' in riga[1]:
-                codice="BG"+str(N)
+                codice=("BG"+riga[2]+riga[3]+str(N)).replace("/", "").replace(":","")
                 writer.writerow([codice,None,None,None])
                 N+=1
 
@@ -47,7 +47,7 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B:
         for riga in dati:
             if '2017' in riga[1]:
                 riga[4] = riga[4].replace("BERGAMO", "") #cancelliamo BERGAMO mantenendo solo la via
-                codice="BG"+str(N)
+                codice=("BG"+riga[2]+riga[3]+str(N)).replace("/", "").replace(":","")
                 writer.writerow([codice,"Bergamo",riga[4],None,None,None,riga[14]])
                 N+=1
 
@@ -63,6 +63,6 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B:
         for riga in dati:
             if '2017' in riga[1]:         
                 riga[2]=datetime.datetime.strptime(riga[2], "%d/%m/%Y").strftime("%Y-%m-%d") #Converte le date nel formato corretto
-                codice="BG"+str(N)
+                codice=("BG"+riga[2]+riga[3]+str(N)).replace("-", "").replace(":","")
                 writer.writerow([codice,riga[2],riga[3],None,None,None,None,riga[6],riga[7],riga[8],riga[9]])
                 N+=1

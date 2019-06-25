@@ -15,7 +15,7 @@ with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P:
         writer.writerow(["ID","Modello","Targa","Tipo veicolo"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            codice="PA"+str(N) #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
+            codice=("PA"+riga[0]+riga[1]+str(N)).replace("/", "").replace(":","").replace("-","") #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
             #print(f"Scrivo la riga: {riga[0],riga[28]}")
             writer.writerow([codice,None,None,None]) 
             N+=1
@@ -30,7 +30,7 @@ with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P:
         writer.writerow(["ID","TipoPersona","Sesso","TipoLesione"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            codice="PA"+str(N)
+            codice=("PA"+riga[0]+riga[1]+str(N)).replace("/", "").replace(":","").replace("-","")
             #print(f"Scrivo la riga: {riga[0],riga[28]}")
             writer.writerow([codice,None,None,None])
             N+=1
@@ -46,7 +46,7 @@ with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P:
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
             coordinate = "(" + riga[6] + "," + riga[5] + ")" #latitudine e longitudine vengono concatenate per formare un unica variabile
-            codice="PA"+str(N)
+            codice=("PA"+riga[0]+riga[1]+str(N)).replace("/", "").replace(":","").replace("-","")
             writer.writerow([codice,"Palermo",riga[2],None,None,None,coordinate])
             N+=1
 
@@ -60,7 +60,7 @@ with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P:
         writer.writerow(["ID","Data","Ora","Tipo","Causa","Meteo","Visibilita","N.Illesi","N.Feriti","N.PrognosiRiservata","N.Deceduti"])
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
-            codice="PA"+str(N)
+            codice=("PA"+riga[0]+riga[1]+str(N)).replace("/", "").replace(":","").replace("-","")
             if "/" in riga[0]:  #Se la data contiene lo / significa che è scritta nel formato sbagliato
                 riga[0] = datetime.datetime.strptime(riga[0], "%d/%m/%Y").strftime("%Y-%m-%d") #converte le date nel formato corretto
             writer.writerow([codice,riga[0],riga[1],None,None,None,None,None,riga[4],None,None])
