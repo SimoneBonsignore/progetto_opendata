@@ -101,7 +101,7 @@ with open('../datiElaborati/sinistri.csv') as sinistro:
         lettore = csv.DictReader(sinistro)
         for riga in lettore:
                 uri_sinistro = base_uri + 'sinistro/' + riga['ID']
-                #print("Creo l'istanza sinistro: " + uri_sinistro)
+                print(riga['ID'])
                 classeSinistro = sas.Sinistro
                 g.add([URIRef(uri_sinistro), RDF.type, classeSinistro])         #Creo l'istanza della classe
 
@@ -122,15 +122,11 @@ with open('../datiElaborati/sinistri.csv') as sinistro:
                 g.add([URIRef(uri_sinistro), sas.localizzato, URIRef(uri_luogo)])
 
                 #Collego il sinistro alle persone coinvolte
-                #print(arrayPersona)
-                for persona in arrayPersona:                       
+                for persona in arrayPersona:
                         if persona.split("-")[1] == riga['ID']:
                                 arrayCorrispondenze.append(persona)
-                
-                #print(arrayCorrispondenze)
 
                 for persona in arrayCorrispondenze:
-                        #print(persona)
                         #print("Collego la persona: " + persona + " al sinistro " + riga['ID'])
                         g.add([URIRef(uri_sinistro), sas.coinvolge, URIRef(persona)])
                         arrayPersona.remove(persona)

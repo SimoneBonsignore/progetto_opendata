@@ -16,7 +16,8 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B:
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
             if '2017' in riga[1]:
-                codice=("035"+riga[2]+riga[3]+str(N)).replace("/", "").replace(":","") #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
+                riga[2]=datetime.datetime.strptime(riga[2], "%d/%m/%Y").strftime("%Y-%m-%d") #Converte le date nel formato corretto
+                codice=("035"+riga[2]+riga[3]+str(N)).replace("-", "").replace(":","") #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
                 writer.writerow([codice,None,None,None]) 
                 N+=1
             
@@ -31,7 +32,8 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B:
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
             if '2017' in riga[1]:
-                codice=("035"+riga[2]+riga[3]+str(N)).replace("/", "").replace(":","")
+                riga[2]=datetime.datetime.strptime(riga[2], "%d/%m/%Y").strftime("%Y-%m-%d") #Converte le date nel formato corretto
+                codice=("035"+riga[2]+riga[3]+str(N)).replace("-", "").replace(":","")
                 writer.writerow([codice,None,None,None])
                 N+=1
 
@@ -47,7 +49,8 @@ with open("../datiOriginali/bergamo.csv", newline="",encoding="UTF-8") as B:
         for riga in dati:
             if '2017' in riga[1]:
                 riga[4] = riga[4].replace("BERGAMO", "") #cancelliamo BERGAMO mantenendo solo la via
-                codice=("035"+riga[2]+riga[3]+str(N)).replace("/", "").replace(":","")
+                riga[2]=datetime.datetime.strptime(riga[2], "%d/%m/%Y").strftime("%Y-%m-%d") #Converte le date nel formato corretto
+                codice=("035"+riga[2]+riga[3]+str(N)).replace("-", "").replace(":","")
                 writer.writerow([codice,"Bergamo",riga[4],None,None,None,riga[14]])
                 N+=1
 
