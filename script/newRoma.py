@@ -26,7 +26,7 @@ for nomeMese in mesi:
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
                 #print(f"Scrivo la riga: {riga[0],riga[28]}")
-                writer.writerow([riga[0],None,None,riga[28]]) 
+                writer.writerow(["06"+riga[0],None,None,riga[28]]) 
 
         print("Scrivo le persone di " +nomeMese)
         with open('../datiElaborati/persona/newRomaPersona.csv', fileMode, newline="", encoding="UTF-8") as newRMPersona:
@@ -39,7 +39,7 @@ for nomeMese in mesi:
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
                 #print(f"Scrivo la riga: {riga[0],riga[28]}")
-                writer.writerow([riga[0],riga[30],riga[31],riga[32]])
+                writer.writerow(["06"+riga[0],riga[30],riga[31],riga[32]])
 
         print("Scrivo i luoghi di " +nomeMese)       
         with open('../datiElaborati/luogo/newRomaLuogo.csv', fileMode, newline="", encoding="UTF-8") as newRMLuogo:
@@ -55,7 +55,7 @@ for nomeMese in mesi:
                 if corrente != precedente:
                     coordinate = "(" + riga[24] + "," + riga[25] + ")" #latitudine e longitudine vengono concatenate
                     #print(f"Scrivo la riga: {riga[0],riga[28]}")
-                    writer.writerow([riga[0],"Roma",riga[4],riga[13],riga[14],riga[19],coordinate])
+                    writer.writerow(["06"+riga[0],"Roma",riga[4],riga[13],riga[14],riga[19],coordinate])
                     precedente = corrente
 
         print("Scrivo i sinistri di " +nomeMese)           
@@ -77,7 +77,7 @@ for nomeMese in mesi:
                     else:
                         orario = None
                     
-                    writer.writerow([riga[0],data,orario,riga[10],None,riga[16],riga[18],riga[23],riga[20],riga[21],riga[22]])
+                    writer.writerow(["06"+riga[0],data,orario,riga[10],None,riga[16],riga[18],riga[23],riga[20],riga[21],riga[22]])
                     precedente = corrente
 
 

@@ -20,7 +20,7 @@ with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M:
         for riga in dati:
             riga[4] = datetime.datetime.strptime(riga[4], "%A %d %B %Y").strftime("%Y-%m-%d") #Converto la data
             riga[5] = datetime.datetime.strptime(riga[5], "%H,%M").strftime("%H:%M") #Converto l'orario
-            codice=("MT"+riga[4]+riga[5]+str(N)).replace("/", "").replace(":","").replace("-","") #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
+            codice=("0835"+riga[4]+riga[5]+str(N)).replace("/", "").replace(":","").replace("-","") #unendo il codice città a N avremo un codice univoco progressivo per ogni sinistro
             writer.writerow([codice,None,None,None]) 
             N+=1
     
@@ -36,7 +36,7 @@ with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M:
         for riga in dati:
             riga[4] = datetime.datetime.strptime(riga[4], "%A %d %B %Y").strftime("%Y-%m-%d") #Converto la data
             riga[5] = datetime.datetime.strptime(riga[5], "%H,%M").strftime("%H:%M") #Converto l'orario
-            codice=("MT"+riga[4]+riga[5]+str(N)).replace("/", "").replace(":","").replace("-","")
+            codice=("0835"+riga[4]+riga[5]+str(N)).replace("/", "").replace(":","").replace("-","")
             writer.writerow([codice,None,None,None])
             N+=1
 
@@ -53,7 +53,7 @@ with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M:
             coordinate = "(" + riga[9] + "," + riga[10] + ")" #latitudine e longitudine vengono concatenate per formare un' unica variabile
             riga[4] = datetime.datetime.strptime(riga[4], "%A %d %B %Y").strftime("%Y-%m-%d") #Converto la data
             riga[5] = datetime.datetime.strptime(riga[5], "%H,%M").strftime("%H:%M") #Converto l'orario
-            codice=("MT"+riga[4]+riga[5]+str(N)).replace("/", "").replace(":","").replace("-","")
+            codice=("0835"+riga[4]+riga[5]+str(N)).replace("/", "").replace(":","").replace("-","")
             writer.writerow([codice,"Matera",riga[8],None,None,None,coordinate])
             N+=1
 
@@ -69,7 +69,7 @@ with open("../datiOriginali/matera.csv", newline="",encoding="UTF-8") as M:
         for riga in dati:
             riga[4] = datetime.datetime.strptime(riga[4], "%A %d %B %Y").strftime("%Y-%m-%d") #Converto la data
             riga[5] = datetime.datetime.strptime(riga[5], "%H,%M").strftime("%H:%M") #Converto l'orario
-            codice=("MT"+riga[4]+riga[5]+str(N)).replace("/", "").replace(":","").replace("-","")
+            codice=("0835"+riga[4]+riga[5]+str(N)).replace("/", "").replace(":","").replace("-","")
             writer.writerow([codice,riga[4],riga[5],riga[12],riga[13],None,None,None,riga[17],None,riga[18]])
             N+=1
             
