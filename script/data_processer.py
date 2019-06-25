@@ -20,7 +20,9 @@ veicoli = list()
 persone = list()
 
 personeCopia = list()
-"""
+arrayPersona = []
+arrayCorrispondenze = []
+
 #Dataset luoghi: elaborazione e caricamento su un dizionario
 print("\n\nCreo le istanze di luogo")
 with open('../datiElaborati/luoghi.csv') as luogo:
@@ -32,22 +34,23 @@ with open('../datiElaborati/luoghi.csv') as luogo:
                 g.add([URIRef(uri_luogo), RDF.type, classeLuogo])       #Creo l'istanza della classe
 
                 #Popolo l'istanza con gli attributi
-"""
-"""                #Le URI delle citta prese in considerazione, su dbpedia sono strutturate in questo modo
+
+                """                
+                #Le URI delle citta prese in considerazione, su dbpedia sono strutturate in questo modo
                 #uri_palermo = "http://dbpedia.org/resource/Palermo"
                 #uri_roma = "http://dbpedia.org/resource/Roma"
                 #uri_bergamo = "http://dbpedia.org/resource/Bergamo"
-               #uri_matera = "http://dbpedia.org/resource/Matera"
-""" 
-"""
+                #uri_matera = "http://dbpedia.org/resource/Matera"
+                """
+
                 g.add([URIRef(uri_luogo), sas.citta, URIRef("http://dbpedia.org/resource/"+riga['Citta'])])
                 g.add([URIRef(uri_luogo), sas.via, Literal(riga['Via'])])
                 g.add([URIRef(uri_luogo), sas.fondo_stradale, Literal(riga['FondoStradale'])])
                 g.add([URIRef(uri_luogo), sas.pavimentazione, Literal(riga['Pavimentazione'])])
                 g.add([URIRef(uri_luogo), sas.illuminazione, Literal(riga['Illuminazione'])])
                 g.add([URIRef(uri_luogo), sas.coordinate, Literal(riga['Coordinate'])])
-"""
-"""
+
+
 #Dataset veicoli: elaborazione e caricamento su un dizionario
 print("Creo le istanze di veicolo")
 with open('../datiElaborati/veicoli.csv') as veicolo:
@@ -66,10 +69,9 @@ with open('../datiElaborati/veicoli.csv') as veicolo:
                 g.add([URIRef(uri_veicolo), sas.modello, Literal(riga['Modello'])])
                 g.add([URIRef(uri_veicolo), sas.targa, Literal(riga['Targa'])])
                 g.add([URIRef(uri_veicolo), sas.tipo_veicolo, Literal(riga['Tipo veicolo'])])
-"""
+
 #Dataset persone: elaborazione e caricamento su un dizionario
 print("Creo le istanze di persona")
-arrayPersona = []
 with open('../datiElaborati/persone.csv') as persona:
         lettore = csv.DictReader(persona)
         count = 0 
@@ -92,9 +94,7 @@ with open('../datiElaborati/persone.csv') as persona:
                 g.add([URIRef(uri_persona), sas.viaggia, URIRef(uri_veicolo)])
 
                 arrayPersona.append(uri_persona)
-
-print(arrayPersona)
-"""
+    
 # Dataset sinistri: elaborazione e caricamento su un dizionario
 print("Creo le istanze di sinistro")
 with open('../datiElaborati/sinistri.csv') as sinistro:
@@ -122,22 +122,22 @@ with open('../datiElaborati/sinistri.csv') as sinistro:
                 g.add([URIRef(uri_sinistro), sas.localizzato, URIRef(uri_luogo)])
 
                 #Collego il sinistro alle persone coinvolte
-                while arrayPersona:                       
+                #print(arrayPersona)
+                for persona in arrayPersona:                       
                         if persona.split("-")[1] == riga['ID']:
-                                print("##########################################################################")
-                                print("Collego la persona: " + persona + " al sinistro " + riga['ID'])
-                                #g.add([URIRef(uri_sinistro), sas.coinvolge, URIRef(persona['uri'])])
-                                print("####################### Cancello ###############################")
-                                print(persona)
-                                arrayPersona.remove(persona)
-                                print("####################### Array pulito ###############################")
-                                print(arrayPersona)
+                                arrayCorrispondenze.append(persona)
+                
+                #print(arrayCorrispondenze)
 
-"""             
-
-"""           
+                for persona in arrayCorrispondenze:
+                        #print(persona)
+                        #print("Collego la persona: " + persona + " al sinistro " + riga['ID'])
+                        g.add([URIRef(uri_sinistro), sas.coinvolge, URIRef(persona)])
+                        arrayPersona.remove(persona)
+                
+                arrayCorrispondenze = []
+                
 #Serializzazione dell'ontologia e salvataggio
 print("Serializzo l'ontologia. Attendi...")
 g.serialize(destination='../standardaccidentstructure.ttl', format='turtle')
 print("\nOntologia creata con SUCCESSO\n")
-"""
