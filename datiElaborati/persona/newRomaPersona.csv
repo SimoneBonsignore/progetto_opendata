@@ -5825,7 +5825,6 @@ ID,TipoPersona,Sesso,TipoLesione
 3771824,Conducente,M,Illeso
 3771824,Conducente,M,Illeso
 3771824,Passeggero,M,Illeso
-ID,TipoPersona,Sesso,TipoLesione
 3655297,Conducente,M,Illeso
 3655297,Conducente,F,Illeso
 3655297,Passeggero,F,Illeso
@@ -11174,7 +11173,6 @@ ID,TipoPersona,Sesso,TipoLesione
 3812479,Conducente,M,Illeso
 3863503,Conducente,M,Illeso
 3863503,Passeggero,M,Ricoverato
-ID,TipoPersona,Sesso,TipoLesione
 3706661,Conducente,M,Rimandato
 3706661,Conducente,F,Illeso
 3706773,Conducente,M,Illeso
@@ -17755,7 +17753,6 @@ ID,TipoPersona,Sesso,TipoLesione
 3797181,Pedone,F,Rimandato
 3823238,Conducente,F,Rimandato
 3823238,Conducente,M,Illeso
-ID,TipoPersona,Sesso,TipoLesione
 3757860,Conducente,F,Rimandato
 3757860,Passeggero,F,Rimandato
 3757864,Conducente,M,Illeso
@@ -23665,7 +23662,6 @@ ID,TipoPersona,Sesso,TipoLesione
 3828615,Passeggero,M,Illeso
 3842423,Pedone,M,Rimandato
 3842423,Conducente,F,Illeso
-ID,TipoPersona,Sesso,TipoLesione
 3802129,Conducente,M,Illeso
 3802129,Conducente,M,Illeso
 3802401,Conducente,F,Rimandato
@@ -29971,7 +29967,6 @@ ID,TipoPersona,Sesso,TipoLesione
 3891685,Conducente,M,Illeso
 3916136,Conducente,F,Illeso
 3916136,Conducente,M,Rimandato
-ID,TipoPersona,Sesso,TipoLesione
 3851558,Conducente,F,Illeso
 3851558,Conducente,M,Illeso
 3851558,Passeggero,M,Illeso
@@ -36085,7 +36080,6 @@ ID,TipoPersona,Sesso,TipoLesione
 3997566,Passeggero,M,Illeso
 4009776,Conducente,M,Illeso
 4009776,Passeggero,M,Illeso
-ID,TipoPersona,Sesso,TipoLesione
 3724666,Conducente,F,Illeso
 3724666,Passeggero,M,Illeso
 3724666,Conducente,M,Rifiuta cure immediate
@@ -41696,7 +41690,6 @@ ID,TipoPersona,Sesso,TipoLesione
 4026179,Conducente,M,Illeso
 4026179,Passeggero,M,Illeso
 4026179,Conducente,M,Illeso
-ID,TipoPersona,Sesso,TipoLesione
 3940186,Conducente,M,Illeso
 3940186,Passeggero,M,Illeso
 3940333,Conducente,M,Illeso
@@ -45244,7 +45237,6 @@ ID,TipoPersona,Sesso,TipoLesione
 3993756,Conducente,F,Illeso
 3993756,Conducente,M,Illeso
 4009967,Conducente,M,Prognosi riservata
-ID,TipoPersona,Sesso,TipoLesione
 3969197,Conducente,M,Illeso
 3969201,Conducente,M,Illeso
 3969201,Passeggero,F,Illeso
@@ -50938,7 +50930,6 @@ ID,TipoPersona,Sesso,TipoLesione
 4050679,Conducente,M,Rimandato
 4077078,Conducente,M,Illeso
 4077078,Conducente,M,Illeso
-ID,TipoPersona,Sesso,TipoLesione
 3974108,Conducente,M,Rifiuta cure immediate
 3974108,Conducente,F,Rimandato
 3974108,Conducente,F,Rimandato
@@ -57589,7 +57580,6 @@ ID,TipoPersona,Sesso,TipoLesione
 4294819,Conducente,M,Illeso
 4297772,Conducente,M,Illeso
 4297772,Conducente,M,Illeso
-ID,TipoPersona,Sesso,TipoLesione
 4061253,Conducente,M,Ricoverato
 4061253,Conducente,M,Illeso
 4064491,Conducente,M,Illeso

@@ -7842,7 +7842,6 @@ PA3341,Palermo,PIAZZA TREDICI VITTIME,,,,"(38,123126,13,363809)"
 3705349,Roma,PIAZZA DI S. MARCO,Asciutto,In cubetti di porfido,Sufficiente,"(12.48142,41.89523)"
 3750886,Roma,VIA NOMENTANA,,,,"(,)"
 3771824,Roma,VIA CRISTOFORO COLOMBO,Asciutto,Asfaltata,Insufficiente,"(12.41155,41.78584)"
-ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3655297,Roma,VIA PINCIANA,Bagnato (pioggia),Asfaltata,Ore Diurne,"(12.49397,41.91502)"
 3659667,Roma,VIA VAL DI CHIENTI,Asciutto,Asfaltata,Sufficiente,"(12.52374,41.94345)"
 3664611,Roma,VIALE CARLO FELICE,Asciutto,Asfaltata,Sufficiente,"(12.51209,41.88739)"
@@ -10179,7 +10178,6 @@ ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3780634,Roma,VIA DEL FORO ITALICO,Asciutto,Asfaltata,Ore Diurne,"(12.48368,41.94007)"
 3812479,Roma,VIA TIBURTINA,Bagnato (pioggia),Asfaltata,Ore Diurne,"(12.53976,41.90844)"
 3863503,Roma,VIA DI SCORTICABOVE,Con neve,Asfaltata,Sufficiente,"(12.59244,41.93467)"
-ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3706661,Roma,VIA DI BOCCEA,Bagnato (pioggia),Asfaltata,Ore Diurne,"(12.41342,41.90302)"
 3706773,Roma,VIALE GUGLIELMO MARCONI,Bagnato (pioggia),Asfaltata,Ore Diurne,"(12.47232,41.8544)"
 3706774,Roma,VIALE GUIDO BACCELLI,Bagnato (umidit? in atto),Asfaltata,Sufficiente,"(12.48985,41.87902)"
@@ -13315,7 +13313,6 @@ ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3782333,Roma,VIA PRENESTINA,Asciutto,Con buche,Ore Diurne,"(12.61039,41.89349)"
 3797181,Roma,VIA DI PORTA FURBA,,,,"(,)"
 3823238,Roma,VIALE BATTISTA BARDANZELLU,Bagnato (pioggia),Asfaltata,Ore Diurne,"(12.57472,41.91545)"
-ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3757860,Roma,VIA FLAMINIA,Bagnato (umidit? in atto),Asfaltata,Sufficiente,"(12.49329,41.9843)"
 3757864,Roma,VIA DI S. CORNELIA,Bagnato (pioggia),Asfaltata,Sufficiente,"(12.47272,42.0091)"
 3757928,Roma,VIA VINCENZO BONIFATI,Bagnato (pioggia),Asfaltata,Sufficiente,"(12.66403,41.91353)"
@@ -15749,7 +15746,6 @@ ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3814855,Roma,VIA DI S. ELENA,Asciutto,In cubetti di porfido,Sufficiente,"(12.47657,41.89441)"
 3828615,Roma,VIA ACHILLE TEDESCHI,Asciutto,Asfaltata,Sufficiente,"(12.5381,41.91288)"
 3842423,Roma,VIA EMANUELE FILIBERTO,,,,"(,)"
-ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3802129,Roma,VIA CASILINA,Asciutto,Asfaltata,Ore Diurne,"(12.57966,41.87106)"
 3802401,Roma,VIA DI CASAL SELCE,Bagnato (pioggia),Asfaltata,Ore Diurne,"(12.33471,41.88794)"
 3802402,Roma,VIALE FILARETE,Bagnato (pioggia),Asfaltata,Ore Diurne,"(12.53951,41.87685)"
@@ -18385,7 +18381,6 @@ ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3874310,Roma,VIA TUSCOLANA,Asciutto,Con buche,Sufficiente,"(12.55393,41.86159)"
 3891685,Roma,VIA DEL FORO ITALICO,Asciutto,Con buche,Ore Diurne,"(12.48375,41.93991)"
 3916136,Roma,VIA DELLE MESSI D'ORO,Asciutto,Asfaltata,Ore Diurne,"(12.56197,41.92206)"
-ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3851558,Roma,VIA CRISTOFORO COLOMBO,Asciutto,Asfaltata,Sufficiente,"(12,49621,41,8673)"
 3851679,Roma,VIA DI TORRENOVA,Asciutto,Strada pavimentata dissestata,Sufficiente,"(12,61854,41,87795)"
 3851744,Roma,VIA DEI GELSI,Asciutto,Asfaltata,Sufficiente,"(12,56352,41,88815)"
@@ -20922,7 +20917,6 @@ ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3987728,Roma,LARGO CAMERANO,Bagnato (umidit? in atto),Asfaltata,Sufficiente,"(12,58697,41,93937)"
 3997566,Roma,VIA MORROVALLE,Asciutto,Asfaltata,Ore Diurne,"(12,58604,41,9398)"
 4009776,Roma,VIALE PALMIRO TOGLIATTI,Asciutto,Asfaltata,Sufficiente,"(12,57283,41,88045)"
-ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3724666,Roma,VIA ARDEATINA,Asciutto,Asfaltata,Sufficiente,"(12.5875,41.7971)"
 3876052,Roma,VIA ARISTIDE LEONORI,Asciutto,Asfaltata,Ore Diurne,"(12.4863,41.8505)"
 3898897,Roma,VIALE DI TOR DI QUINTO,Asciutto,Asfaltata,Sufficiente,"(12.4707,41.9372)"
@@ -23153,7 +23147,6 @@ ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 4014377,Roma,VIA LEONINA,Asciutto,Acciotolata,Sufficiente,"(12.4912,41.8947)"
 4021741,Roma,SOTTOVIA IGNAZIO GUIDI,Asciutto,Asfaltata,Ore Diurne,"(12.5044,41.9081)"
 4026179,Roma,VIA CORCOLLE,Asciutto,Asfaltata,Ore Diurne,"(12.6204,41.9336)"
-ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3940186,Roma,VIA CASILINA,Asciutto,Asfaltata,Sufficiente,"(12.6271,41.8632)"
 3940333,Roma,PIAZZALE LABICANO,Asciutto,Asfaltata,Sufficiente,"(12.5155,41.891)"
 3940355,Roma,VIA DI PORTONACCIO,Asciutto,Asfaltata,Ore Diurne,"(12.542,41.893)"
@@ -24584,7 +24577,6 @@ ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3977853,Roma,VIALE DELLE MEDAGLIE D'ORO,Asciutto,Asfaltata,Ore Diurne,"(12.4457,41.9109)"
 3993756,Roma,VIA ALFONSO TORELLI,Asciutto,Asfaltata,Ore Diurne,"(12.5378,41.8992)"
 4009967,Roma,VIA DI VALLERANO,Asciutto,Asfaltata,Ore Diurne,"(,)"
-ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3969197,Roma,VIALE ISACCO NEWTON,Bagnato (pioggia),Asfaltata,Sufficiente,"(12.4427,41.8481)"
 3969201,Roma,VIALE ISACCO NEWTON,Bagnato (pioggia),Asfaltata,Sufficiente,"(12.4427,41.8481)"
 3969266,Roma,VIA DI BRAVETTA,Asciutto,Asfaltata,Sufficiente,"(12.4231,41.8668)"
@@ -26889,7 +26881,6 @@ ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 4031081,Roma,VIA GEMMANO,Asciutto,Asfaltata,Ore Diurne,"(12.405,41.7931)"
 4050679,Roma,LARGO GIOVANNI PITTALUGA,Asciutto,Asfaltata,Sufficiente,"(12.5372,41.8996)"
 4077078,Roma,VIA APPIA NUOVA,Asciutto,Asfaltata,Ore Diurne,"(12.5338,41.8607)"
-ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 3974108,Roma,VIA CASILINA,Asciutto,Asfaltata,Ore Diurne,"(9.644,45.397)"
 3983358,Roma,VIA SALARIA,Asciutto,Asfaltata,Sufficiente,"(12.509,41.9303)"
 4013757,Roma,VIA GALEAZZO ALESSI,Asciutto,Asfaltata,Sufficiente,"(12.5385,41.8794)"
@@ -29669,7 +29660,6 @@ ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 4213536,Roma,VIA GIUSEPPE ZANARDELLI,Viscido da liquidi oleosi,Asfaltata,Ore Diurne,"(12.4719,41.9016)"
 4294819,Roma,NUOVA CIRCONVALLAZIONE INTERNA,Asciutto,Asfaltata,Sufficiente,"(,)"
 4297772,Roma,VIALE DELLO SCALO S. LORENZO,Asciutto,Asfaltata,Ore Diurne,"(,)"
-ID,Citta,Via,FondoStradale,Pavimentazione,Illuminazione,Coordinate
 4061253,Roma,VIA CASILINA,Asciutto,Asfaltata,Sufficiente,"(12.5301,41.8848)"
 4064491,Roma,VIA TRIONFALE,Asciutto,Asfaltata,Ore Diurne,"(12.4213,41.9408)"
 4067541,Roma,VIA DEGLI ANGELI,Bagnato (umidit? in atto),Asfaltata,Sufficiente,"(12.5474,41.8725)"

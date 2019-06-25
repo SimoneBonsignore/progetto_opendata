@@ -21,7 +21,8 @@ for nomeMese in mesi:
             lettore = csv.reader(RM, delimiter=";")
             header = next(lettore)
             writer = csv.writer(newRMVeicoli, delimiter=",")
-            writer.writerow(["ID","Modello","Targa","Tipo veicolo"])
+            if "Gennaio" in nomeMese:
+                writer.writerow(["ID","Modello","Targa","Tipo veicolo"])
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
                 #print(f"Scrivo la riga: {riga[0],riga[28]}")
@@ -33,7 +34,8 @@ for nomeMese in mesi:
             lettore = csv.reader(RM, delimiter=";")
             header = next(lettore)
             writer = csv.writer(newRMPersona, delimiter=",")
-            writer.writerow(["ID","TipoPersona","Sesso","TipoLesione"])
+            if "Gennaio" in nomeMese:
+                writer.writerow(["ID","TipoPersona","Sesso","TipoLesione"])
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
                 #print(f"Scrivo la riga: {riga[0],riga[28]}")
@@ -45,7 +47,8 @@ for nomeMese in mesi:
             lettore = csv.reader(RM, delimiter=";")
             header = next(lettore)
             writer = csv.writer(newRMLuogo, delimiter=",")
-            writer.writerow(["ID","Citta","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
+            if "Gennaio" in nomeMese:
+                writer.writerow(["ID","Citta","Via","FondoStradale","Pavimentazione","Illuminazione","Coordinate"])
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
                 corrente = riga[0] 
@@ -61,7 +64,8 @@ for nomeMese in mesi:
             lettore = csv.reader(RM, delimiter=";")
             header = next(lettore)
             writer = csv.writer(newRMSinistro, delimiter=",")
-            writer.writerow(["ID","Data","Ora","Tipo","Causa","Meteo","Visibilita","N.Illesi","N.Feriti","N.PrognosiRiservata","N.Deceduti"])
+            if "Gennaio" in nomeMese:
+                writer.writerow(["ID","Data","Ora","Tipo","Causa","Meteo","Visibilita","N.Illesi","N.Feriti","N.PrognosiRiservata","N.Deceduti"])
             dati = [(linea[:]) for linea in lettore]
             for riga in dati:
                 corrente = riga[0] 

@@ -61,6 +61,8 @@ with open("../datiOriginali/palermo.csv", newline="",encoding="UTF-8") as P:
         dati = [(linea[:]) for linea in lettore]
         for riga in dati:
             codice="PA"+str(N)
+            if "/" in riga[0]:  #Se la data contiene lo / significa che è scritta nel formato sbagliato
+                riga[0] = datetime.datetime.strptime(riga[0], "%d/%m/%Y").strftime("%Y-%m-%d") #converte le date nel formato corretto
             writer.writerow([codice,riga[0],riga[1],None,None,None,None,None,riga[4],None,None])
             N+=1
             

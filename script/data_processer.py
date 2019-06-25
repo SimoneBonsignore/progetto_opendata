@@ -20,7 +20,7 @@ veicoli = list()
 persone = list()
 
 personeCopia = list()
-
+"""
 #Dataset luoghi: elaborazione e caricamento su un dizionario
 print("\n\nCreo le istanze di luogo")
 with open('../datiElaborati/luoghi.csv') as luogo:
@@ -32,21 +32,22 @@ with open('../datiElaborati/luoghi.csv') as luogo:
                 g.add([URIRef(uri_luogo), RDF.type, classeLuogo])       #Creo l'istanza della classe
 
                 #Popolo l'istanza con gli attributi
-                """
-                Le URI delle citta prese in considerazione, su dbpedia sono strutturate in questo modo
-                uri_palermo = "http://dbpedia.org/resource/Palermo"
-                uri_roma = "http://dbpedia.org/resource/Roma"
-                uri_bergamo = "http://dbpedia.org/resource/Bergamo"
-                uri_matera = "http://dbpedia.org/resource/Matera"
-                """
+"""
+"""                #Le URI delle citta prese in considerazione, su dbpedia sono strutturate in questo modo
+                #uri_palermo = "http://dbpedia.org/resource/Palermo"
+                #uri_roma = "http://dbpedia.org/resource/Roma"
+                #uri_bergamo = "http://dbpedia.org/resource/Bergamo"
+               #uri_matera = "http://dbpedia.org/resource/Matera"
+""" 
+"""
                 g.add([URIRef(uri_luogo), sas.citta, URIRef("http://dbpedia.org/resource/"+riga['Citta'])])
                 g.add([URIRef(uri_luogo), sas.via, Literal(riga['Via'])])
                 g.add([URIRef(uri_luogo), sas.fondo_stradale, Literal(riga['FondoStradale'])])
                 g.add([URIRef(uri_luogo), sas.pavimentazione, Literal(riga['Pavimentazione'])])
                 g.add([URIRef(uri_luogo), sas.illuminazione, Literal(riga['Illuminazione'])])
                 g.add([URIRef(uri_luogo), sas.coordinate, Literal(riga['Coordinate'])])
-
-
+"""
+"""
 #Dataset veicoli: elaborazione e caricamento su un dizionario
 print("Creo le istanze di veicolo")
 with open('../datiElaborati/veicoli.csv') as veicolo:
@@ -65,7 +66,7 @@ with open('../datiElaborati/veicoli.csv') as veicolo:
                 g.add([URIRef(uri_veicolo), sas.modello, Literal(riga['Modello'])])
                 g.add([URIRef(uri_veicolo), sas.targa, Literal(riga['Targa'])])
                 g.add([URIRef(uri_veicolo), sas.tipo_veicolo, Literal(riga['Tipo veicolo'])])
-
+"""
 #Dataset persone: elaborazione e caricamento su un dizionario
 print("Creo le istanze di persona")
 arrayPersona = []
@@ -88,12 +89,12 @@ with open('../datiElaborati/persone.csv') as persona:
 
                 #Collego la persona al veicolo che stava conducendo
                 uri_veicolo = base_uri + 'veicolo/' + str(count) + "-" + riga['ID']  
-                g.add([URIRef(uri_persona), sas.conduce, URIRef(uri_veicolo)])
+                g.add([URIRef(uri_persona), sas.viaggia, URIRef(uri_veicolo)])
 
                 arrayPersona.append(uri_persona)
 
-#print(arrayPersona)
-
+print(arrayPersona)
+"""
 # Dataset sinistri: elaborazione e caricamento su un dizionario
 print("Creo le istanze di sinistro")
 with open('../datiElaborati/sinistri.csv') as sinistro:
@@ -121,7 +122,7 @@ with open('../datiElaborati/sinistri.csv') as sinistro:
                 g.add([URIRef(uri_sinistro), sas.localizzato, URIRef(uri_luogo)])
 
                 #Collego il sinistro alle persone coinvolte
-                for persona in arrayPersona:                       
+                while arrayPersona:                       
                         if persona.split("-")[1] == riga['ID']:
                                 print("##########################################################################")
                                 print("Collego la persona: " + persona + " al sinistro " + riga['ID'])
@@ -132,7 +133,7 @@ with open('../datiElaborati/sinistri.csv') as sinistro:
                                 print("####################### Array pulito ###############################")
                                 print(arrayPersona)
 
-                
+"""             
 
 """           
 #Serializzazione dell'ontologia e salvataggio

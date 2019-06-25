@@ -2437,7 +2437,6 @@ ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.
 3705349,2018-01-24,17:10,Veicolo in marcia contro ostacolo fisso,,Sereno,Buona,1,0,0,0
 3750886,2018-01-26,09:50,Investimento di pedone,,,,1,1,0,0
 3771824,2018-01-16,01:27,Tamponamento,,Sereno,Buona,3,0,0,0
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 3655297,2018-02-07,08:50,Scontro laterale fra veicoli in marcia,,Nuvoloso,Buona,4,0,0,0
 3659667,2018-02-19,19:45,Scontro laterale fra veicoli in marcia,,Sereno,Buona,2,0,0,0
 3664611,2018-02-01,01:30,Veicolo in marcia contro veicoli in sosta,,Sereno,Sufficiente,1,0,0,0
@@ -4774,7 +4773,6 @@ ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.
 3780634,2018-02-14,07:45,Infortunio per sola frenata improvvisa,,Sereno,Sufficiente,0,1,0,0
 3812479,2018-02-07,17:30,Investimento di pedone,,Pioggia in atto,Buona,1,1,0,0
 3863503,2018-02-26,19:50,Veicolo in marcia contro ostacolo fisso,,Sereno,Sufficiente,1,1,0,0
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 3706661,2018-03-01,07:00,Scontro frontale/laterale SX fra veicoli in marcia,,Nuvoloso,Buona,1,1,0,0
 3706773,2018-03-01,07:30,Veicolo in marcia contro ostacolo accidentale,,Pioggia in atto,Buona,1,0,0,0
 3706774,2018-03-01,03:00,Veicolo in marcia contro ostacolo fisso,,Nuvoloso,Sufficiente,0,1,0,0
@@ -7910,7 +7908,6 @@ ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.
 3782333,2018-03-09,16:15,Veicolo in marcia contro ostacolo accidentale,,Sereno,Sufficiente,1,0,0,0
 3797181,2018-03-16,09:20,Investimento di pedone,,,,0,1,0,0
 3823238,2018-03-06,14:40,Veicolo in marcia contro veicolo fermo,,Nuvoloso,Buona,1,1,0,0
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 3757860,2018-04-01,00:10,Veicolo in marcia contro ostacolo fisso,,Nuvoloso,Sufficiente,0,2,0,0
 3757864,2018-04-01,04:30,Veicolo in marcia contro ostacolo accidentale,,Nuvoloso,Buona,1,0,0,0
 3757928,2018-04-01,01:10,Ribaltamento senza urto contro ostacolo fisso,,Nuvoloso,Sufficiente,1,0,0,0
@@ -10344,7 +10341,6 @@ ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.
 3814855,2018-04-06,22:35,Veicolo in marcia contro ostacolo fisso,,Sereno,Buona,1,0,0,0
 3828615,2018-04-15,23:10,Scontro frontale/laterale SX fra veicoli in marcia,,Sereno,Sufficiente,3,1,0,0
 3842423,2018-04-07,10:00,Investimento di pedone,,,,1,1,0,0
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 3802129,2018-05-01,08:00,Tamponamento,,Nuvoloso,Buona,2,0,0,0
 3802401,2018-05-01,12:30,Scontro frontale/laterale SX fra veicoli in marcia,,Nuvoloso,Buona,2,3,0,0
 3802402,2018-05-01,10:50,Veicolo in marcia contro veicoli in sosta,,Nuvoloso,Buona,1,0,0,0
@@ -12980,7 +12976,6 @@ ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.
 3874310,2018-05-18,22:48,Veicolo in marcia contro ostacolo accidentale,,Nuvoloso,Buona,1,0,0,0
 3891685,2018-05-09,00:15,Veicolo in marcia contro ostacolo accidentale,,Sereno,Buona,1,0,0,0
 3916136,2018-05-10,16:45,Scontro frontale fra veicoli in marcia,,Nuvoloso,Buona,1,1,0,0
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 3851558,2018-06-01,03:00:00,Scontro frontale/laterale SX fra veicoli in marcia,,Sereno,Sufficiente,3,0,0,0
 3851679,2018-06-01,03:30:00,Veicolo in marcia contro veicoli in sosta,,Sereno,Buona,2,0,0,0
 3851744,2018-06-01,00:50:00,Veicolo in marcia contro veicoli in sosta,,Sereno,Buona,0,1,0,0
@@ -15517,7 +15512,6 @@ ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.
 3987728,2018-06-15,01:10:00,Veicolo in marcia contro veicolo in sosta,,Nuvoloso,Sufficiente,1,0,0,0
 3997566,2018-06-20,15:00:00,Scontro frontale/laterale SX fra veicoli in marcia,,Sereno,Buona,4,0,0,0
 4009776,2018-06-22,01:50:00,Veicolo in marcia contro ostacolo accidentale,,Sereno,Sufficiente,2,0,0,0
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 3724666,2018-07-04,23:00:00,Scontro frontale/laterale SX fra veicoli in marcia,,Sereno,Sufficiente,2,1,0,0
 3876052,2018-07-09,09:20:00,Scontro laterale fra veicoli in marcia,,Sereno,Buona,3,0,0,0
 3898897,2018-07-01,00:15:00,Tamponamento Multiplo,,Sereno,Sufficiente,8,0,0,0
@@ -17748,7 +17742,6 @@ ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.
 4014377,2018-07-10,00:30:00,Tamponamento,,Sereno,Buona,0,1,0,0
 4021741,2018-07-17,11:15:00,Veicolo in marcia contro ostacolo accidentale,,Sereno,Buona,1,0,0,0
 4026179,2018-07-20,13:00:00,Scontro frontale/laterale DX fra veicoli in marcia,,Sereno,Buona,3,0,0,0
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 3940186,2018-08-01,00:45:00,Veicolo in marcia contro veicolo in sosta,,Sereno,Buona,2,0,0,0
 3940333,2018-08-01,00:15:00,Scontro laterale fra veicoli in marcia,,Sereno,Buona,3,0,0,0
 3940355,2018-08-01,08:10:00,Scontro frontale/laterale SX fra veicoli in marcia,,Sereno,Sufficiente,1,1,0,0
@@ -19179,7 +19172,6 @@ ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.
 3977853,2018-08-15,13:30:00,Scontro frontale/laterale SX fra veicoli in marcia,,Sereno,Buona,2,0,0,0
 3993756,2018-08-06,07:15:00,Scontro frontale/laterale SX fra veicoli in marcia,,Sereno,Buona,2,0,0,0
 4009967,2018-08-26,14:50:00,Fuoriuscita dalla sede stradale,,Sereno,Buona,0,0,1,0
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 3969197,2018-09-01,02:15:00,Veicolo in marcia contro ostacolo fisso,,Nuvoloso,Sufficiente,1,0,0,0
 3969201,2018-09-01,02:15:00,Veicolo in marcia contro ostacolo fisso,,Pioggia in atto,Sufficiente,2,0,0,0
 3969266,2018-09-01,04:00:00,Veicolo in marcia contro veicoli in sosta,,Nuvoloso,Buona,1,0,0,0
@@ -21484,7 +21476,6 @@ ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.
 4031081,2018-09-04,12:00:00,Scontro frontale/laterale SX fra veicoli in marcia,,Sereno,Buona,1,1,0,0
 4050679,2018-09-03,23:25:00,Scontro laterale fra veicoli in marcia,,Sereno,Sufficiente,1,1,0,0
 4077078,2018-09-20,10:05:00,Scontro laterale fra veicoli in marcia,,Sereno,Buona,2,0,0,0
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 3974108,2018-10-10,10:30:00,Tamponamento Multiplo,,Sereno,Sufficiente,1,4,0,0
 3983358,2018-10-12,21:10:00,Veicolo in marcia contro veicolo arresto,,Sereno,Buona,4,1,0,0
 4013757,2018-10-01,00:50:00,Scontro frontale/laterale DX fra veicoli in marcia,,Sereno,Sufficiente,1,1,0,0
@@ -24264,7 +24255,6 @@ ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.
 4213536,2018-10-22,16:00:00,Infortunio per caduta del veicolo,,Sereno,Buona,0,1,0,0
 4294819,2018-10-18,03:15:00,Veicolo in marcia contro ostacolo fisso,,Sereno,Sufficiente,1,0,0,0
 4297772,2018-10-09,16:30:00,Tamponamento,,Sereno,Buona,2,0,0,0
-ID,Data,Ora,Tipo,Causa,Meteo,Visibilita,N.Illesi,N.Feriti,N.PrognosiRiservata,N.Deceduti
 4061253,2018-11-27,03:00:00,Tamponamento,,Sereno,Sufficiente,1,1,0,0
 4064491,2018-11-13,07:45:00,Scontro frontale/laterale SX fra veicoli in marcia,,Sereno,Buona,2,0,0,0
 4067541,2018-11-01,01:50:00,Scontro frontale/laterale SX fra veicoli in marcia,,Nuvoloso,Sufficiente,2,0,0,0
