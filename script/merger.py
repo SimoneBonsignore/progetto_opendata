@@ -42,7 +42,7 @@ with open("../datiElaborati/veicoli.csv", "w", newline="") as veicoli:
     print("\n\nMerge veicoli")    
     for city in citta:
         print(city)
-        with open("../datiElaborati/veicoli/new"+city+"Veicoli.csv", newline="") as c:  
+        with open("../datiElaborati/veicolo/new"+city+"Veicolo.csv", newline="") as c:  
             lettore = csv.reader(c, delimiter=",")
             next(lettore)                                                  
             dati = [(linea[:]) for linea in lettore]
