@@ -25,7 +25,7 @@ with open("../datiOriginali/Roma/gennaio.csv", newline="", encoding="UTF-8") as 
                     else:
                         orario = None
 
-                    coordinate = "(" + riga[24] + "," + riga[25] + ")"
+                    coordinate = "(" + riga[25] + "," + riga[24] + ")"
                     writer.writerow([riga[0], riga[4], coordinate, riga[13], riga[14], riga[19], data, orario, riga[10], riga[16], riga[18], riga[23], riga[20],riga[21],riga[22]])
                     precedente = corrente
 
