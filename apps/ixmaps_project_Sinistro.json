@@ -1,0 +1,80 @@
+{
+	"metadata": {
+		"title": "",
+		"snippet": "",
+		"descriptrion": "",
+		"thumbnail": "",
+		"about": ""
+		},
+	"map": {
+		"map": "../../maps/svg/maps/generic/mercator.svg",
+		"basemap": "Stamen - toner-lite",
+		"scaleParam": {
+			"normalSizeScale": "177165354"
+			},
+		"options": {
+			"featurescaling": "dynamic",
+			"objectscaling": "true",
+			"clipmap": "true",
+			"clipmapdynamic": "true",
+			"dynamiclabel": "NOSIZE",
+			"labelspace": "1.0",
+			"checklabeloverlap": "NOSQUEEZE",
+			"dynamiclayer": "true",
+			"dynamictiles": "true",
+			"discardtiles": "false",
+			"loadmultitiles": "true",
+			"loadsilent": "false",
+			"loadexternaldata": "true",
+			"buttonsize": "15",
+			"fastpan": "false",
+			"panborder": "0",
+			"northarrow": "false",
+			"sidebarbuttons": "false",
+			"tooltipdelay": "250",
+			"popupdelay": "250",
+			"popupgridstyle": "firstright|firstitalic|firstbold|firstgray|firstsmall|background|alternate|full",
+			"popupalignment": "BOTTOM|LEFT",
+			"transparentbackground": "true",
+			"labelscaling": "dynamic",
+			"flushChartDraw": "50000",
+			"mapopacity": "1"
+			},
+		"center": {
+			"lat": "41.734429390721",
+			"lng": "12.36167907714844"
+			},
+		"zoom": "11"
+		},
+	"themes": [{
+			"layer": "World Mercator",
+			"field": "$item$",
+			"field100": "",
+			"style": {
+				"type": "CHART|BUBBLE|SIZE|RANGES",
+				"colorscheme": [
+					"1",
+					"RGB(238,238,255)",
+					"RGB(0,0,221)"],
+				"fillopacity": "0.7",
+				"shadow": "false",
+				"dbtable": "themeDataObj",
+				"dbtableUrl": "https://raw.githubusercontent.com/SimoneBonsignore/progetto_opendata/master/datiElaborati/csvPerGoogle.csv",
+				"dbtableType": "csv",
+				"datacache": "true",
+				"itemfield": "Coordinate",
+				"lookupfield": "Coordinate",
+				"showdata": "true",
+				"ranges": [
+					"1",
+					"1.002010001"],
+				"units": "",
+				"scale": "0.5",
+				"valuescale": "1",
+				"valuedecimals": "0",
+				"title": "Sinistro"
+				}
+			}],
+	"layerMask": {
+		}
+	}
