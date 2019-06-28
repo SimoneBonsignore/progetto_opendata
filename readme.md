@@ -10,8 +10,11 @@ Nonostante la disponibilità di dati in formato aperto forniti dal Comune di Pal
 
 # In questa repository...
 sono presenti i dati originali dalla quale si è partiti per lo sviluppo del progetto, i dati elaborati ottenuti alla fine, gli script sviluppati per ottenere i dati elaborati.
+
 Nella cartella ontologie sono presenti una prima versione di ontologia e l'ontologia dalla quale si è preso spunto.
+
 Nella cartella apps sono presenti dei file che è possibile caricare su diversi software per la visualizzazione dei dati su mappe interattive come GoogleMyMaps e iXMaps.
+
 Il file dell'ontologia definitiva in formato Turtle.
 
 La versione online della relazione è visualizzabile al seguente indirizzo:
