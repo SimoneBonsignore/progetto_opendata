@@ -9,7 +9,7 @@ Abitando in una delle città con il più alto numero di traffico veicolare in It
 Nonostante la disponibilità di dati in formato aperto forniti dal Comune di Palermo, le informazioni contenuto in esso sono abbastanze scarse, fornendo poche informazioni e tralasciando dati che in una successiva analisi potrebbero essere fondamentali. La ricerca di ulteriori dataset presenti sui portali di altri Comuni ha fatto emergere in modo ancor più evidente le differenze nella struttura di questi dati aperti, presentando in alcuni casi informazioni molto più dettagliate e precise di quanto non fossero quelle del nostro Comune.
 
 # In questa repository...
-sono presenti i dati originali dalla quale si è partiti per lo sviluppo del progetto, i dati elaborati ottenuti alla fine, gli script sviluppati per ottenere i dati elaborati.
+Sono presenti i dati originali dalla quale si è partiti per lo sviluppo del progetto, i dati elaborati ottenuti alla fine, gli script sviluppati per ottenere i dati elaborati.
 
 Nella cartella ontologie sono presenti una prima versione di ontologia e l'ontologia dalla quale si è preso spunto.
 
