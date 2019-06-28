@@ -5,7 +5,7 @@ print("##            Aggiorno i dataset               ##")
 print("#################################################")
 
 #Esegue sequenzialmente i seguenti script
-os.system("python3 newMatera.py; python3 newPalermo.py; python3 newBergamo.py; python3 newRoma.py; python3 merger.py")
+os.system("python3 matera.py; python3 palermo.py; python3 bergamo.py; python3 roma.py; python3 merger.py")
 
 print("#################################################")
 print("##            Dataset aggiornati               ##")

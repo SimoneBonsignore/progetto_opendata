@@ -8,7 +8,7 @@ precedente = 0
 
 
 with open("../datiOriginali/Roma/gennaio.csv", newline="", encoding="UTF-8") as roma: 
-    with open('../datiElaborati/csvPerGoogle.csv', "w", newline="", encoding="UTF-8") as newRoma: 
+    with open('../apps/csvPerGoogle.csv', "w", newline="", encoding="UTF-8") as newRoma: 
         lettore = csv.reader(roma, delimiter=";")
         next(lettore)
         writer = csv.writer(newRoma, delimiter=",")
